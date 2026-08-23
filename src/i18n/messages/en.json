@@ -1,0 +1,224 @@
+{
+  "dir": "ltr",
+  "site": {
+    "companyName": "Maram Group",
+    "tagline": "Kuwait Development",
+    "rights": "All rights reserved."
+  },
+  "nav": {
+    "items": {
+      "/": "Home",
+      "/projects": "Projects",
+      "/services": "Services",
+      "/mg-today": "MG Today",
+      "/about": "About us",
+      "/blogs": "Blogs",
+      "/contact": "Contact us"
+    },
+    "cta": "Request a Quote",
+    "toggleTheme": "Toggle theme",
+    "toggleMenu": "Toggle menu",
+    "language": "Switch language"
+  },
+  "hero": {
+    "eyebrow": "Kuwait Development",
+    "title": "Landmarks built to outlive the skyline",
+    "subtitle": "Maram Group develops residential, coastal and commercial addresses across Kuwait — designed with intent, delivered with discipline.",
+    "ctaLabel": "Explore Projects",
+    "secondaryCtaLabel": "Request a Quotation",
+    "marquee": [
+      "Kuwait City",
+      "Salmiya",
+      "Residential Towers",
+      "Coastal Villas",
+      "Commercial Assets",
+      "20+ Years",
+      "Bnaider",
+      "Design-Led Development"
+    ]
+  },
+  "stats": {
+    "heading": "Built on numbers, proven by trust",
+    "items": {
+      "years": "Years of Experience",
+      "units": "Delivered Units",
+      "projects": "Projects Completed",
+      "land": "Land Bank (sqm)"
+    }
+  },
+  "quotation": {
+    "eyebrow": "Lead Capture",
+    "title": "Request a quotation",
+    "body": "Tell us which project interests you and our team will call you back with availability, layouts and payment plans.",
+    "successTitle": "Thank you",
+    "successBody": "Your request has been received. A member of our sales team will call you shortly.",
+    "nameLabel": "Full name",
+    "namePlaceholder": "Your name",
+    "phoneLabel": "Phone number",
+    "phonePlaceholder": "+965 0000 0000",
+    "projectLabel": "Project of interest",
+    "projectPlaceholder": "Select a project",
+    "submit": "Request a call back"
+  },
+  "about": {
+    "eyebrow": "Since 2005",
+    "title": "Two decades of building in Kuwait",
+    "body": "Maram Group began with a single residential block in Salmiya and grew into one of Kuwait's steady development houses. We acquire carefully, design with architects we trust, and hand over on schedule. Every project is held to the same standard: durable materials, honest layouts, and locations that keep their value.",
+    "ctaLabel": "Learn more about us"
+  },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "heading": "Our Latest Launches",
+    "subheading": "A portfolio shaped by location, craft and long-term value.",
+    "pageHeading": "Our Projects",
+    "pageSubheading": "Every address we develop is chosen for its long-term value — residential, coastal and commercial across Kuwait.",
+    "viewMore": "View more",
+    "soldOut": "Sold Out",
+    "allLocations": "All",
+    "detail": {
+      "backToProjects": "Back to Projects",
+      "type": "Project Type",
+      "units": "Total Units",
+      "floors": "Floors",
+      "delivery": "Delivery",
+      "amenities": "Amenities"
+    },
+    "items": {
+      "salmiya-heights": {
+        "title": "Salmiya Heights",
+        "shortDescription": "Forty-two residences overlooking the Gulf, finished in warm stone and bronze detailing.",
+        "longDescription": "Salmiya Heights is a twelve-floor residential tower offering forty-two curated residences with unobstructed views of the Arabian Gulf. Each apartment is finished in warm limestone, brushed bronze hardware and floor-to-ceiling glazing. Residents enjoy a rooftop terrace, concierge service and direct access to the Salmiya waterfront promenade.",
+        "location": "Salmiya, Kuwait",
+        "status": "Now Selling"
+      },
+      "bnaider-villas": {
+        "title": "Bnaider Coastal Villas",
+        "shortDescription": "Private seaside villas with terraced gardens, designed for slow weekends by the water.",
+        "longDescription": "Twelve private villas set along the Bnaider coastline, each with a terraced garden that steps down to a private beach. The architecture draws on the vernacular of Kuwaiti coastal living — shaded arcades, deep overhangs and open-plan interiors that bring the sea inside. A community pool and landscaped pathway connect all twelve homes.",
+        "location": "Bnaider, Kuwait",
+        "status": "Launching Soon"
+      },
+      "sharq-business-house": {
+        "title": "Sharq Business House",
+        "shortDescription": "Grade-A offices and retail at the centre of the capital's business district.",
+        "longDescription": "An eighteen-floor commercial address in the heart of Sharq, Kuwait City's primary business corridor. The ground floor hosts curated retail and a coffee destination; upper floors offer Grade-A office suites with flexible plate configurations. The building achieves LEED Silver certification and offers valet parking, meeting suites and 24/7 security.",
+        "location": "Sharq, Kuwait City",
+        "status": "Under Construction"
+      }
+    }
+  },
+  "brochure": {
+    "eyebrow": "Brochure",
+    "title": "Interested in our projects?",
+    "body": "Download the Maram Group brochure with floor plans, finishes and delivery timelines.",
+    "ctaLabel": "Send me the PDF",
+    "successBody": "Check your inbox — the brochure is on its way.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com"
+  },
+  "contact": {
+    "hotline": "Hotline",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "pages": {
+    "services": {
+      "eyebrow": "What We Offer",
+      "heading": "Our Services",
+      "subheading": "From land acquisition to handover — a full-spectrum development service built on two decades of experience in Kuwait."
+    },
+    "mgToday": {
+      "eyebrow": "Media & Updates",
+      "heading": "MG Today",
+      "subheading": "The latest news, announcements and on-site progress from Maram Group."
+    },
+    "about": {
+      "eyebrow": "Since 2005",
+      "heading": "About Us",
+      "subheading": "Two decades of acquiring, designing and delivering addresses that hold their value across Kuwait."
+    },
+    "blogs": {
+      "eyebrow": "Insights",
+      "heading": "Blogs",
+      "subheading": "Perspectives on real estate, design and the Kuwaiti market from the Maram Group team."
+    },
+    "contact": {
+      "eyebrow": "Get In Touch",
+      "heading": "Contact Us",
+      "subheading": "Our sales team is available to answer your questions, arrange site visits and walk you through available units."
+    }
+  },
+  "mgToday": {
+    "news": {
+      "eyebrow": "Latest News",
+      "heading": "News & Announcements"
+    },
+    "team": {
+      "eyebrow": "The Team",
+      "heading": "The People Behind Maram Group"
+    }
+  },
+  "blogsPage": {
+    "eyebrow": "Insights",
+    "pageHeading": "Blogs",
+    "pageSubheading": "Perspectives on real estate, design and the Kuwaiti market from the Maram Group team.",
+    "allCategories": "All",
+    "readMore": "Read More",
+    "backToBlogs": "Back to Blogs",
+    "aboutPost": "About this post",
+    "published": "Published",
+    "category": "Category"
+  },
+  "contactPage": {
+    "form": {
+      "eyebrow": "Send Us a Message",
+      "heading": "We'd love to hear from you",
+      "body": "Whether you have a question about a project, want to arrange a site visit, or are interested in a partnership — fill in the form and someone from our team will be in touch within one business day.",
+      "nameLabel": "Full name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@email.com",
+      "phoneLabel": "Phone number",
+      "phonePlaceholder": "+965 0000 0000",
+      "messageLabel": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "submit": "Send Message",
+      "successTitle": "Message received",
+      "successBody": "Thank you for reaching out. A member of our team will contact you within one business day."
+    },
+    "info": {
+      "eyebrow": "Contact Details",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Office Hours",
+      "hoursValue": "Sunday – Thursday, 9 am – 5 pm"
+    },
+    "map": {
+      "eyebrow": "Find Us",
+      "heading": "Our Location"
+    }
+  },
+  "aboutPage": {
+    "sections": {
+      "our-story": {
+        "eyebrow": "Our Story",
+        "title": "Built from a single block in Salmiya",
+        "body": "Maram Group was founded in 2005 with a single residential building in Salmiya and a straightforward conviction: Kuwait deserved more considered development. In the years that followed, we grew carefully — acquiring sites we believed in, working with architects we trusted, and handing over on schedule. That discipline compounded into a portfolio of residential towers, coastal villas and commercial addresses that have held their value and their residents' trust across two decades."
+      },
+      "our-approach": {
+        "eyebrow": "Our Approach",
+        "title": "Design-led. Delivery-disciplined.",
+        "body": "Every project begins with the same question: what would make someone choose to live or work here in twenty years? We start with location — not just the plot, but the neighbourhood, the views, the routes. We then work with architects and consultants who share our instinct for durable design: warm materials, honest proportions, layouts that function as well as they photograph. And we hold the same standard through construction, procurement and handover — because the finish is where trust is won or lost."
+      },
+      "our-commitment": {
+        "eyebrow": "Our Commitment",
+        "title": "On time, as promised",
+        "body": "Delivery is a commitment, not a target. Maram Group has maintained an on-schedule handover record across its portfolio by structuring each project with realistic programmes, properly resourced teams and contingency built in from the outset. When buyers choose one of our addresses, they are not just selecting a floor plan — they are entering a relationship that we intend to honour from reservation through to the moment they receive their keys."
+      }
+    }
+  }
+}

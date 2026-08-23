@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "ahmed-al-maram",
+      "image": "/assets/project-1.jpg",
+      "name": "Ahmed Al-Maram",
+      "role": "Chairman & Founder",
+      "bio": "Ahmed founded Maram Group in 2005 with a conviction that Kuwait's built environment deserved more considered development. Over two decades he has led the acquisition and delivery of residential, coastal and commercial addresses across the country, building a reputation grounded in design integrity and on-schedule delivery."
+    },
+    {
+      "id": "sara-al-rashidi",
+      "image": "/assets/project-2.jpg",
+      "name": "Sara Al-Rashidi",
+      "role": "Chief Executive Officer",
+      "bio": "Sara joined Maram Group in 2011 and was appointed CEO in 2019. She oversees the group's strategy, operations and financial performance. Her background spans investment banking and real estate advisory, and she brings a disciplined, data-led approach to each development decision."
+    },
+    {
+      "id": "khalid-al-sabah",
+      "image": "/assets/project-3.jpg",
+      "name": "Khalid Al-Sabah",
+      "role": "Head of Development",
+      "bio": "Khalid leads the development management function, taking projects from site acquisition through to handover. With fifteen years of experience in Kuwait's construction sector, he coordinates architects, contractors and consultants to keep each project on programme and within budget."
+    }
+  ]
+}

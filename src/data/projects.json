@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "id": "salmiya-heights",
+      "slug": "salmiya-heights",
+      "image": "project-1",
+      "location": "Salmiya",
+      "soldOut": false,
+      "details": {
+        "gallery": ["project-1", "project-2", "project-3"],
+        "type": "Residential",
+        "units": 42,
+        "floors": 12,
+        "delivery": "Q4 2025",
+        "amenities": ["Rooftop Terrace", "Concierge", "Covered Parking", "Gym", "Sea View"]
+      }
+    },
+    {
+      "id": "bnaider-villas",
+      "slug": "bnaider-villas",
+      "image": "project-2",
+      "location": "Bnaider",
+      "soldOut": false,
+      "details": {
+        "gallery": ["project-2", "project-1", "project-3"],
+        "type": "Coastal Villas",
+        "units": 12,
+        "floors": 2,
+        "delivery": "Q2 2026",
+        "amenities": ["Private Beach", "Terraced Garden", "Private Pool", "Direct Sea Access"]
+      }
+    },
+    {
+      "id": "sharq-business-house",
+      "slug": "sharq-business-house",
+      "image": "project-3",
+      "location": "Sharq",
+      "soldOut": false,
+      "details": {
+        "gallery": ["project-3", "project-1", "project-2"],
+        "type": "Commercial",
+        "units": 28,
+        "floors": 18,
+        "delivery": "Q1 2027",
+        "amenities": ["Grade-A Offices", "Retail Ground Floor", "Valet Parking", "Meeting Suites", "24/7 Security"]
+      }
+    }
+  ]
+}

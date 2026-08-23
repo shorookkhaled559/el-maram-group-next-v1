@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "ctaHref": "#launches",
+    "secondaryCtaHref": "#quotation",
+    "videoSrc": "https://cdn.coverr.co/videos/coverr-a-modern-building-1573/1080p.mp4"
+  },
+  "about": {
+    "ctaHref": "/about"
+  }
+}

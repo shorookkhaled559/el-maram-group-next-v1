@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "href": "/" },
+    { "href": "/projects" },
+    { "href": "/services" },
+    { "href": "/mg-today" },
+    { "href": "/about" },
+    { "href": "/blogs" },
+    { "href": "/contact" }
+  ],
+  "cta": { "href": "#quotation" }
+}

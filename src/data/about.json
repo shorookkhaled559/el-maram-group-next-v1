@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "id": "our-story",
+      "image": "/assets/project-1.jpg",
+      "imageAlt": "Salmiya Heights under construction",
+      "imagePosition": "right"
+    },
+    {
+      "id": "our-approach",
+      "image": "/assets/project-2.jpg",
+      "imageAlt": "Bnaider Coastal Villas site",
+      "imagePosition": "left"
+    },
+    {
+      "id": "our-commitment",
+      "image": "/assets/project-3.jpg",
+      "imageAlt": "Sharq Business House facade",
+      "imagePosition": "right"
+    }
+  ]
+}

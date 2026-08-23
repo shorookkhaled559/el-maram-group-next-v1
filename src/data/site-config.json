@@ -1,0 +1,16 @@
+{
+  "companyName": "Maram Group",
+  "tagline": "Kuwait Development",
+  "hotline": "+965 1800 900",
+  "hotlineHref": "tel:+9651800900",
+  "whatsapp": "+965 9000 0000",
+  "whatsappHref": "https://wa.me/96590000000",
+  "email": "info@maramgroup.com",
+  "emailHref": "mailto:info@maramgroup.com",
+  "address": "Al Hamra Tower, Sharq, Kuwait City",
+  "social": {
+    "instagram": "https://instagram.com/",
+    "facebook": "https://facebook.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+}
