@@ -77,6 +77,7 @@ export function ProjectDetailContent({ project, locale }: ProjectDetailProps) {
                     alt={`${t.title} ${i + 1}`}
                     width={800}
                     height={600}
+                    sizes="(max-width: 1023px) 33vw, 25vw"
                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   />
                   </div>

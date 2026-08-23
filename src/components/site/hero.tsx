@@ -37,18 +37,16 @@ export function Hero() {
 
   return (
     <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden">
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        poster="/assets/hero-poster.jpg"
-        src={hero.videoSrc}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="none"
+      <Image
+        src="/assets/hero-poster.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
       />
       <div className="absolute inset-0 bg-black/70" />
-      {/* Ambient 3D layer sits above the video but below the readability gradient. */}
+      {/* Ambient 3D layer sits above the background image but below the readability gradient. */}
       <HeroCanvas className="pointer-events-none absolute inset-0" />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-black/70 to-black/75" />
 

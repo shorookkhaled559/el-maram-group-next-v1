@@ -46,6 +46,7 @@ export function NewsSection() {
                   alt={article.title}
                   width={1600}
                   height={1000}
+                  sizes="(max-width: 1023px) 100vw, 42vw"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>

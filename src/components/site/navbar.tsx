@@ -41,6 +41,7 @@ export function Navbar() {
               alt={`${m.site.companyName} logo`}
               width={96}
               height={96}
+              sizes="80px"
               className="h-16 w-16 object-contain lg:h-20 lg:w-20"
             />
           <span className="flex flex-col leading-none">
