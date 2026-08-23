@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { useTheme } from "@/hooks/use-theme";
@@ -28,11 +28,10 @@ function Wireform({ color }: { color: string }) {
   );
 }
 
-function Dust({ color }: { color: string }) {
+function Dust({ color, count }: { color: string; count: number }) {
   const points = useRef<THREE.Points>(null);
 
   const positions = useMemo(() => {
-    const count = 420;
     const array = new Float32Array(count * 3);
     for (let i = 0; i < count; i += 1) {
       array[i * 3] = (Math.random() - 0.5) * 12;
@@ -40,7 +39,7 @@ function Dust({ color }: { color: string }) {
       array[i * 3 + 2] = (Math.random() - 0.5) * 6;
     }
     return array;
-  }, []);
+  }, [count]);
 
   useFrame((state, delta) => {
     if (!points.current) return;
@@ -63,16 +62,24 @@ export default function HeroScene({ active }: { active: boolean }) {
   // Theme-aware accent: brighter gold on dark, deeper bronze on light.
   const color = theme === "dark" ? "#e8bf74" : "#8a6420";
 
+  // Lighter settings on small screens: fewer particles, no antialiasing,
+  // and a fixed low pixel ratio, since phone GPUs/CPUs have far less
+  // headroom than desktop for a continuous render loop.
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    setIsMobile(window.matchMedia("(max-width: 767px)").matches);
+  }, []);
+
   return (
     <Canvas
       camera={{ position: [0, 0, 6], fov: 45 }}
-      dpr={[1, 1.5]}
+      dpr={isMobile ? 1 : [1, 1.5]}
       frameloop={active ? "always" : "never"}
-      gl={{ antialias: true, alpha: true }}
+      gl={{ antialias: !isMobile, alpha: true }}
       style={{ pointerEvents: "none" }}
     >
       <Wireform color={color} />
-      <Dust color={color} />
+      <Dust color={color} count={isMobile ? 180 : 420} />
     </Canvas>
   );
 }

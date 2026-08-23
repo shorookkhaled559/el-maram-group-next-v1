@@ -29,6 +29,7 @@ export function TeamSection() {
                   alt={member.name}
                   width={224}
                   height={224}
+                  sizes="152px"
                   className="h-full w-full object-cover object-top"
                 />
               </div>
@@ -39,14 +40,6 @@ export function TeamSection() {
               {/* Role */}
               <p className="mt-1.5 text-[10px] uppercase tracking-[0.26em] text-gold">
                 {member.role}
-              </p>
-
-              {/* Divider */}
-              <div className="my-5 h-px w-8 bg-border" />
-
-              {/* Bio */}
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                {member.bio}
               </p>
             </div>
           ))}

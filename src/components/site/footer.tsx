@@ -17,12 +17,13 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <Image
-              src={LOGO_URL}
-              alt={`${m.site.companyName} logo`}
-              width={56}
-              height={56}
-              className="h-14 w-14 object-contain"
-            />
+                src={LOGO_URL}
+                alt={`${m.site.companyName} logo`}
+                width={56}
+                height={56}
+                sizes="56px"
+                className="h-14 w-14 object-contain"
+              />
             <span className="font-display text-lg uppercase tracking-[0.18em]">
               {m.site.companyName}
             </span>
