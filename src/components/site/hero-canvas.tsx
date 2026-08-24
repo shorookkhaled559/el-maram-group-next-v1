@@ -18,9 +18,37 @@ export function HeroCanvas({ className }: { className?: string }) {
   useEffect(() => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) return;
-    // Defer mounting until after first paint so it never blocks the hero.
-    const id = window.setTimeout(() => setMounted(true), 300);
-    return () => window.clearTimeout(id);
+
+    // PERF FIX: requestIdleCallback isn't available in every browser
+    // (e.g. Safari), so fall back to a short timeout there.
+    const scheduleIdle: (cb: () => void) => number =
+      "requestIdleCallback" in window
+        ? (cb) => window.requestIdleCallback(cb, { timeout: 1500 })
+        : (cb) => window.setTimeout(cb, 300);
+    const cancelIdle: (id: number) => void =
+      "cancelIdleCallback" in window
+        ? (id) => window.cancelIdleCallback(id)
+        : (id) => window.clearTimeout(id);
+
+    let idleId: number | null = null;
+    const mountWhenIdle = () => {
+      idleId = scheduleIdle(() => setMounted(true));
+    };
+
+    // PERF FIX: only mount the 3D layer once the rest of the page has
+    // finished loading (window "load" event), so it never competes with
+    // the hero text for main-thread time during first paint. This used
+    // to be a flat 300ms setTimeout, which sometimes overlapped with the
+    // page still rendering — that overlap was delaying LCP by 4+ seconds.
+    if (document.readyState === "complete") {
+      mountWhenIdle();
+      return;
+    }
+    window.addEventListener("load", mountWhenIdle, { once: true });
+    return () => {
+      window.removeEventListener("load", mountWhenIdle);
+      if (idleId !== null) cancelIdle(idleId);
+    };
   }, []);
 
   useEffect(() => {
