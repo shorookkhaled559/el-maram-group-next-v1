@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import { NavigationProgress } from "@/components/site/navigation-progress";
@@ -25,6 +26,20 @@ const manrope = Manrope({
   fallback: ["system-ui", "ui-sans-serif", "sans-serif"],
 });
 
+const cairo = localFont({
+  src: [
+    { path: "../../public/assets/fonts/Cairo-Light.ttf",     weight: "300", style: "normal" },
+    { path: "../../public/assets/fonts/Cairo-Regular.ttf",   weight: "400", style: "normal" },
+    { path: "../../public/assets/fonts/Cairo-Medium.ttf",    weight: "500", style: "normal" },
+    { path: "../../public/assets/fonts/Cairo-SemiBold.ttf",  weight: "600", style: "normal" },
+    { path: "../../public/assets/fonts/Cairo-Bold.ttf",      weight: "700", style: "normal" },
+  ],
+  variable: "--font-arabic",
+  display: "swap",
+  preload: false,
+  fallback: ["system-ui", "ui-sans-serif", "sans-serif"],
+});
+
 export const metadata: Metadata = {
   title: "Maram Group | Real Estate Development in Kuwait",
   description:
@@ -44,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`dark ${cormorant.variable} ${manrope.variable}`}
+      className={`dark ${cormorant.variable} ${manrope.variable} ${cairo.variable}`}
       suppressHydrationWarning
     >
       <head>

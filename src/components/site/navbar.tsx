@@ -26,10 +26,15 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // True when the navbar should show its solid frosted background
+  const solidBg = scrolled || open || pathname !== "/";
+  // When transparent (dark mode, not scrolled, menu closed) use pure white for text
+  const ghostText = !solidBg ? "text-white" : "text-muted-foreground";
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
-        scrolled || open
+        solidBg
           ? "bg-background/90 backdrop-blur-xl border-b border-border"
           : "bg-transparent"
       }`}
@@ -42,13 +47,13 @@ export function Navbar() {
               width={96}
               height={96}
               sizes="80px"
-              className="h-16 w-16 object-contain lg:h-20 lg:w-20"
+              className="h-16 w-16 object-contain lg:h-30 lg:w-30"
             />
           <span className="flex flex-col leading-none">
-            <span className="font-display text-xl tracking-[0.18em] uppercase lg:text-2xl">
+            <span className={`font-display text-sm tracking-[0.5em] uppercase lg:text-[22px] transition-colors duration-500 ${!solidBg ? "text-white" : "text-foreground"}`}>
               {m.site.companyName}
             </span>
-            <span className="mt-1.5 text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+            <span className={`mt-1.4 text-[10px] tracking-[0.3em] uppercase transition-colors duration-500 ${!solidBg ? "text-white/70" : "text-muted-foreground"}`}>
               {m.site.tagline}
             </span>
           </span>
@@ -60,7 +65,7 @@ export function Navbar() {
               key={item.href}
               href={item.href}
               className={`text-xs uppercase tracking-[0.16em] transition-colors hover:text-gold whitespace-nowrap ${
-                pathname === item.href ? "text-gold" : "text-muted-foreground"
+                pathname === item.href ? "text-gold" : ghostText
               }`}
             >
               {m.nav.items[item.href as keyof typeof m.nav.items]}
@@ -74,7 +79,7 @@ export function Navbar() {
             size="sm"
             aria-label={m.nav.language}
             onClick={toggleLocale}
-            className="gap-1.5 rounded-none px-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground hover:text-gold"
+            className={`gap-1.5 rounded-none px-2 text-[11px] uppercase tracking-[0.18em] hover:text-gold transition-colors duration-500 ${ghostText}`}
           >
             <Globe className="size-4" />
             {locale === "en" ? "AR" : "EN"}
@@ -84,7 +89,7 @@ export function Navbar() {
             size="icon"
             aria-label={m.nav.toggleTheme}
             onClick={toggle}
-            className="text-muted-foreground hover:text-gold"
+            className={`hover:text-gold transition-colors duration-500 ${ghostText}`}
           >
             {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
           </Button>
@@ -98,7 +103,7 @@ export function Navbar() {
             variant="ghost"
             size="icon"
             aria-label={m.nav.toggleMenu}
-            className="xl:hidden"
+            className="xl:hidden text-zinc-100 hover:text-gold"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}

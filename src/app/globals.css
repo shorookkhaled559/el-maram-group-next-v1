@@ -56,6 +56,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -169,6 +170,24 @@
     font-family: var(--font-display);
     font-weight: 300;
     letter-spacing: -0.01em;
+  }
+
+  /* Arabic — use Cairo for all text, tighten letter-spacing overrides */
+  :lang(ar) body,
+  :lang(ar) {
+    font-family: var(--font-arabic);
+  }
+
+  :lang(ar) h1,
+  :lang(ar) h2,
+  :lang(ar) h3 {
+    font-family: var(--font-arabic);
+    letter-spacing: 0;
+  }
+
+  /* Reset Latin tracking utilities when in Arabic */
+  :lang(ar) [class*="tracking-"] {
+    letter-spacing: 0.02em;
   }
 }
 
