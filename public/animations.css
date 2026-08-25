@@ -1,0 +1,74 @@
+/* 
+ * Non-critical animations and effects
+ * Loaded asynchronously after initial render
+ */
+
+/* Import animation utilities */
+@import "tw-animate-css";
+
+/* Custom animations */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-scroll 38s linear infinite;
+}
+
+@keyframes marquee-scroll-rtl {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-rtl {
+  animation: marquee-scroll-rtl 38s linear infinite;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes grid-scroll {
+  from { background-position: 0 0; }
+  to   { background-position: 40px 40px; }
+}
+
+.animate-grid-scroll {
+  animation: grid-scroll 3s linear infinite;
+}
+
+/* Navigation progress bar — compositor-only crawl to 85% */
+@keyframes progress-crawl {
+  from { width: 0%; }
+  to   { width: 85%; }
+}
+
+/* Respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-rtl,
+  .animate-rise,
+  .animate-grid-scroll {
+    animation: none;
+  }
+}

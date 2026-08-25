@@ -7,6 +7,7 @@ import { NavigationProgress } from "@/components/site/navigation-progress";
 import { Navbar } from "@/components/site/navbar";
 import { Footer } from "@/components/site/footer";
 import { FloatingActions } from "@/components/site/floating-actions";
+import { getCriticalCSS } from "@/lib/critical-css";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -56,6 +57,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const criticalCSS = getCriticalCSS();
+  
   return (
     <html
       lang="en"
@@ -63,10 +66,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <head>
+        {/* Critical CSS - inlined for instant render, no blocking */}
+        <style
+          dangerouslySetInnerHTML={{ __html: criticalCSS }}
+          data-purpose="critical-css"
+        />
+        
+        {/* Load animations CSS asynchronously without blocking render */}
+        <link
+          rel="preload"
+          href="/animations.css"
+          as="style"
+        />
+        
         {/* Prevents dark-mode and RTL flash before React hydrates */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{if(localStorage.getItem('maram-theme')==='light'){document.documentElement.classList.remove('dark')}var l=localStorage.getItem('maram-locale');if(l==='ar'){document.documentElement.lang='ar';document.documentElement.dir='rtl'}}catch(e){}`,
+            __html: `try{if(localStorage.getItem('maram-theme')==='light'){document.documentElement.classList.remove('dark')}var l=localStorage.getItem('maram-locale');if(l==='ar'){document.documentElement.lang='ar';document.documentElement.dir='rtl'}}catch(e){}(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='/animations.css';document.head.appendChild(l)})()`,
           }}
         />
       </head>

@@ -4,8 +4,21 @@ const nextConfig: NextConfig = {
   experimental: {
     // Prevents importing the entire lucide-react barrel — only used icons
     // are included in the client bundle.
-    optimizePackageImports: ["lucide-react"],
+    optimizePackageImports: [
+      "lucide-react",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-label",
+    ],
   },
+  
+  // Production optimizations
+  compiler: {
+    // Remove console.logs in production
+    removeConsole: process.env.NODE_ENV === "production" ? {
+      exclude: ["error", "warn"],
+    } : false,
+  },
+  
   typescript: {
     // TypeScript is checked separately via `tsc --noEmit` (which passes cleanly).
     // This skips Next.js's own generated type checker, which produces false
