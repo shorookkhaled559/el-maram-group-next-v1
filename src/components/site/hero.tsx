@@ -5,6 +5,7 @@ import { ArrowDownRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import content from "@/data/homepage-content.json";
 import { useI18n } from "@/i18n";
+import { useTheme } from "@/hooks/use-theme";
 import { HeroCanvas } from "./hero-canvas";
 
 const { hero } = content;
@@ -34,18 +35,21 @@ function Marquee() {
 
 export function Hero() {
   const { m } = useI18n();
+  const { theme } = useTheme();
+  const isLight = theme === "light";
 
   return (
-    <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden">
+    <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden pt-2.5">
       <Image
-        src="/assets/hero-poster.jpg"
+        src={isLight ? "/assets/hero-poster1.jpg" : "/assets/hero-poster.jpg"}
         alt=""
         fill
         priority
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-black/70" />
+      {/* Dark overlay — dark mode only */}
+      {!isLight && <div className="absolute inset-0 bg-black/70" />}
       {/* Ambient 3D layer sits above the background image but below the readability gradient. */}
       <HeroCanvas className="pointer-events-none absolute inset-0" />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-black/70 to-black/75" />

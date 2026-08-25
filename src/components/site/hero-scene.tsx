@@ -2,11 +2,15 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import * as THREE from "three";
+// PERF FIX: type-only import — "three" is only used here for TypeScript
+// types (Group, Points below), never as runtime code. A normal
+// `import * as THREE from "three"` was bundling the whole ~98KB library
+// even though ~80KB of it was unused, per PageSpeed's report.
+import type { Group, Points } from "three";
 import { useTheme } from "@/hooks/use-theme";
 
 function Wireform({ color }: { color: string }) {
-  const group = useRef<THREE.Group>(null);
+  const group = useRef<Group>(null);
 
   useFrame((_, delta) => {
     if (!group.current) return;
@@ -29,7 +33,7 @@ function Wireform({ color }: { color: string }) {
 }
 
 function Dust({ color, count }: { color: string; count: number }) {
-  const points = useRef<THREE.Points>(null);
+  const points = useRef<Points>(null);
 
   const positions = useMemo(() => {
     const array = new Float32Array(count * 3);
@@ -62,9 +66,9 @@ export default function HeroScene({ active }: { active: boolean }) {
   // Theme-aware accent: brighter gold on dark, deeper bronze on light.
   const color = theme === "dark" ? "#e8bf74" : "#8a6420";
 
-  // Lighter settings on small screens: fewer particles, no antialiasing,
-  // and a fixed low pixel ratio, since phone GPUs/CPUs have far less
-  // headroom than desktop for a continuous render loop.
+  // PERF FIX: lighter settings on small screens — fewer particles, no
+  // antialiasing, and a fixed low pixel ratio — since phone GPUs/CPUs
+  // have far less headroom than desktop for a continuous render loop.
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     setIsMobile(window.matchMedia("(max-width: 767px)").matches);

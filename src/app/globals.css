@@ -1,6 +1,5 @@
 @import "tailwindcss" source(none);
 @source "../../src";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -56,6 +55,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -170,6 +170,24 @@
     font-weight: 300;
     letter-spacing: -0.01em;
   }
+
+  /* Arabic — use Cairo for all text, tighten letter-spacing overrides */
+  :lang(ar) body,
+  :lang(ar) {
+    font-family: var(--font-arabic);
+  }
+
+  :lang(ar) h1,
+  :lang(ar) h2,
+  :lang(ar) h3 {
+    font-family: var(--font-arabic);
+    letter-spacing: 0;
+  }
+
+  /* Reset Latin tracking utilities when in Arabic */
+  :lang(ar) [class*="tracking-"] {
+    letter-spacing: 0.02em;
+  }
 }
 
 @utility text-gold-gradient {
@@ -195,68 +213,4 @@
 
 @utility hairline {
   border-top: 1px solid var(--color-border);
-}
-
-@keyframes marquee-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-marquee {
-  animation: marquee-scroll 38s linear infinite;
-}
-
-@keyframes marquee-scroll-rtl {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.animate-marquee-rtl {
-  animation: marquee-scroll-rtl 38s linear infinite;
-}
-
-@keyframes rise-in {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-rise {
-  animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animate-marquee,
-  .animate-marquee-rtl,
-  .animate-rise {
-    animation: none;
-  }
-}
-
-@keyframes grid-scroll {
-  from { background-position: 0 0; }
-  to   { background-position: 40px 40px; }
-}
-
-.animate-grid-scroll {
-  animation: grid-scroll 3s linear infinite;
-}
-
-/* Navigation progress bar — compositor-only crawl to 85% */
-@keyframes progress-crawl {
-  from { width: 0%; }
-  to   { width: 85%; }
 }
