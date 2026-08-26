@@ -46,9 +46,15 @@ projectsData.projects.forEach((p: Project) => {
 const categories = Array.from(categoryMap.keys());
 
 export function ProjectsContent() {
-  const { m } = useI18n();
+  const { m, locale } = useI18n();
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+
+  // Translation helper for categories
+  const translateCategory = (category: string): string => {
+    const categories = m.projects?.categories as Record<string, string> | undefined;
+    return categories?.[category] || category;
+  };
 
   // Filter projects by category (supports hierarchy)
   const filteredProjects =
@@ -129,12 +135,13 @@ export function ProjectsContent() {
   return (
     <>
       <PageHeader
-        eyebrow="Portfolio"
-        heading={m.locale === "ar" ? "مشاريعنا" : "Our Projects"}
+        eyebrow={m.projects?.eyebrow || "Portfolio"}
+        heading={m.projects?.pageHeading || (locale === "ar" ? "مشاريعنا" : "Our Projects")}
         subheading={
-          m.locale === "ar"
+          m.projects?.pageSubheading ||
+          (locale === "ar"
             ? "تصفح مجموعة من أعمالنا في البناء والتصميم الداخلي"
-            : "Browse our collection of construction and interior design works"
+            : "Browse our collection of construction and interior design works")
         }
       />
 
@@ -150,7 +157,7 @@ export function ProjectsContent() {
                 : "border border-border text-muted-foreground hover:border-gold hover:text-gold"
             }`}
           >
-            {m.locale === "ar" ? "الكل" : "All"} 
+            {m.projects?.allLocations || (locale === "ar" ? "الكل" : "All")}
             <span className="ml-2 text-[10px] opacity-70">
               ({projectsData.projects.length})
             </span>
@@ -161,8 +168,8 @@ export function ProjectsContent() {
             const count = categoryMap.get(category) || 0;
             const isHierarchical = category.includes('/');
             const displayName = isHierarchical 
-              ? category.split('/').pop() 
-              : category;
+              ? translateCategory(category.split('/').pop() || category)
+              : translateCategory(category);
             
             return (
               <button
@@ -214,11 +221,11 @@ export function ProjectsContent() {
                     {/* Category Badge */}
                     <div className="absolute top-4 right-4 z-10 flex flex-col gap-1">
                       <span className="inline-block rounded-full bg-gold/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-primary-foreground backdrop-blur-sm">
-                        {project.mainCategory}
+                        {translateCategory(project.mainCategory)}
                       </span>
                       {project.subcategories.length > 0 && (
                         <span className="inline-block rounded-full bg-foreground/80 px-3 py-1 text-[9px] font-medium tracking-wide text-background backdrop-blur-sm">
-                          {project.subcategories[0]}
+                          {translateCategory(project.subcategories[0])}
                         </span>
                       )}
                     </div>
@@ -243,7 +250,7 @@ export function ProjectsContent() {
                       rel="noopener noreferrer"
                       className="mt-4 inline-flex items-center gap-2 text-sm text-gold transition-all duration-300 hover:gap-3"
                     >
-                      <span>{m.locale === "ar" ? "عرض التفاصيل" : "View Details"}</span>
+                      <span>{locale === "ar" ? "عرض التفاصيل" : "View Details"}</span>
                       <svg
                         className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                         fill="none"
@@ -254,7 +261,7 @@ export function ProjectsContent() {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          d={locale === "ar" ? "M7 16l-4-4m0 0l4-4m-4 4h18" : "M17 8l4 4m0 0l-4 4m4-4H3"}
                         />
                       </svg>
                     </Link>
@@ -324,7 +331,7 @@ export function ProjectsContent() {
 
             {/* Results Info */}
             <div className="mt-8 text-center text-sm text-muted-foreground">
-              {m.locale === "ar" 
+              {locale === "ar" 
                 ? `عرض ${startIndex + 1}-${Math.min(endIndex, filteredProjects.length)} من ${filteredProjects.length} مشروع`
                 : `Showing ${startIndex + 1}-${Math.min(endIndex, filteredProjects.length)} of ${filteredProjects.length} projects`
               }
@@ -333,7 +340,7 @@ export function ProjectsContent() {
         ) : (
           <div className="py-20 text-center">
             <p className="text-lg text-muted-foreground">
-              {m.locale === "ar"
+              {locale === "ar"
                 ? "لا توجد مشاريع في هذه الفئة"
                 : "No projects found in this category"}
             </p>

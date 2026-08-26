@@ -75,6 +75,18 @@
     "viewMore": "عرض المزيد",
     "soldOut": "نفذت الوحدات",
     "allLocations": "الكل",
+    "categories": {
+      "Design": "التصميم",
+      "Construction": "البناء",
+      "Interior": "الديكور الداخلي",
+      "Exterior": "التصميم الخارجي",
+      "Modern": "حديث",
+      "Classic": "كلاسيك",
+      "New Classic": "كلاسيك حديث",
+      "Chalet": "شاليه",
+      "Private Villa": "فيلا خاصة",
+      "Renovation": "تجديد"
+    },
     "detail": {
       "backToProjects": "العودة إلى المشاريع",
       "type": "نوع المشروع",

@@ -75,6 +75,18 @@
     "viewMore": "View more",
     "soldOut": "Sold Out",
     "allLocations": "All",
+    "categories": {
+      "Design": "Design",
+      "Construction": "Construction",
+      "Interior": "Interior",
+      "Exterior": "Exterior",
+      "Modern": "Modern",
+      "Classic": "Classic",
+      "New Classic": "New Classic",
+      "Chalet": "Chalet",
+      "Private Villa": "Private Villa",
+      "Renovation": "Renovation"
+    },
     "detail": {
       "backToProjects": "Back to Projects",
       "type": "Project Type",
