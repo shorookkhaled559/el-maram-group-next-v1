@@ -1,0 +1,4002 @@
+{
+  "projects": [
+    {
+      "id": "nayef-al-masma",
+      "slug": "nayef-al-masma",
+      "title": "Nayef Al-Masma",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/نايف-المسما_1.jpg",
+      "url": "https://maram-kw.com/portfolio/nayef-al-masma/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "mr-khaled-al-majid",
+      "slug": "mr-khaled-al-majid",
+      "title": "Mr. Khaled Al Majid",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/خالد-الماجد_1.jpg",
+      "url": "https://maram-kw.com/portfolio/mr-khaled-al-majid/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "mr-adel-al-wawan",
+      "slug": "mr-adel-al-wawan",
+      "title": "Mr. Adel Al-Wawan",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/الواوان_1.jpg",
+      "url": "https://maram-kw.com/portfolio/mr-adel-al-wawan/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "mr-ghanem-al-ali",
+      "slug": "mr-ghanem-al-ali",
+      "title": "Mr. Ghanem Al-Ali",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/العمرية_1.jpg",
+      "url": "https://maram-kw.com/portfolio/mr-ghanem-al-ali/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "mr-essam-al-zaid",
+      "slug": "mr-essam-al-zaid",
+      "title": "Mr. Essam Al-Zaid",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/الشهداء_1.jpg",
+      "url": "https://maram-kw.com/portfolio/mr-essam-al-zaid/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "mr-wael-al-khamis",
+      "slug": "mr-wael-al-khamis",
+      "title": "Mr. Wael Al-Khamis",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/الزهراء-1_1.jpg",
+      "url": "https://maram-kw.com/portfolio/mr-wael-al-khamis/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "mashary-al-farsi",
+      "slug": "mashary-al-farsi",
+      "title": "Mashary Al-Farsi",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/الدسمه_1.jpg",
+      "url": "https://maram-kw.com/portfolio/mashary-al-farsi/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "youssef-al-zaid",
+      "slug": "youssef-al-zaid",
+      "title": "Youssef Al-Zaid",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/الجابرية_1.jpg",
+      "url": "https://maram-kw.com/portfolio/youssef-al-zaid/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "hashem-al-muhaimid",
+      "slug": "hashem-al-muhaimid",
+      "title": "Hashem Al-Muhaimid",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/ابو-فطيرة-1_1.jpg",
+      "url": "https://maram-kw.com/portfolio/hashem-al-muhaimid/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "jawad-al-saffar",
+      "slug": "jawad-al-saffar",
+      "title": "Jawad Al-Saffar",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/معرض-الصفار-الشويخ-الصناعية.jpg",
+      "url": "https://maram-kw.com/portfolio/jawad-al-saffar/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "mohamed-al-kandry",
+      "slug": "mohamed-al-kandry",
+      "title": "Mohamed Al-Kandry",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/محمد-الكندري-المطلاع.jpg",
+      "url": "https://maram-kw.com/portfolio/mohamed-al-kandry/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "mohamed-al-obaid",
+      "slug": "mohamed-al-obaid",
+      "title": "Mohamed Al-Obaid",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/محمد-العبيد.jpg",
+      "url": "https://maram-kw.com/portfolio/mohamed-al-obaid/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "kamil-hussein",
+      "slug": "kamil-hussein",
+      "title": "Kamil Hussein",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/كميل-حسين.jpg",
+      "url": "https://maram-kw.com/portfolio/kamil-hussein/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "faisal-al-rashidi",
+      "slug": "faisal-al-rashidi",
+      "title": "Faisal Al-Rashidi",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/فيصل-الرشيدي-العارضية.jpg",
+      "url": "https://maram-kw.com/portfolio/faisal-al-rashidi-2/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "essam-al-zaid",
+      "slug": "essam-al-zaid",
+      "title": "Essam Al-Zaid",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/عصام-الزيد-الشهداء.jpg",
+      "url": "https://maram-kw.com/portfolio/essam-al-zaid/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "abdullah-al-shatti",
+      "slug": "abdullah-al-shatti",
+      "title": "Abdullah Al-Shatti",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/عبدالله-الشطي-بيان.jpg",
+      "url": "https://maram-kw.com/portfolio/abdullah-al-shatti-2/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "abdullah-al-hanyan",
+      "slug": "abdullah-al-hanyan",
+      "title": "Abdullah Al-Hanyan",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/عبدالله-الحنيان-المطلاع.jpg",
+      "url": "https://maram-kw.com/portfolio/abdullah-al-hanyan-2/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "dalal-al-ghareeb",
+      "slug": "dalal-al-ghareeb",
+      "title": "Dalal Al-Ghareeb",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/خيران-الغريب.jpg",
+      "url": "https://maram-kw.com/portfolio/dalal-al-ghareeb-2/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "khalaf-al-antri",
+      "slug": "khalaf-al-antri",
+      "title": "Khalaf Al-Antri",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/خلف-العنتري.jpg",
+      "url": "https://maram-kw.com/portfolio/khalaf-al-antri/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "hamad-al-haddad",
+      "slug": "hamad-al-haddad",
+      "title": "Hamad Al-Haddad",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/حمد-الحداد.jpg",
+      "url": "https://maram-kw.com/portfolio/hamad-al-haddad/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "jassim-bu-hamad",
+      "slug": "jassim-bu-hamad",
+      "title": "Jassim Bu Hamad",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/جاسم-بو-حمد.jpg",
+      "url": "https://maram-kw.com/portfolio/jassim-bu-hamad/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "ahmed-marzouk",
+      "slug": "ahmed-marzouk",
+      "title": "Ahmed Marzouk",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/أحمد-مرزوق-1.jpg",
+      "url": "https://maram-kw.com/portfolio/ahmed-marzouk-2/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "ahmed-al-khamis",
+      "slug": "ahmed-al-khamis",
+      "title": "Ahmed Al-Khamis",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/أحمد-الخميس.jpg",
+      "url": "https://maram-kw.com/portfolio/ahmed-al-khamis-2/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "hisham-al-shehab",
+      "slug": "hisham-al-shehab",
+      "title": "Hisham Al-Shehab",
+      "category": "Construction",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/هاشم-الشهاب-بيان.jpg",
+      "url": "https://maram-kw.com/portfolio/hisham-al-shehab/",
+      "mainCategory": "Construction",
+      "subcategories": [
+        "Private Villa"
+      ],
+      "oldCategory": "Construction"
+    },
+    {
+      "id": "enterance-design-3",
+      "slug": "enterance-design-3",
+      "title": "Enterance - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Enterance-Design-2-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/enterance-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "entertaiment-area-design-1",
+      "slug": "entertaiment-area-design-1",
+      "title": "Entertaiment Area - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Entertaiment-Area-Design-1-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/entertaiment-area-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "land-scape-design-1",
+      "slug": "land-scape-design-1",
+      "title": "Land Scape - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/land-scapeDesign-1-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/land-scape-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "land-scape-design-2",
+      "slug": "land-scape-design-2",
+      "title": "Land Scape - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/land-scapeDesign-2-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/land-scape-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "land-scape-design-3",
+      "slug": "land-scape-design-3",
+      "title": "Land Scape - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/land-scapeDesign-3-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/land-scape-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "office-design-1",
+      "slug": "office-design-1",
+      "title": "Office - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Office-Design-1-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/office-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "office-design-2",
+      "slug": "office-design-2",
+      "title": "Office - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Office-Design-2-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/office-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "office-design-3",
+      "slug": "office-design-3",
+      "title": "Office - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Office-Design-3-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/office-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "office-design-4",
+      "slug": "office-design-4",
+      "title": "Office - Design 4",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Office-Design-4-17-copy.webp",
+      "url": "https://maram-kw.com/portfolio/office-design-4/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "pool-design-1",
+      "slug": "pool-design-1",
+      "title": "Pool - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Pool-Design-1-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/pool-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "pool-design-2",
+      "slug": "pool-design-2",
+      "title": "Pool - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Pool-Design-2-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/pool-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "pool-design-3",
+      "slug": "pool-design-3",
+      "title": "Pool - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Pool-Design-3-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/pool-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "roof-garden-design-1",
+      "slug": "roof-garden-design-1",
+      "title": "Roof Garden - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Roof-Garden-Design-1-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/roof-garden-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "roof-garden-design-2",
+      "slug": "roof-garden-design-2",
+      "title": "Roof Garden - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Roof-Garden-Design-2-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/roof-garden-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "shop-design-1",
+      "slug": "shop-design-1",
+      "title": "Shop - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Shop-Design-1-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/shop-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-23",
+      "slug": "reception-living-design-23",
+      "title": "Reception & Living - Design 23",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-23-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-23/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-24",
+      "slug": "reception-living-design-24",
+      "title": "Reception & Living - Design 24",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-24-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-24/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-25",
+      "slug": "reception-living-design-25",
+      "title": "Reception & Living - Design 25",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-25-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-25/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-26",
+      "slug": "reception-living-design-26",
+      "title": "Reception & Living - Design 26",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-26-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-26/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-27",
+      "slug": "reception-living-design-27",
+      "title": "Reception & Living - Design 27",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-27-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-27/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-28",
+      "slug": "reception-living-design-28",
+      "title": "Reception & Living - Design 28",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-28-14-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-28/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-29",
+      "slug": "reception-living-design-29",
+      "title": "Reception & Living - Design 29",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-29-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-29/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-30",
+      "slug": "reception-living-design-30",
+      "title": "Reception & Living - Design 30",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-30-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-30/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-31",
+      "slug": "reception-living-design-31",
+      "title": "Reception & Living - Design 31",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-31-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-31/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-32",
+      "slug": "reception-living-design-32",
+      "title": "Reception & Living - Design 32",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-32-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-32/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-33",
+      "slug": "reception-living-design-33",
+      "title": "Reception & Living - Design 33",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-33-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-33/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-34",
+      "slug": "reception-living-design-34",
+      "title": "Reception & Living - Design 34",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-34-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-34/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-35",
+      "slug": "reception-living-design-35",
+      "title": "Reception & Living - Design 35",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-35-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-35/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-36",
+      "slug": "reception-living-design-36",
+      "title": "Reception & Living - Design 36",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-36-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-36/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-37",
+      "slug": "reception-living-design-37",
+      "title": "Reception & Living - Design 37",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-37-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-37/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dressing-design-1",
+      "slug": "dressing-design-1",
+      "title": "Dressing - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dressing-Design-1-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dressing-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dressing-design-2",
+      "slug": "dressing-design-2",
+      "title": "Dressing - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dressing-Design-2-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dressing-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dressing-design-3",
+      "slug": "dressing-design-3",
+      "title": "Dressing - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dressing-Design-3-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dressing-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "enterance-design-1",
+      "slug": "enterance-design-1",
+      "title": "Enterance - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Enterance-Design-1-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/enterance-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "enterance-design-2",
+      "slug": "enterance-design-2",
+      "title": "Enterance - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Enterance-Design-2-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/enterance-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-3",
+      "slug": "reception-living-design-3",
+      "title": "Reception & Living - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-3-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-4",
+      "slug": "reception-living-design-4",
+      "title": "Reception & Living - Design 4",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-4-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-4/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-5",
+      "slug": "reception-living-design-5",
+      "title": "Reception & Living - Design 5",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-5-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-5/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-6",
+      "slug": "reception-living-design-6",
+      "title": "Reception & Living - Design 6",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-6-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-6/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-7",
+      "slug": "reception-living-design-7",
+      "title": "Reception & Living - Design 7",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-7-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-7/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-8",
+      "slug": "reception-living-design-8",
+      "title": "Reception & Living - Design 8",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-8-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-8/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-9",
+      "slug": "reception-living-design-9",
+      "title": "Reception & Living - Design 9",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-9-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-9/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-10",
+      "slug": "reception-living-design-10",
+      "title": "Reception & Living - Design 10",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-10-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-10/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-11",
+      "slug": "reception-living-design-11",
+      "title": "Reception & Living - Design 11",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-11-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-11/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-12",
+      "slug": "reception-living-design-12",
+      "title": "Reception & Living - Design 12",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-12-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-12/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-13",
+      "slug": "reception-living-design-13",
+      "title": "Reception & Living - Design 13",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-13-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-13/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-14",
+      "slug": "reception-living-design-14",
+      "title": "Reception & Living - Design 14",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-14-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-14/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-15",
+      "slug": "reception-living-design-15",
+      "title": "Reception & Living - Design 15",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-15-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-15/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-16",
+      "slug": "reception-living-design-16",
+      "title": "Reception & Living - Design 16",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-16-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-16/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-18",
+      "slug": "reception-living-design-18",
+      "title": "Reception & Living - Design 18",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-18-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-18/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-19",
+      "slug": "reception-living-design-19",
+      "title": "Reception & Living - Design 19",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-19-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-19/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-20",
+      "slug": "reception-living-design-20",
+      "title": "Reception & Living - Design 20",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-20-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-20/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-22",
+      "slug": "reception-living-design-22",
+      "title": "Reception & Living - Design 22",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-22-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-22/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-5",
+      "slug": "dining-design-5",
+      "title": "Dining - Design 5",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-5/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-6",
+      "slug": "dining-design-6",
+      "title": "Dining - Design 6",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-6-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-6/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-7",
+      "slug": "dining-design-7",
+      "title": "Dining - Design 7",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-7-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-7/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-8",
+      "slug": "dining-design-8",
+      "title": "Dining - Design 8",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-8-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-8/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-9",
+      "slug": "dining-design-9",
+      "title": "Dining - Design 9",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-9-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-9/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-10",
+      "slug": "dining-design-10",
+      "title": "Dining - Design 10",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-10-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-10/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-11",
+      "slug": "dining-design-11",
+      "title": "Dining - Design 11",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-11-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-11/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-12",
+      "slug": "dining-design-12",
+      "title": "Dining - Design 12",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-12-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-12/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-13",
+      "slug": "dining-design-13",
+      "title": "Dining - Design 13",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-13-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-13/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-14",
+      "slug": "dining-design-14",
+      "title": "Dining - Design 14",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-14-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-14/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-15",
+      "slug": "dining-design-15",
+      "title": "Dining - Design 15",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-15-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-15/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-16",
+      "slug": "dining-design-16",
+      "title": "Dining - Design 16",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-16-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-16/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-17",
+      "slug": "dining-design-17",
+      "title": "Dining - Design 17",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-17-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-17/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-18",
+      "slug": "dining-design-18",
+      "title": "Dining - Design 18",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-18-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-18/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-19",
+      "slug": "dining-design-19",
+      "title": "Dining - Design 19",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-19-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-19/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-20",
+      "slug": "dining-design-20",
+      "title": "Dining - Design 20",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-20-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-20/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "kitchen-design-1",
+      "slug": "kitchen-design-1",
+      "title": "Kitchen - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Kitchen-Design-1-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/kitchen-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "kitchen-design-2",
+      "slug": "kitchen-design-2",
+      "title": "Kitchen - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Kitchen-Design-2-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/kitchen-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-1",
+      "slug": "reception-living-design-1",
+      "title": "Reception & Living - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-1-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reception-living-design-2",
+      "slug": "reception-living-design-2",
+      "title": "Reception & Living - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-2-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reception-living-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-23",
+      "slug": "bed-rooms-design-23",
+      "title": "Bed Rooms - Design 23",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-23-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-23/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-24",
+      "slug": "bed-rooms-design-24",
+      "title": "Bed Rooms - Design 24",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-24-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-24/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-25",
+      "slug": "bed-rooms-design-25",
+      "title": "Bed Rooms - Design 25",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-25-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-25/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-26",
+      "slug": "bed-rooms-design-26",
+      "title": "Bed Rooms - Design 26",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-26-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-26/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-27",
+      "slug": "bed-rooms-design-27",
+      "title": "Bed Rooms - Design 27",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-27-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-27/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-28",
+      "slug": "bed-rooms-design-28",
+      "title": "Bed Rooms - Design 28",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-28-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-28/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-29",
+      "slug": "bed-rooms-design-29",
+      "title": "Bed Rooms - Design 29",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-29-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-29/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-30",
+      "slug": "bed-rooms-design-30",
+      "title": "Bed Rooms - Design 30",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-30-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-30/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-31",
+      "slug": "bed-rooms-design-31",
+      "title": "Bed Rooms - Design 31",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-31-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-31/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-32",
+      "slug": "bed-rooms-design-32",
+      "title": "Bed Rooms - Design 32",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-32-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-32/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-33",
+      "slug": "bed-rooms-design-33",
+      "title": "Bed Rooms - Design 33",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-33-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-33/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-34",
+      "slug": "bed-rooms-design-34",
+      "title": "Bed Rooms - Design 34",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-34-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-34/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "cinema-design-1",
+      "slug": "cinema-design-1",
+      "title": "Cinema - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Cinema-Design-1-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/cinema-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dewaniya-design-1",
+      "slug": "dewaniya-design-1",
+      "title": "Dewaniya - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dewaniya-Design-1-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dewaniya-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dewaniya-design-2",
+      "slug": "dewaniya-design-2",
+      "title": "Dewaniya - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dewaniya-Design-2-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dewaniya-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dewaniya-design-3",
+      "slug": "dewaniya-design-3",
+      "title": "Dewaniya - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dewaniya-Design-3-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dewaniya-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-1",
+      "slug": "dining-design-1",
+      "title": "Dining - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-1-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-2",
+      "slug": "dining-design-2",
+      "title": "Dining - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-2-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-3",
+      "slug": "dining-design-3",
+      "title": "Dining - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-3-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dining-design-4",
+      "slug": "dining-design-4",
+      "title": "Dining - Design 4",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-4-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dining-design-4/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-3",
+      "slug": "bed-rooms-design-3",
+      "title": "Bed Rooms - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-3-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-4",
+      "slug": "bed-rooms-design-4",
+      "title": "Bed Rooms - Design 4",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-4-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-4/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-5",
+      "slug": "bed-rooms-design-5",
+      "title": "Bed Rooms - Design 5",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-5-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-5/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-6",
+      "slug": "bed-rooms-design-6",
+      "title": "Bed Rooms - Design 6",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-6-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-6/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-7",
+      "slug": "bed-rooms-design-7",
+      "title": "Bed Rooms - Design 7",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-7-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-7/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-8",
+      "slug": "bed-rooms-design-8",
+      "title": "Bed Rooms - Design 8",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-8-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-8/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-9",
+      "slug": "bed-rooms-design-9",
+      "title": "Bed Rooms - Design 9",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-9-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-9/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-10",
+      "slug": "bed-rooms-design-10",
+      "title": "Bed Rooms - Design 10",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-10-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-10/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-11",
+      "slug": "bed-rooms-design-11",
+      "title": "Bed Rooms - Design 11",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-11-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-11/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-12",
+      "slug": "bed-rooms-design-12",
+      "title": "Bed Rooms - Design 12",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-12-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-12/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-13",
+      "slug": "bed-rooms-design-13",
+      "title": "Bed Rooms - Design 13",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-13-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-13/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-14",
+      "slug": "bed-rooms-design-14",
+      "title": "Bed Rooms - Design 14",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-14-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-14/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-15",
+      "slug": "bed-rooms-design-15",
+      "title": "Bed Rooms - Design 15",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-15-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-15/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-16",
+      "slug": "bed-rooms-design-16",
+      "title": "Bed Rooms - Design 16",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-16-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-16/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-17",
+      "slug": "bed-rooms-design-17",
+      "title": "Bed Rooms - Design 17",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-17-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-17/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-18",
+      "slug": "bed-rooms-design-18",
+      "title": "Bed Rooms - Design 18",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-18-8-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-18/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-19",
+      "slug": "bed-rooms-design-19",
+      "title": "Bed Rooms - Design 19",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-19-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-19/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-20",
+      "slug": "bed-rooms-design-20",
+      "title": "Bed Rooms - Design 20",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-20-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-20/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-21",
+      "slug": "bed-rooms-design-21",
+      "title": "Bed Rooms - Design 21",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-21-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-21/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-22",
+      "slug": "bed-rooms-design-22",
+      "title": "Bed Rooms - Design 22",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-22-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-22/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-22",
+      "slug": "bath-design-22",
+      "title": "Bath - Design 22",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-22-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-22/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-23",
+      "slug": "bath-design-23",
+      "title": "Bath - Design 23",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-23-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-23/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-24",
+      "slug": "bath-design-24",
+      "title": "Bath - Design 24",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-24-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-24/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-25",
+      "slug": "bath-design-25",
+      "title": "Bath - Design 25",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-25-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-25/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-26",
+      "slug": "bath-design-26",
+      "title": "Bath - Design 26",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-26-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-26/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-27",
+      "slug": "bath-design-27",
+      "title": "Bath - Design 27",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-27-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-27/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-28",
+      "slug": "bath-design-28",
+      "title": "Bath - Design 28",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-28-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-28/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-29",
+      "slug": "bath-design-29",
+      "title": "Bath - Design 29",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-29-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-29/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-30",
+      "slug": "bath-design-30",
+      "title": "Bath - Design 30",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-30-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-30/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-31",
+      "slug": "bath-design-31",
+      "title": "Bath - Design 31",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-31-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-31/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "washer-design-1",
+      "slug": "washer-design-1",
+      "title": "Washer - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Washer-Design-washer-1-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/washer-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "washer-design-2",
+      "slug": "washer-design-2",
+      "title": "Washer - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Washer-Design-washer-2-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/washer-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "washer-design-3",
+      "slug": "washer-design-3",
+      "title": "Washer - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Washer-Design-washer-3-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/washer-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "washer-design-4",
+      "slug": "washer-design-4",
+      "title": "Washer - Design 4",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Washer-Design-washer-4-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/washer-design-4/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "washer-design-5",
+      "slug": "washer-design-5",
+      "title": "Washer - Design 5",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Washer-Design-washer-5-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/washer-design-5/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "washer-design-6",
+      "slug": "washer-design-6",
+      "title": "Washer - Design 6",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Washer-Design-washer-6-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/washer-design-6/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "washer-design-7",
+      "slug": "washer-design-7",
+      "title": "Washer - Design 7",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Washer-Design-washer-7-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/washer-design-7/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "washer-design-8",
+      "slug": "washer-design-8",
+      "title": "Washer - Design 8",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Washer-Design-washer-8-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/washer-design-8/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-1",
+      "slug": "bed-rooms-design-1",
+      "title": "Bed Rooms - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-1-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bed-rooms-design-2",
+      "slug": "bed-rooms-design-2",
+      "title": "Bed Rooms - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bed-Rooms-Design-2-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bed-rooms-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-1",
+      "slug": "bath-design-1",
+      "title": "Bath - Design 1",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-1-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-2",
+      "slug": "bath-design-2",
+      "title": "Bath - Design 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-2-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-3",
+      "slug": "bath-design-3",
+      "title": "Bath - Design 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-3-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-4",
+      "slug": "bath-design-4",
+      "title": "Bath - Design 4",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-4-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-4/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-5",
+      "slug": "bath-design-5",
+      "title": "Bath - Design 5",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-5-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-5/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-6",
+      "slug": "bath-design-6",
+      "title": "Bath - Design 6",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-6-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-6/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-7",
+      "slug": "bath-design-7",
+      "title": "Bath - Design 7",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-7-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-7/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-8",
+      "slug": "bath-design-8",
+      "title": "Bath - Design 8",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-8-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-8/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-9",
+      "slug": "bath-design-9",
+      "title": "Bath - Design 9",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-9-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-9/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-10",
+      "slug": "bath-design-10",
+      "title": "Bath - Design 10",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-10-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-10/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-11",
+      "slug": "bath-design-11",
+      "title": "Bath - Design 11",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-11-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-11/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-12",
+      "slug": "bath-design-12",
+      "title": "Bath - Design 12",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-12-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-12/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-13",
+      "slug": "bath-design-13",
+      "title": "Bath - Design 13",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-13-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-13/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-14",
+      "slug": "bath-design-14",
+      "title": "Bath - Design 14",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-14-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-14/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-15",
+      "slug": "bath-design-15",
+      "title": "Bath - Design 15",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-15-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-15/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-16",
+      "slug": "bath-design-16",
+      "title": "Bath - Design 16",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-16-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-16/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-17",
+      "slug": "bath-design-17",
+      "title": "Bath - Design 17",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-17-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-17/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-19",
+      "slug": "bath-design-19",
+      "title": "Bath - Design 19",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-19-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-19/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-20",
+      "slug": "bath-design-20",
+      "title": "Bath - Design 20",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-20-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-20/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bath-design-21",
+      "slug": "bath-design-21",
+      "title": "Bath - Design 21",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Bath-Design-21-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bath-design-21/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Interior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "khalaf-al-antari",
+      "slug": "khalaf-al-antari",
+      "title": "Khalaf Al-Antari",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Khalaf-Al-Antari-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/khalaf-al-antari/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "faisal-al-rashidi-1",
+      "slug": "faisal-al-rashidi-1",
+      "title": "Faisal Al-Rashidi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Faisal-Al-Rashidi-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/faisal-al-rashidi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "muhammad-al-kandari",
+      "slug": "muhammad-al-kandari",
+      "title": "Muhammad Al-Kandari",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Muhammad-Al-Kandari-copy.webp",
+      "url": "https://maram-kw.com/portfolio/muhammad-al-kandari/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "al-mutairi",
+      "slug": "al-mutairi",
+      "title": "Al-Mutairi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Al-Mutairi-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/al-mutairi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "mohmmed-abdulmuhsen",
+      "slug": "mohmmed-abdulmuhsen",
+      "title": "mohmmed abdulmuhsen",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-mohmmed-abdulmuhsen-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/mohmmed-abdulmuhsen/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-rahman-al-rashidi",
+      "slug": "abdul-rahman-al-rashidi",
+      "title": "Abdul Rahman Al-Rashidi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Abdul-Rahman-Al-Rashidi-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-rahman-al-rashidi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ahmed-al-mutairi",
+      "slug": "ahmed-al-mutairi",
+      "title": "Ahmed Al-Mutairi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Ahmed-Al-Mutairi-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ahmed-al-mutairi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "saleh-al-rashidi",
+      "slug": "saleh-al-rashidi",
+      "title": "Saleh Al-Rashidi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Saleh-Al-Rashidi-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/saleh-al-rashidi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "al-anazi",
+      "slug": "al-anazi",
+      "title": "Al-Anazi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Al-Anazi-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/al-anazi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-mohsen-al-kandari",
+      "slug": "abdul-mohsen-al-kandari",
+      "title": "Abdul Mohsen Al-Kandari",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Abdul-Mohsen-Al-Kandari-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-mohsen-al-kandari/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "muhammad-al-ayyar",
+      "slug": "muhammad-al-ayyar",
+      "title": "Muhammad Al-Ayyar",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Muhammad-Al-Ayyar-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/muhammad-al-ayyar/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "reda-soroush",
+      "slug": "reda-soroush",
+      "title": "Reda Soroush",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Reda-Soroush-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/reda-soroush/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-aziz-al-dariwish",
+      "slug": "abdul-aziz-al-dariwish",
+      "title": "Abdul Aziz Al-Dariwish",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Abdul-Aziz-Al-Dariwish-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-aziz-al-dariwish/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ali-elmokbel",
+      "slug": "ali-elmokbel",
+      "title": "Ali Elmokbel",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Ali-Elmokbel-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ali-elmokbel/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdullah-al-hajri-2",
+      "slug": "abdullah-al-hajri-2",
+      "title": "Abdullah Al-Hajri (2)",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Abdullah-Al-Hajri-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdullah-al-hajri-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "New Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "walid-abdel-salam",
+      "slug": "walid-abdel-salam",
+      "title": "Walid Abdel Salam",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Walid-Abdel-Salam-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/walid-abdel-salam/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "muhammad-al-dariwishi-2",
+      "slug": "muhammad-al-dariwishi-2",
+      "title": "Muhammad Al-Dariwishi 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Muhammad-Al-Dariwishi-2-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/muhammad-al-dariwishi-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ayed-al-fadali",
+      "slug": "ayed-al-fadali",
+      "title": "Ayed Al-Fadali",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Ayed-Al-Fadali-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ayed-al-fadali/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "fahd-al-mukhaizeem",
+      "slug": "fahd-al-mukhaizeem",
+      "title": "Fahd Al-Mukhaizeem",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Fahd-Al-Mukhaizeem-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/fahd-al-mukhaizeem/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "fahd-al-mukhaizeem-2",
+      "slug": "fahd-al-mukhaizeem-2",
+      "title": "Fahd Al-Mukhaizeem 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Fahd-Al-Mukhaizeem-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/fahd-al-mukhaizeem-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "khaled-al-hendal",
+      "slug": "khaled-al-hendal",
+      "title": "Khaled Al-Hendal",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Khaled-Al-Hendal-7-copy.webp",
+      "url": "https://maram-kw.com/portfolio/khaled-al-hendal/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bo-ahmed",
+      "slug": "bo-ahmed",
+      "title": "Bo Ahmed",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Bo-Ahmed-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bo-ahmed/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "khalaf",
+      "slug": "khalaf",
+      "title": "khalaf",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-khalaf-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/khalaf/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "tariq-al-qattan",
+      "slug": "tariq-al-qattan",
+      "title": "Tariq Al-Qattan",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Tariq-Al-Qattan-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/tariq-al-qattan/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "alhomor",
+      "slug": "alhomor",
+      "title": "Alhomor",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Alhomor-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/alhomor/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdullah-badi",
+      "slug": "abdullah-badi",
+      "title": "Abdullah Badi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Abdullah-Badi-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdullah-badi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdullah-almahoos",
+      "slug": "abdullah-almahoos",
+      "title": "Abdullah Almahoos",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Abdullah-Almahoos-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdullah-almahoos/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "doaa-alhomor",
+      "slug": "doaa-alhomor",
+      "title": "Doaa alhomor",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Doaa-alhomor-copy.webp",
+      "url": "https://maram-kw.com/portfolio/doaa-alhomor/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ali-al-anazi",
+      "slug": "ali-al-anazi",
+      "title": "Ali Al-Anazi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ali-Al-Anazi-2-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ali-al-anazi-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdullah-ali-al-hajri",
+      "slug": "abdullah-ali-al-hajri",
+      "title": "Abdullah Ali Al-Hajri",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Abdullah-Ali-Al-Hajri-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdullah-ali-al-hajri/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "alhomor-2",
+      "slug": "alhomor-2",
+      "title": "Alhomor 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Alhomor-2-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/alhomor-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "alrawhy",
+      "slug": "alrawhy",
+      "title": "Alrawhy",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Alrawhy-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/alrawhy/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "jerah-al-anazi",
+      "slug": "jerah-al-anazi",
+      "title": "jerah Al-Anazi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-jerah-Al-Anazi-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/jerah-al-anazi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "nada-naqy",
+      "slug": "nada-naqy",
+      "title": "Nada Naqy",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Nada-Naqy-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/nada-naqy/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abu-ayed",
+      "slug": "abu-ayed",
+      "title": "Abu Ayed",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Abu-Ayed-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abu-ayed/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "fawaz-al-mutairi",
+      "slug": "fawaz-al-mutairi",
+      "title": "Fawaz Al-Mutairi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Fawaz-Al-Mutairi-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/fawaz-al-mutairi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "boo-sakhr",
+      "slug": "boo-sakhr",
+      "title": "Boo Sakhr",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Boo-Sakhr-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/boo-sakhr/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "saif-al-duwailah",
+      "slug": "saif-al-duwailah",
+      "title": "Saif Al-Duwailah",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Saif-Al-Duwailah-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/saif-al-duwailah/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdullah-al-hajri",
+      "slug": "abdullah-al-hajri",
+      "title": "Abdullah Al-Hajri",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Abdullah-Al-Hajri-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdullah-al-hajri/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "bassam-al-anzi",
+      "slug": "bassam-al-anzi",
+      "title": "Bassam Al-Anzi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Bassam-Al-Anzi-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/bassam-al-anzi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "sami",
+      "slug": "sami",
+      "title": "Sami",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Sami-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/sami/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Classic"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "faisal-al-shehri",
+      "slug": "faisal-al-shehri",
+      "title": "Faisal Al Shehri",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Faisal-Al-Shehri-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/faisal-al-shehri/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "adel-al-wawan",
+      "slug": "adel-al-wawan",
+      "title": "Adel Al-Wawan",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/chalet-Adel-Al-Wawan-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/adel-al-wawan/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Chalet"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ahmed-al-attar",
+      "slug": "ahmed-al-attar",
+      "title": "Ahmed Al-Attar",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/chalet-Ahmed-Al-Attar-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ahmed-al-attar/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Chalet"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "khaled-bonashi",
+      "slug": "khaled-bonashi",
+      "title": "Khaled Bonashi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/chalet-Khaled-Bonashi-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/khaled-bonashi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Chalet"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dr-khaled-abdel-ghani",
+      "slug": "dr-khaled-abdel-ghani",
+      "title": "Dr. Khaled Abdel Ghani",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/chalet-Dr.-Khaled-Abdel-Ghani-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dr-khaled-abdel-ghani/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Chalet"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "dalal-al-ghareeb-1",
+      "slug": "dalal-al-ghareeb-1",
+      "title": "Dalal Al-Ghareeb",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/chalet-Dalal-Al-Ghareeb-10-copy.webp",
+      "url": "https://maram-kw.com/portfolio/dalal-al-ghareeb/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Chalet"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "walid-hamada",
+      "slug": "walid-hamada",
+      "title": "Walid Hamada",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/chalet-Walid-Hamada-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/walid-hamada/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Chalet"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ahmed-al-kandari",
+      "slug": "ahmed-al-kandari",
+      "title": "Ahmed Al-Kandari",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/chalet-Ahmed-Al-Kandari-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ahmed-al-kandari/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Chalet"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "maryam-al-shamali",
+      "slug": "maryam-al-shamali",
+      "title": "Maryam Al-Shamali",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Maryam-Al-Shamali-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/maryam-al-shamali/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-aziz-al-yaqout",
+      "slug": "abdul-aziz-al-yaqout",
+      "title": "Abdul Aziz Al-Yaqout",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdul-Aziz-Al-Yaqout-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-aziz-al-yaqout/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "nasser-darwish",
+      "slug": "nasser-darwish",
+      "title": "Nasser Darwish",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Nasser-Darwish-7-copy.webp",
+      "url": "https://maram-kw.com/portfolio/nasser-darwish/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ahmed-al-duwailah-1",
+      "slug": "ahmed-al-duwailah-1",
+      "title": "Ahmed Al-Duwailah (1)",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ahmed-Al-Duwailah-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ahmed-al-duwailah-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "adnan-bousakher",
+      "slug": "adnan-bousakher",
+      "title": "Adnan Bousakher",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Adnan-Bousakher-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/adnan-bousakher/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ali-al-balushi",
+      "slug": "ali-al-balushi",
+      "title": "Ali Al Balushi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ali-Al-Balushi-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ali-al-balushi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdulaziz",
+      "slug": "abdulaziz",
+      "title": "Abdulaziz",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdulaziz-9-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdulaziz/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "hashem-al-mahmeed",
+      "slug": "hashem-al-mahmeed",
+      "title": "Hashem Al Mahmeed",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Hashem-Al-Mahmeed-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/hashem-al-mahmeed/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdullah-al-fahd",
+      "slug": "abdullah-al-fahd",
+      "title": "Abdullah Al-Fahd",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdullah-Al-Fahd-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdullah-al-fahd/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdullah-al-hanyan-1",
+      "slug": "abdullah-al-hanyan-1",
+      "title": "Abdullah Al-Hanyan",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdullah-Al-Hanyan-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdullah-al-hanyan/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "hashem-al-awadhi",
+      "slug": "hashem-al-awadhi",
+      "title": "Hashem Al-Awadhi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Hashem-Al-Awadhi-7-copy.webp",
+      "url": "https://maram-kw.com/portfolio/hashem-al-awadhi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "noura-al-khalifa",
+      "slug": "noura-al-khalifa",
+      "title": "Noura Al Khalifa",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Noura-Al-Khalifa-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/noura-al-khalifa/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "mishal-al-rifai-1",
+      "slug": "mishal-al-rifai-1",
+      "title": "Mishal Al-Rifai (1)",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Mishal-Al-Rifai-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/mishal-al-rifai-1/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "sakr-elsakr",
+      "slug": "sakr-elsakr",
+      "title": "Sakr elsakr",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Sakr-elsakr-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/sakr-elsakr/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "jar-allah-al-anazi",
+      "slug": "jar-allah-al-anazi",
+      "title": "Jar Allah Al-Anazi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Jar-Allah-Al-Anazi-7-copy.webp",
+      "url": "https://maram-kw.com/portfolio/jar-allah-al-anazi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "mahmoud-sarab",
+      "slug": "mahmoud-sarab",
+      "title": "Mahmoud Sarab",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Mahmoud-Sarab-14-copy.webp",
+      "url": "https://maram-kw.com/portfolio/mahmoud-sarab/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-aziz-al-makimi",
+      "slug": "abdul-aziz-al-makimi",
+      "title": "Abdul Aziz Al Makimi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdul-Aziz-Al-Makimi-11-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-aziz-al-makimi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "mosharaa-algaeij",
+      "slug": "mosharaa-algaeij",
+      "title": "Mosharaa Algaeij",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Mosharaa-Algaeij-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/mosharaa-algaeij/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "hamoud-al-anezi",
+      "slug": "hamoud-al-anezi",
+      "title": "Hamoud Al-Anezi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Hamoud-Al-Anezi-copy.webp",
+      "url": "https://maram-kw.com/portfolio/hamoud-al-anezi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdulkarim",
+      "slug": "abdulkarim",
+      "title": "Abdulkarim",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdulkarim-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdulkarim/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ahmed-al-anzi",
+      "slug": "ahmed-al-anzi",
+      "title": "Ahmed Al-Anzi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ahmed-Al-Anzi-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ahmed-al-anzi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ahmed-marzouk-1",
+      "slug": "ahmed-marzouk-1",
+      "title": "Ahmed Marzouk",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ahmed-Marzouk-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ahmed-marzouk/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "fadel-khan",
+      "slug": "fadel-khan",
+      "title": "Fadel Khan",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Fadel-Khan-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/fadel-khan/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ali-balushi-2",
+      "slug": "ali-balushi-2",
+      "title": "Ali Balushi (2)",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ali-Al-Balushi-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ali-balushi-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "nayef-al-badehi",
+      "slug": "nayef-al-badehi",
+      "title": "Nayef Al-Badehi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Nayef-Al-Badehi-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/nayef-al-badehi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "nawaf-al-muhareb",
+      "slug": "nawaf-al-muhareb",
+      "title": "Nawaf Al-Muhareb",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Nawaf-Al-Muhareb-copy.webp",
+      "url": "https://maram-kw.com/portfolio/nawaf-al-muhareb/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "muhammad-al-obaid",
+      "slug": "muhammad-al-obaid",
+      "title": "Muhammad Al-Obaid",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Muhammad-Al-Obaid-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/muhammad-al-obaid/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "mishary-al-mutairi",
+      "slug": "mishary-al-mutairi",
+      "title": "Mishary Al-Mutairi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Mishary-Al-Mutairi-copy.webp",
+      "url": "https://maram-kw.com/portfolio/mishary-al-mutairi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ibrahim-al-ali",
+      "slug": "ibrahim-al-ali",
+      "title": "Ibrahim Al-Ali",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ibrahim-Al-Ali-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ibrahim-al-ali/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "mashal-elrefaay",
+      "slug": "mashal-elrefaay",
+      "title": "Mashal Elrefaay",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Mashal-Elrefaay-6-copy.webp",
+      "url": "https://maram-kw.com/portfolio/mashal-elrefaay/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdullah-bu-hamad",
+      "slug": "abdullah-bu-hamad",
+      "title": "Abdullah Bu Hamad",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdullah-Bu-Hamad-7-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdullah-bu-hamad/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "muhammad-hamza-abbas",
+      "slug": "muhammad-hamza-abbas",
+      "title": "Muhammad Hamza Abbas",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Muhammad-Hamza-Abbas-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/muhammad-hamza-abbas/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "fawaz-al-zaabi",
+      "slug": "fawaz-al-zaabi",
+      "title": "Fawaz Al Zaabi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Fawaz-Al-Zaabi-19-copy.webp",
+      "url": "https://maram-kw.com/portfolio/fawaz-al-zaabi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "munira-al-ali",
+      "slug": "munira-al-ali",
+      "title": "Munira Al-Ali",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Munira-Al-Ali-copy.webp",
+      "url": "https://maram-kw.com/portfolio/munira-al-ali/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ali-al-anazi-2",
+      "slug": "ali-al-anazi-2",
+      "title": "Ali Al-Anazi 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ali-Al-Anazi-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ali-al-anazi-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "saleh-hamza",
+      "slug": "saleh-hamza",
+      "title": "Saleh Hamza",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Saleh-Hamza-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/saleh-hamza/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-rahman-haider",
+      "slug": "abdul-rahman-haider",
+      "title": "Abdul Rahman Haider",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdul-Rahman-Haider-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-rahman-haider/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "saleh-hamza-al-ali",
+      "slug": "saleh-hamza-al-ali",
+      "title": "Saleh Hamza Al-Ali",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Saleh-Hamza-Al-Ali-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/saleh-hamza-al-ali/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "khad-al-mutairi",
+      "slug": "khad-al-mutairi",
+      "title": "Khad Al-Mutairi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Khad-Al-Mutairi-8-copy.webp",
+      "url": "https://maram-kw.com/portfolio/khad-al-mutairi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdullah-al-shatti-1",
+      "slug": "abdullah-al-shatti-1",
+      "title": "Abdullah Al-Shatti",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdullah-Al-Shatti-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdullah-al-shatti/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ammar-al-ostaz",
+      "slug": "ammar-al-ostaz",
+      "title": "Ammar al ostaz",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ammar-al-ostaz-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ammar-al-ostaz/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-mohsen-khaja",
+      "slug": "abdul-mohsen-khaja",
+      "title": "Abdul Mohsen Khaja",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdul-Mohsen-Khaja-3-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-mohsen-khaja/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-mohsen-khaja-2",
+      "slug": "abdul-mohsen-khaja-2",
+      "title": "Abdul Mohsen Khaja 2",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdul-Mohsen-Khaja-2-copy-1.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-mohsen-khaja-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-mohsen-khaja-3",
+      "slug": "abdul-mohsen-khaja-3",
+      "title": "Abdul Mohsen Khaja 3",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdul-Mohsen-Khaja-3-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-mohsen-khaja-3/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "sheikh-salem-al-sabah",
+      "slug": "sheikh-salem-al-sabah",
+      "title": "Sheikh Salem Al-Sabah",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Sheikh-Salem-Al-Sabah-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/sheikh-salem-al-sabah/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "fahd-al-kandari",
+      "slug": "fahd-al-kandari",
+      "title": "Fahd Al-Kandari",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Fahd-Al-Kandari-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/fahd-al-kandari/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "faisal-al-ali",
+      "slug": "faisal-al-ali",
+      "title": "Faisal Al-Ali",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Faisal-Al-Ali-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/faisal-al-ali/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "khaled-al-waheeb",
+      "slug": "khaled-al-waheeb",
+      "title": "Khaled Al Waheeb",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Khaled-Al-Waheeb-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/khaled-al-waheeb/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abbas-hussein",
+      "slug": "abbas-hussein",
+      "title": "Abbas Hussein",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abbas-Hussein-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abbas-hussein/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-karim-al-anzi",
+      "slug": "abdul-karim-al-anzi",
+      "title": "Abdul Karim Al-Anzi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdul-Karim-Al-Anzi-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-karim-al-anzi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "muhammad-al-nasr-allah",
+      "slug": "muhammad-al-nasr-allah",
+      "title": "Muhammad Al-Nasr Allah",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Muhammad-Al-Nasr-Allah-copy.webp",
+      "url": "https://maram-kw.com/portfolio/muhammad-al-nasr-allah/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "nayef-al-zaid",
+      "slug": "nayef-al-zaid",
+      "title": "Nayef Al-Zaid",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Nayef-Al-Zaid-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/nayef-al-zaid/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ahmed-al-hammadi",
+      "slug": "ahmed-al-hammadi",
+      "title": "Ahmed Al-Hammadi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ahmed-Al-Hammadi-2-copy-1.webp",
+      "url": "https://maram-kw.com/portfolio/ahmed-al-hammadi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-aziz-al-ansari",
+      "slug": "abdul-aziz-al-ansari",
+      "title": "Abdul Aziz Al Ansari",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdul-Aziz-Al-Ansari-7-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-aziz-al-ansari/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "youssef-ammar",
+      "slug": "youssef-ammar",
+      "title": "Youssef Ammar",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Youssef-Ammar-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/youssef-ammar/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "jassim-al-baloud",
+      "slug": "jassim-al-baloud",
+      "title": "Jassim Al-Baloud",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Jassim-Al-Baloud-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/jassim-al-baloud/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "aish-elsalmeen",
+      "slug": "aish-elsalmeen",
+      "title": "Aish Elsalmeen",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Aish-Elsalmeen-4-copy.webp",
+      "url": "https://maram-kw.com/portfolio/aish-elsalmeen/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "badr-al-kut",
+      "slug": "badr-al-kut",
+      "title": "Badr Al Kut",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Badr-Al-Kut-copy.webp",
+      "url": "https://maram-kw.com/portfolio/badr-al-kut/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ismail-al-khabaz",
+      "slug": "ismail-al-khabaz",
+      "title": "Ismail Al-Khabaz",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ismail-Al-Khabaz-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ismail-al-khabaz/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ali-al-anazi-1",
+      "slug": "ali-al-anazi-1",
+      "title": "Ali Al-Anazi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ali-Al-Anazi-2-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ali-al-anazi/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdul-karim-al-shuail",
+      "slug": "abdul-karim-al-shuail",
+      "title": "Abdul Karim Al-Shuail",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdul-Karim-Al-Shuail-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdul-karim-al-shuail/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "jassim-kamal",
+      "slug": "jassim-kamal",
+      "title": "Jassim Kamal",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Jassim-Kamal-7-copy.webp",
+      "url": "https://maram-kw.com/portfolio/jassim-kamal/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "hazem-al-mayouf",
+      "slug": "hazem-al-mayouf",
+      "title": "Hazem Al-Mayouf",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Hazem-Al-Mayouf-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/hazem-al-mayouf/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "al-ansari",
+      "slug": "al-ansari",
+      "title": "Al-Ansari",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdul-Aziz-Al-Ansari-7-copy.webp",
+      "url": "https://maram-kw.com/portfolio/al-ansari/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "aladwanny",
+      "slug": "aladwanny",
+      "title": "Aladwanny",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Aladwanny-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/aladwanny/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "al-zaid",
+      "slug": "al-zaid",
+      "title": "Al-Zaid",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Al-Zaid-3-copy.webp",
+      "url": "https://maram-kw.com/portfolio/al-zaid/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ahmed-al-khamis-1",
+      "slug": "ahmed-al-khamis-1",
+      "title": "Ahmed Al-Khamis",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ahmed-Al-Khamis-5-copy.webp",
+      "url": "https://maram-kw.com/portfolio/ahmed-al-khamis/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "saleh-al-youssef",
+      "slug": "saleh-al-youssef",
+      "title": "Saleh Al-Youssef",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Saleh-Al-Youssef-10-copy.webp",
+      "url": "https://maram-kw.com/portfolio/saleh-al-youssef/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "rusafa",
+      "slug": "rusafa",
+      "title": "Rusafa",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Rusafa-1-copy.webp",
+      "url": "https://maram-kw.com/portfolio/rusafa/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "abdullah-al-amanan",
+      "slug": "abdullah-al-amanan",
+      "title": "Abdullah Al-Amanan",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Abdullah-Al-Amanan-2-copy.webp",
+      "url": "https://maram-kw.com/portfolio/abdullah-al-amanan/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    },
+    {
+      "id": "ahmed-al-hammadi-1",
+      "slug": "ahmed-al-hammadi-1",
+      "title": "Ahmed Al Hammadi",
+      "category": "Design",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Ahmed-Al-Hammadi-3-copy-1.webp",
+      "url": "https://maram-kw.com/portfolio/ahmed-al-hammadi-2/",
+      "mainCategory": "Design",
+      "subcategories": [
+        "Exterior",
+        "Modern"
+      ],
+      "oldCategory": "Design"
+    }
+  ],
+  "metadata": {
+    "total": 297,
+    "categorized": 297,
+    "fetchedAt": "2026-08-26T18:03:14.667Z",
+    "categories": {
+      "Construction": 24,
+      "Design": 273
+    },
+    "subcategories": {
+      "Construction/Private Villa": 24,
+      "Design/Interior": 153,
+      "Design/Exterior": 120,
+      "Design/New Classic": 15,
+      "Design/Classic": 26,
+      "Design/Chalet": 7,
+      "Design/Modern": 71
+    }
+  }
+}

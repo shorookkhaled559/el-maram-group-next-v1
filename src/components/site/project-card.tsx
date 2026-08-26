@@ -36,7 +36,7 @@ export function ProjectCard({
         className="relative block aspect-[4/3] overflow-hidden bg-muted"
       >
         <Image
-          src={projectImages[image]}
+          src={image.startsWith('http') ? image : projectImages[image] || image}
           alt={title}
           width={1200}
           height={900}

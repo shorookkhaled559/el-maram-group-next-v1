@@ -75,6 +75,18 @@
     "viewMore": "View more",
     "soldOut": "Sold Out",
     "allLocations": "All",
+    "categories": {
+      "Design": "Design",
+      "Construction": "Construction",
+      "Interior": "Interior",
+      "Exterior": "Exterior",
+      "Modern": "Modern",
+      "Classic": "Classic",
+      "New Classic": "New Classic",
+      "Chalet": "Chalet",
+      "Private Villa": "Private Villa",
+      "Renovation": "Renovation"
+    },
     "detail": {
       "backToProjects": "Back to Projects",
       "type": "Project Type",
@@ -84,6 +96,27 @@
       "amenities": "Amenities"
     },
     "items": {
+      "nayef-al-masma": {
+        "title": "Nayef Al-Masma",
+        "shortDescription": "A modern private villa showcasing premium construction and refined architectural details.",
+        "longDescription": "Nayef Al-Masma is a contemporary private villa in Kuwait, designed with attention to detail and constructed using the finest materials. The residence features spacious interiors, a private garden, and modern amenities that cater to luxury family living.",
+        "location": "Kuwait",
+        "status": "Completed"
+      },
+      "maryam-al-shamali": {
+        "title": "Maryam Al-Shamali",
+        "shortDescription": "Contemporary exterior design featuring clean lines and sophisticated modern aesthetics.",
+        "longDescription": "This project showcases our expertise in modern exterior design. The facade combines contemporary architectural principles with functional elegance, creating a striking visual presence while maintaining timeless appeal.",
+        "location": "Kuwait",
+        "status": "Completed"
+      },
+      "reception-living-design-28": {
+        "title": "Reception & Living - Design 28",
+        "shortDescription": "An elegant interior design featuring sophisticated furnishings and premium finishes.",
+        "longDescription": "Design 28 transforms a living and reception space into a sophisticated environment using carefully selected materials, custom furniture, and an expertly curated lighting scheme. The design balances comfort with visual elegance.",
+        "location": "Kuwait",
+        "status": "Completed"
+      },
       "salmiya-heights": {
         "title": "Salmiya Heights",
         "shortDescription": "Forty-two residences overlooking the Gulf, finished in warm stone and bronze detailing.",
