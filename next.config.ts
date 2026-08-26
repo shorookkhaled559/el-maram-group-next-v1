@@ -11,6 +11,17 @@ const nextConfig: NextConfig = {
     ],
   },
   
+  // Allow external images
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "maram-kw.com",
+        pathname: "/wp-content/uploads/**",
+      },
+    ],
+  },
+  
   // Production optimizations
   compiler: {
     // Remove console.logs in production

@@ -1,48 +1,75 @@
 {
   "items": [
     {
-      "id": "salmiya-heights",
-      "slug": "salmiya-heights",
-      "image": "project-1",
-      "location": "Salmiya",
+      "id": "nayef-al-masma",
+      "slug": "nayef-al-masma",
+      "title": "Nayef Al-Masma",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/نايف-المسما_1.jpg",
+      "location": "Kuwait",
+      "category": "Construction",
+      "mainCategory": "Construction",
+      "subcategories": ["Private Villa"],
+      "url": "https://maram-kw.com/portfolio/nayef-al-masma/",
       "soldOut": false,
       "details": {
-        "gallery": ["project-1", "project-2", "project-3"],
-        "type": "Residential",
-        "units": 42,
-        "floors": 12,
-        "delivery": "Q4 2025",
-        "amenities": ["Rooftop Terrace", "Concierge", "Covered Parking", "Gym", "Sea View"]
-      }
-    },
-    {
-      "id": "bnaider-villas",
-      "slug": "bnaider-villas",
-      "image": "project-2",
-      "location": "Bnaider",
-      "soldOut": false,
-      "details": {
-        "gallery": ["project-2", "project-1", "project-3"],
-        "type": "Coastal Villas",
-        "units": 12,
+        "gallery": [
+          "https://maram-kw.com/wp-content/uploads/2023/12/نايف-المسما_1.jpg",
+          "https://maram-kw.com/wp-content/uploads/2023/12/نايف-المسما_1.jpg",
+          "https://maram-kw.com/wp-content/uploads/2023/12/نايف-المسما_1.jpg"
+        ],
+        "type": "Private Villa",
+        "units": 1,
         "floors": 2,
-        "delivery": "Q2 2026",
-        "amenities": ["Private Beach", "Terraced Garden", "Private Pool", "Direct Sea Access"]
+        "delivery": "Completed",
+        "amenities": ["Modern Design", "Premium Finishes", "Spacious Layout", "Private Garden"]
       }
     },
     {
-      "id": "sharq-business-house",
-      "slug": "sharq-business-house",
-      "image": "project-3",
-      "location": "Sharq",
+      "id": "maryam-al-shamali",
+      "slug": "maryam-al-shamali",
+      "title": "Maryam Al-Shamali",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Maryam-Al-Shamali-6-copy.webp",
+      "location": "Kuwait",
+      "category": "Design",
+      "mainCategory": "Design",
+      "subcategories": ["Exterior", "Modern"],
+      "url": "https://maram-kw.com/portfolio/maryam-al-shamali/",
       "soldOut": false,
       "details": {
-        "gallery": ["project-3", "project-1", "project-2"],
-        "type": "Commercial",
-        "units": 28,
-        "floors": 18,
-        "delivery": "Q1 2027",
-        "amenities": ["Grade-A Offices", "Retail Ground Floor", "Valet Parking", "Meeting Suites", "24/7 Security"]
+        "gallery": [
+          "https://maram-kw.com/wp-content/uploads/2023/11/EM-Maryam-Al-Shamali-6-copy.webp",
+          "https://maram-kw.com/wp-content/uploads/2023/11/EM-Maryam-Al-Shamali-6-copy.webp",
+          "https://maram-kw.com/wp-content/uploads/2023/11/EM-Maryam-Al-Shamali-6-copy.webp"
+        ],
+        "type": "Exterior Design",
+        "units": 1,
+        "floors": 2,
+        "delivery": "Completed",
+        "amenities": ["Contemporary Architecture", "Clean Lines", "Luxury Facade", "Modern Aesthetics"]
+      }
+    },
+    {
+      "id": "reception-living-design-28",
+      "slug": "reception-living-design-28",
+      "title": "Reception & Living - Design 28",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-28-14-copy.webp",
+      "location": "Kuwait",
+      "category": "Design",
+      "mainCategory": "Design",
+      "subcategories": ["Interior"],
+      "url": "https://maram-kw.com/portfolio/reception-living-design-28/",
+      "soldOut": false,
+      "details": {
+        "gallery": [
+          "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-28-14-copy.webp",
+          "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-28-14-copy.webp",
+          "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-28-14-copy.webp"
+        ],
+        "type": "Interior Design",
+        "units": 1,
+        "floors": 1,
+        "delivery": "Completed",
+        "amenities": ["Elegant Living Space", "Premium Materials", "Custom Furniture", "Sophisticated Lighting"]
       }
     }
   ]
