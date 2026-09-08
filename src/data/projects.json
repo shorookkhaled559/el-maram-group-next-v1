@@ -1,27 +1,27 @@
 {
   "items": [
     {
-      "id": "nayef-al-masma",
-      "slug": "nayef-al-masma",
-      "title": "Nayef Al-Masma",
-      "image": "https://maram-kw.com/wp-content/uploads/2023/12/نايف-المسما_1.jpg",
+      "id": "enterance-design-3",
+      "slug": "enterance-design-3",
+      "title": "Entrance - Design 3",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Enterance-Design-2-2-copy.webp",
       "location": "Kuwait",
-      "category": "Construction",
-      "mainCategory": "Construction",
-      "subcategories": ["Private Villa"],
-      "url": "https://maram-kw.com/portfolio/nayef-al-masma/",
+      "category": "Design",
+      "mainCategory": "Design",
+      "subcategories": ["Interior"],
+      "url": "https://maram-kw.com/portfolio/enterance-design-3/",
       "soldOut": false,
       "details": {
         "gallery": [
-          "https://maram-kw.com/wp-content/uploads/2023/12/نايف-المسما_1.jpg",
-          "https://maram-kw.com/wp-content/uploads/2023/12/نايف-المسما_1.jpg",
-          "https://maram-kw.com/wp-content/uploads/2023/12/نايف-المسما_1.jpg"
+          "https://maram-kw.com/wp-content/uploads/2023/12/Enterance-Design-2-2-copy.webp",
+          "https://maram-kw.com/wp-content/uploads/2023/12/Enterance-Design-2-2-copy.webp",
+          "https://maram-kw.com/wp-content/uploads/2023/12/Enterance-Design-2-2-copy.webp"
         ],
-        "type": "Private Villa",
+        "type": "Interior Design",
         "units": 1,
-        "floors": 2,
+        "floors": 1,
         "delivery": "Completed",
-        "amenities": ["Modern Design", "Premium Finishes", "Spacious Layout", "Private Garden"]
+        "amenities": ["Elegant Entrance", "Modern Design", "Premium Materials", "Sophisticated Lighting"]
       }
     },
     {

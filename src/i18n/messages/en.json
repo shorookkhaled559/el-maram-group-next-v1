@@ -2,7 +2,7 @@
   "dir": "ltr",
   "site": {
     "companyName": "Maram Group",
-    "tagline": "Kuwait Development",
+    "tagline": "Kuwait & Egypt Development",
     "rights": "All rights reserved."
   },
   "nav": {
@@ -22,8 +22,8 @@
   },
   "hero": {
     "eyebrow": "Kuwait Development",
-    "title": "Landmarks built to outlive the skyline",
-    "subtitle": "Maram Group develops residential, coastal and commercial addresses across Kuwait — designed with intent, delivered with discipline.",
+    "title": "Building Today. Shaping Tomorrow.",
+    "subtitle": "A real estate developer with roots in Kuwait and a growing presence in Egypt — building spaces designed to last.",
     "ctaLabel": "Explore Projects",
     "secondaryCtaLabel": "Request a Quotation",
     "marquee": [
@@ -32,7 +32,7 @@
       "Residential Towers",
       "Coastal Villas",
       "Commercial Assets",
-      "20+ Years",
+      "25+ Years",
       "Bnaider",
       "Design-Led Development"
     ]
@@ -61,17 +61,17 @@
     "submit": "Request a call back"
   },
   "about": {
-    "eyebrow": "Since 2005",
-    "title": "Two decades of building in Kuwait",
-    "body": "Maram Group began with a single residential block in Salmiya and grew into one of Kuwait's steady development houses. We acquire carefully, design with architects we trust, and hand over on schedule. Every project is held to the same standard: durable materials, honest layouts, and locations that keep their value.",
+    "eyebrow": "Since 2002",
+    "title": "From Kuwait to Egypt",
+    "body": "Our journey began in Kuwait, where Maram Group established its experience and developed a strong foundation in real estate and construction. Today, we are expanding this experience into the Egyptian market, bringing the same commitment to quality, professionalism, and execution to every project we undertake.",
     "ctaLabel": "Learn more about us"
   },
   "projects": {
     "eyebrow": "Portfolio",
     "heading": "Our Latest Launches",
-    "subheading": "A portfolio shaped by location, craft and long-term value.",
+    "subheading": "A portfolio shaped by location, craft and long-term value across Kuwait and Egypt.",
     "pageHeading": "Our Projects",
-    "pageSubheading": "Every address we develop is chosen for its long-term value — residential, coastal and commercial across Kuwait.",
+    "pageSubheading": "Every address we develop is chosen for its long-term value — residential, coastal and commercial projects across Kuwait and Egypt.",
     "viewMore": "View more",
     "soldOut": "Sold Out",
     "allLocations": "All",
@@ -96,6 +96,13 @@
       "amenities": "Amenities"
     },
     "items": {
+      "enterance-design-3": {
+        "title": "Entrance - Design 3",
+        "shortDescription": "An elegant entrance design featuring modern touches and sophisticated lighting.",
+        "longDescription": "Entrance Design 3 transforms the entrance space into a sophisticated environment using carefully selected materials and expertly curated lighting. The design balances elegance with functionality while maintaining a contemporary character.",
+        "location": "Kuwait",
+        "status": "Completed"
+      },
       "nayef-al-masma": {
         "title": "Nayef Al-Masma",
         "shortDescription": "A modern private villa showcasing premium construction and refined architectural details.",
@@ -161,22 +168,50 @@
     "services": {
       "eyebrow": "What We Offer",
       "heading": "Our Services",
-      "subheading": "From land acquisition to handover — a full-spectrum development service built on two decades of experience in Kuwait."
+      "subheading": "From land acquisition to handover — a full-spectrum development service built on two decades of experience in Kuwait and now expanding to Egypt.",
+      "designServicesTitle": "Design Services",
+      "constructionServicesTitle": "Construction Services",
+      "items": {
+        "architectural-design": {
+          "title": "Architectural Design",
+          "description": "Whether you need architectural design, planning, construction, or renovation, we have the expertise and experience to handle any project. We work closely with our clients to understand their needs and preferences, and we deliver high-quality results that meet their expectations and budget."
+        },
+        "interior-design": {
+          "title": "Interior Design",
+          "description": "Are you looking for a new look for your home or office? Do you want to create a space that reflects your personality and style? We can provide you with expert advice, creative solutions and professional results. Whether you need a simple makeover or a complete renovation, we can handle it all."
+        },
+        "exterior-design": {
+          "title": "Exterior Design",
+          "description": "If you are looking for a professional and creative architectural company to help you with your exterior design project, look no further than Maram Group. We have the experience and expertise to transform your vision into reality with modern designs suited for the Egyptian market."
+        },
+        "landscape-design": {
+          "title": "Landscape Design",
+          "description": "If you want to transform your outdoor space into a beautiful and functional oasis, landscape design is a service that involves planning, designing, and installing various elements of your garden, such as plants, paths, water features, lighting, and more."
+        },
+        "concrete-works": {
+          "title": "Concrete Works",
+          "description": "We offer a range of services to complete your project, such as painting, plastering, tiling, flooring, carpentry, and more. Whether you need to renovate your home, office, or commercial space, we have the skills and experience to deliver high-quality results."
+        },
+        "finishing-works": {
+          "title": "Finishing Works",
+          "description": "We offer a comprehensive range of finishing services to complete your project to the highest quality standards. From painting and decorations to flooring and final installations, our specialized team ensures every detail is executed with precision and professionalism."
+        }
+      }
     },
     "mgToday": {
       "eyebrow": "Media & Updates",
-      "heading": "MG Today",
+      "heading": "MARAM GROUP Today",
       "subheading": "The latest news, announcements and on-site progress from Maram Group."
     },
     "about": {
-      "eyebrow": "Since 2005",
+      "eyebrow": "Since 2002",
       "heading": "About Us",
-      "subheading": "Two decades of acquiring, designing and delivering addresses that hold their value across Kuwait."
+      "subheading": "Two decades of acquiring, designing and delivering addresses that hold their value across Kuwait and Egypt."
     },
     "blogs": {
       "eyebrow": "Insights",
       "heading": "Blogs",
-      "subheading": "Perspectives on real estate, design and the Kuwaiti market from the Maram Group team."
+      "subheading": "Perspectives on real estate, design and the markets in Kuwait and Egypt from the Maram Group team."
     },
     "contact": {
       "eyebrow": "Get In Touch",
@@ -187,7 +222,13 @@
   "mgToday": {
     "news": {
       "eyebrow": "Latest News",
-      "heading": "News & Announcements"
+      "heading": "Maram Group Today"
+    },
+    "items": {
+      "maram-group-today": {
+        "title": "Maram Group Today",
+        "body": "Building a Stronger Future in Real Estate\n\nToday, Maram Group continues to strengthen its presence in the Egyptian real estate market, building on its experience in real estate development, construction, and project execution across Kuwait and Egypt.\n\nOur growing portfolio reflects our commitment to developing high-quality residential, commercial, administrative, medical, and educational projects designed around real market needs and long-term value.\n\nFrom strategic locations and thoughtful architectural design to quality construction and precise execution, we approach every project with the same objective: to create spaces that deliver lasting value to communities, businesses, and investors.\n\nWith projects such as Hadaba Plaza, Zayed Mall, Noor Heights Compound, Al Maram Medical Tower, and International School, Maram Group continues to expand its development portfolio while maintaining a clear focus on quality, functionality, and professional execution.\n\nAs we look ahead, our vision remains focused on creating distinctive real estate projects in Egypt and beyond, combining experience, innovation, and quality to shape communities built for the future.\n\nMaram Group — Building Today. Shaping Tomorrow."
+      }
     },
     "team": {
       "eyebrow": "The Team",
@@ -197,7 +238,7 @@
   "blogsPage": {
     "eyebrow": "Insights",
     "pageHeading": "Blogs",
-    "pageSubheading": "Perspectives on real estate, design and the Kuwaiti market from the Maram Group team.",
+    "pageSubheading": "Perspectives on real estate, design and the markets in Kuwait and Egypt from the Maram Group team.",
     "allCategories": "All",
     "readMore": "Read More",
     "backToBlogs": "Back to Blogs",
@@ -237,20 +278,25 @@
   },
   "aboutPage": {
     "sections": {
-      "our-story": {
-        "eyebrow": "Our Story",
-        "title": "Built from a single block in Salmiya",
-        "body": "Maram Group was founded in 2005 with a single residential building in Salmiya and a straightforward conviction: Kuwait deserved more considered development. In the years that followed, we grew carefully — acquiring sites we believed in, working with architects we trusted, and handing over on schedule. That discipline compounded into a portfolio of residential towers, coastal villas and commercial addresses that have held their value and their residents' trust across two decades."
+      "vision": {
+        "eyebrow": "Who We Are",
+        "title": "Maram Group — A Vision Built on Quality",
+        "body": "Maram Group is a real estate development company with roots in Kuwait and a growing presence in Egypt. Since its establishment, the Group has built its experience across real estate development, construction, and project execution, driven by a clear belief: exceptional projects begin with a clear vision and are defined by the quality of their execution.\n\nOur portfolio reflects a diverse approach to development, spanning residential, commercial, administrative, medical, and educational projects. From distinctive residential villas to integrated commercial destinations, our projects are thoughtfully planned to respond to the needs of modern communities and create lasting value.\n\nWith every project, we bring together architectural vision, functional design, quality construction, and careful attention to detail — transforming ideas into spaces that are built to last."
       },
-      "our-approach": {
-        "eyebrow": "Our Approach",
-        "title": "Design-led. Delivery-disciplined.",
-        "body": "Every project begins with the same question: what would make someone choose to live or work here in twenty years? We start with location — not just the plot, but the neighbourhood, the views, the routes. We then work with architects and consultants who share our instinct for durable design: warm materials, honest proportions, layouts that function as well as they photograph. And we hold the same standard through construction, procurement and handover — because the finish is where trust is won or lost."
+      "from-kuwait-to-egypt": {
+        "eyebrow": "Our Expansion",
+        "title": "From Kuwait to Egypt",
+        "body": "Our journey began in Kuwait, where Maram Group established its experience and developed a strong foundation in real estate and construction.\n\nToday, we are expanding this experience into the Egyptian market, bringing the same commitment to quality, professionalism, and execution to every project we undertake.\n\nOur growing portfolio in Egypt includes projects such as Hadaba Plaza, Zayed Mall, Noor Heights Compound, Al Maram Medical Tower, and an International School, reflecting our ability to develop across different sectors and project requirements."
       },
-      "our-commitment": {
-        "eyebrow": "Our Commitment",
-        "title": "On time, as promised",
-        "body": "Delivery is a commitment, not a target. Maram Group has maintained an on-schedule handover record across its portfolio by structuring each project with realistic programmes, properly resourced teams and contingency built in from the outset. When buyers choose one of our addresses, they are not just selecting a floor plan — they are entering a relationship that we intend to honour from reservation through to the moment they receive their keys."
+      "people-centered": {
+        "eyebrow": "Our Philosophy",
+        "title": "Built Around People",
+        "body": "We believe successful real estate development is not simply about creating buildings. It is about creating spaces that serve people, support businesses, and become part of the communities around them.\n\nThat is why every Maram Group project begins with understanding its purpose — from location and planning to design, construction, and delivery.\n\nWe focus on creating environments that combine functionality, quality, comfort, and long-term value, while maintaining the standards that define our work."
+      },
+      "vision-to-reality": {
+        "eyebrow": "Our Execution",
+        "title": "From Vision to Reality",
+        "body": "At Maram Group, our role extends beyond development.\n\nWe follow each project through its journey — from the first idea and design concept to construction and execution — ensuring that the final result reflects the vision with precision and quality.\n\nBecause we don't simply build projects. We build with a vision for what comes next."
       }
     }
   }

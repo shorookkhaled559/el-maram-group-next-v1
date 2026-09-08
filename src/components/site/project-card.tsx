@@ -33,25 +33,26 @@ export function ProjectCard({
       {/* Image */}
       <Link
         href={`/projects/${slug}`}
-        className="relative block aspect-[4/3] overflow-hidden bg-muted"
+        className="relative block aspect-[16/10] overflow-hidden bg-black/5 dark:bg-white/5"
       >
-        <Image
-          src={image.startsWith('http') ? image : projectImages[image] || image}
-          alt={title}
-          width={1200}
-          height={900}
-          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-        />
+        <div className="relative h-full w-full">
+          <Image
+            src={image.startsWith('http') ? image : projectImages[image] || image}
+            alt={title}
+            fill
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            className="object-contain transition-transform duration-700 group-hover:scale-105"
+          />
+        </div>
 
         {/* Status badge — always present */}
-        <span className="absolute start-4 top-4 border border-white/25 bg-black/50 px-3 py-1 text-[10px] uppercase tracking-[0.22em] text-white backdrop-blur">
+        <span className="absolute start-4 top-4 z-10 border border-white/25 bg-black/50 px-3 py-1 text-[10px] uppercase tracking-[0.22em] text-white backdrop-blur">
           {status}
         </span>
 
         {/* Sold Out badge — only when soldOut is true */}
         {soldOut && (
-          <span className="absolute end-4 top-4 bg-gold-gradient px-3 py-1 text-[10px] uppercase tracking-[0.22em] text-primary-foreground">
+          <span className="absolute end-4 top-4 z-10 bg-gold-gradient px-3 py-1 text-[10px] uppercase tracking-[0.22em] text-primary-foreground">
             {soldOutLabel}
           </span>
         )}

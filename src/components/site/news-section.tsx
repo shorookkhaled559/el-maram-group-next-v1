@@ -32,47 +32,52 @@ export function NewsSection() {
 
         {/* Articles */}
         <div className="mt-14 space-y-20">
-          {news.items.map((article, index) => (
-            <article
-              key={article.id}
-              className={`grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-16 ${
-                index % 2 !== 0 ? "lg:[direction:rtl] [&>*]:[direction:ltr]" : ""
-              }`}
-            >
-              {/* Image */}
-              <div className="aspect-[16/10] overflow-hidden bg-muted">
-                <Image
-                  src={article.image}
-                  alt={article.title}
-                  width={1600}
-                  height={1000}
-                  sizes="(max-width: 1023px) 100vw, 42vw"
-                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
-                />
-              </div>
-
-              {/* Text */}
-              <div className="flex flex-col justify-center">
-                {/* Date & time */}
-                <p className="text-[10px] uppercase tracking-[0.26em] text-gold">
-                  {formatDate(article.date, locale)}
-                  <span className="mx-2 text-border">·</span>
-                  {formatTime(article.date, locale)}
-                </p>
-
-                <h3 className="mt-4 text-2xl lg:text-3xl">{article.title}</h3>
-
-                {/* Body — split on \n\n into separate paragraphs */}
-                <div className="mt-5 space-y-4">
-                  {article.body.split("\n\n").map((para, i) => (
-                    <p key={i} className="text-sm leading-[1.95] text-muted-foreground">
-                      {para}
-                    </p>
-                  ))}
+          {news.items.map((article, index) => {
+            const title = typeof article.title === 'string' ? article.title : article.title[locale];
+            const body = typeof article.body === 'string' ? article.body : article.body[locale];
+            
+            return (
+              <article
+                key={article.id}
+                className={`grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-16 ${
+                  index % 2 !== 0 ? "lg:[direction:rtl] [&>*]:[direction:ltr]" : ""
+                }`}
+              >
+                {/* Image */}
+                <div className="overflow-hidden">
+                  <Image
+                    src={article.image}
+                    alt={title}
+                    width={1600}
+                    height={1000}
+                    sizes="(max-width: 1023px) 100vw, 42vw"
+                    className="w-full h-auto object-contain transition-transform duration-700 hover:scale-105"
+                  />
                 </div>
-              </div>
-            </article>
-          ))}
+
+                {/* Text */}
+                <div className="flex flex-col justify-center">
+                  {/* Date & time */}
+                  <p className="text-[10px] uppercase tracking-[0.26em] text-gold">
+                    {formatDate(article.date, locale)}
+                    <span className="mx-2 text-border">·</span>
+                    {formatTime(article.date, locale)}
+                  </p>
+
+                  <h3 className="mt-4 text-2xl lg:text-3xl">{title}</h3>
+
+                  {/* Body — split on \n\n into separate paragraphs */}
+                  <div className="mt-5 space-y-4">
+                    {body.split("\n\n").map((para, i) => (
+                      <p key={i} className="text-sm leading-[1.95] text-muted-foreground">
+                        {para}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

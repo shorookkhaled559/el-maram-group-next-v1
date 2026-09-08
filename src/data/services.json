@@ -1,0 +1,77 @@
+{
+  "designServices": [
+    {
+      "id": "architectural-design",
+      "icon": "Building",
+      "number": "01",
+      "exampleProjects": [
+        {
+          "slug": "khalaf-al-antari",
+          "title": "Khalaf Al-Antari",
+          "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Khalaf-Al-Antari-4-copy.webp"
+        }
+      ]
+    },
+    {
+      "id": "interior-design",
+      "icon": "Home",
+      "number": "02",
+      "exampleProjects": [
+        {
+          "slug": "reception-living-design-28",
+          "title": "Reception & Living - Design 28",
+          "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-28-14-copy.webp"
+        },
+        {
+          "slug": "office-design-1",
+          "title": "Office - Design 1",
+          "image": "https://maram-kw.com/wp-content/uploads/2023/12/Office-Design-1-1-copy.webp"
+        }
+      ]
+    },
+    {
+      "id": "exterior-design",
+      "icon": "Layers",
+      "number": "03",
+      "exampleProjects": [
+        {
+          "slug": "maryam-al-shamali",
+          "title": "Maryam Al-Shamali",
+          "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Maryam-Al-Shamali-6-copy.webp"
+        }
+      ]
+    },
+    {
+      "id": "landscape-design",
+      "icon": "Trees",
+      "number": "04",
+      "exampleProjects": []
+    }
+  ],
+  "constructionServices": [
+    {
+      "id": "concrete-works",
+      "icon": "Hammer",
+      "number": "01",
+      "exampleProjects": [
+        {
+          "slug": "mr-khaled-al-majid",
+          "title": "Mr. Khaled Al Majid",
+          "image": "https://maram-kw.com/wp-content/uploads/2023/12/%D8%AE%D8%A7%D9%84%D8%AF-%D8%A7%D9%84%D9%85%D8%A7%D8%AC%D8%AF_1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "finishing-works",
+      "icon": "Paintbrush",
+      "number": "02",
+      "exampleProjects": [
+        {
+          "slug": "enterance-design-3",
+          "title": "Entrance - Design 3",
+          "image": "https://maram-kw.com/wp-content/uploads/2023/12/Enterance-Design-2-2-copy.webp"
+        }
+      ]
+    }
+  ]
+}
