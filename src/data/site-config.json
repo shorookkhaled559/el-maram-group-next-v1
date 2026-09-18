@@ -3,14 +3,27 @@
   "tagline": "Kuwait Development",
   "hotline": "+965 1800 900",
   "hotlineHref": "tel:+9651800900",
-  "whatsapp": "+965 9000 0000",
-  "whatsappHref": "https://wa.me/96590000000",
-  "email": "info@maramgroup.com",
-  "emailHref": "mailto:info@maramgroup.com",
-  "address": "Al Hamra Tower, Sharq, Kuwait City",
+  "whatsapp": "+965 99950061",
+  "whatsappHref": "https://wa.me/96599950061",
+  "email": "info@maramkwdevelopment.com",
+  "emailHref": "mailto:info@maramkwdevelopment.com",
+  "email2": "mohamed@maram-kw.com",
+  "email2Href": "mailto:mohamed@maram-kw.com",
+  "website": "www.maram-kw.com",
+  "websiteHref": "https://www.maram-kw.com",
+  "address": {
+    "en": "Golf Tower, Sherq City, Egypt",
+    "ar": "برج الجولف، شرق سيتي، مصر"
+  },
+  "locations": {
+    "en": "Cairo, Fayoum & Kuwait",
+    "ar": "القاهرة والفيوم والكويت"
+  },
+  "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.1234567890!2d31.4631863!3d30.025034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAxJzMwLjEiTiAzMcKwMjcnNTYuNyJF!5e0!3m2!1sen!2seg!4v1234567890!5m2!1sen!2seg",
   "social": {
-    "instagram": "https://instagram.com/",
-    "facebook": "https://facebook.com/",
+    "instagram": "https://www.instagram.com/maramggroupegypt?stkn=YWY2aWY1Y2pvOWVw",
+    "facebook": "https://www.facebook.com/share/1CV7nxBK5B/?mibextid=qi2Omg",
+    "twitter": "https://twitter.com/MARAM_GROUP_CO",
     "linkedin": "https://linkedin.com/"
   }
 }

@@ -9,7 +9,8 @@ import { useI18n } from "@/i18n";
 const LOGO_URL = "/assets/maram-logo.png";
 
 export function Footer() {
-  const { m } = useI18n();
+  const { m, locale } = useI18n();
+  const address = typeof site.address === 'string' ? site.address : site.address[locale as 'en' | 'ar'];
 
   return (
     <footer className="border-t border-border bg-surface">
@@ -28,7 +29,7 @@ export function Footer() {
               {m.site.companyName}
             </span>
           </div>
-          <p className="mt-5 max-w-xs text-sm text-muted-foreground">{site.address}</p>
+          <p className="mt-5 max-w-xs text-sm text-muted-foreground">{address}</p>
         </div>
 
         <nav className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
@@ -43,11 +44,17 @@ export function Footer() {
           <a href={site.hotlineHref} dir="ltr" className="block text-start hover:text-gold">
             {site.hotline}
           </a>
-          <a href={site.emailHref} dir="ltr" className="block text-start hover:text-gold">
+          <a href={site.emailHref} dir="ltr" className="block text-start lowercase hover:text-gold">
             {site.email}
+          </a>
+          <a href={site.email2Href} dir="ltr" className="block text-start lowercase hover:text-gold">
+            {site.email2}
           </a>
           <a href={site.whatsappHref} dir="ltr" className="block text-start hover:text-gold">
             {m.contact.whatsapp} {site.whatsapp}
+          </a>
+          <a href={site.websiteHref} target="_blank" rel="noopener noreferrer" dir="ltr" className="block text-start lowercase hover:text-gold">
+            {site.website}
           </a>
         </div>
       </div>

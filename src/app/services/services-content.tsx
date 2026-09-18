@@ -39,145 +39,261 @@ type ServiceItem = {
 export function ServicesContent() {
   const { m, locale } = useI18n();
 
-  const renderServiceCard = (service: ServiceItem, index: number) => {
-    const Icon = iconMap[service.icon];
-    const serviceData = m.pages?.services?.items?.[service.id];
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Design Services Section */}
+      <section className="relative overflow-hidden bg-background py-16 lg:py-24">
+        <div className="mx-auto grid max-w-7xl gap-8 px-5 lg:grid-cols-[1.5fr_1fr] lg:gap-12 lg:px-8">
+          {/* Left Side - Content */}
+          <div className="flex flex-col justify-center">
+            {/* Section Number & Title */}
+            <div className="mb-6">
+              <p className="mb-2 text-sm uppercase tracking-[0.3em] text-muted-foreground">
+                01 —
+              </p>
+              <h2 className="mb-4 font-display text-4xl font-light text-foreground lg:text-5xl">
+                {m.pages?.services?.designServicesTitle || "Design Services"}
+              </h2>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {locale === "ar" 
+                  ? "نحول الأفكار إلى مساحات. فريق التصميم لدينا يبتكر حلولاً وظيفية وأنيقة ومخصصة تعكس رؤيتك وأسلوب حياتك."
+                  : "We turn ideas into spaces. Our design team creates functional, elegant, and personalized solutions that reflect your vision and lifestyle."}
+              </p>
+            </div>
 
-    if (!serviceData) return null;
+            {/* Service Cards Grid */}
+            <div className="grid gap-4 sm:grid-cols-2">
+              {servicesData.designServices.map((service) => {
+                const Icon = iconMap[service.icon];
+                const serviceData = m.pages?.services?.items?.[service.id];
+                if (!serviceData) return null;
 
-    const hasExamples = service.exampleProjects && service.exampleProjects.length > 0;
+                return (
+                  <div
+                    key={service.id}
+                    className="group relative overflow-hidden rounded-lg border border-border bg-card/50 p-6 backdrop-blur-sm transition-all duration-300 hover:border-gold/50 hover:bg-card"
+                  >
+                    {/* Icon */}
+                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gold/10 text-gold transition-all duration-300 group-hover:bg-gold group-hover:text-primary-foreground">
+                      <Icon className="h-6 w-6" strokeWidth={1.5} />
+                    </div>
 
-    return (
-      <article
-        key={service.id}
-        className="group relative flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-all duration-500 hover:shadow-elevated hover:border-gold/50"
-      >
-        {/* Number Badge */}
-        <div className="absolute top-6 end-6 z-10 text-6xl font-light text-muted-foreground/10 transition-all duration-500 group-hover:text-gold/20">
-          {service.number}
-        </div>
+                    {/* Title */}
+                    <h3 className="mb-2 text-base font-medium text-foreground">
+                      {serviceData.title}
+                    </h3>
 
-        {/* Content */}
-        <div className="p-8">
-          {/* Icon */}
-          <div className="relative mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-gold/10 text-gold transition-all duration-500 group-hover:scale-110 group-hover:bg-gold group-hover:text-primary-foreground">
-            <Icon className="h-8 w-8" />
+                    {/* Description */}
+                    <p className="text-xs leading-relaxed text-muted-foreground">
+                      {serviceData.description}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* CTA Button */}
+            <div className="mt-8">
+              <Link
+                href="/contact"
+                className="group inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-xs font-medium uppercase tracking-wider text-primary-foreground transition-all duration-300 hover:bg-gold/90"
+              >
+                <span>{locale === "ar" ? "استكشف خدمات التصميم" : "Explore Design Services"}</span>
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </div>
+
+            {/* Signature */}
+            <div className="mt-8">
+              <p className="font-display text-2xl text-gold/60">
+                {locale === "ar" ? "صمم حلمك" : "Design Your Dream"}
+              </p>
+            </div>
           </div>
 
-          {/* Title & Description */}
-          <h3 className="mb-4 text-2xl font-medium text-foreground transition-colors duration-300 group-hover:text-gold">
-            {serviceData.title}
-          </h3>
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            {serviceData.description}
-          </p>
-        </div>
+          {/* Right Side - Images Grid */}
+          <div className="flex flex-col justify-center mt-8 lg:mt-12">
+            <div className="grid auto-rows-fr grid-cols-2 gap-4">
+              {servicesData.designServices.slice(0, 4).map((service, index) => {
+                const project = service.exampleProjects?.[0];
+                if (!project) return null;
 
-        {/* Example Projects */}
-        {hasExamples && (
-          <div className="mt-auto border-t border-border bg-muted/30 p-6">
-            <div className="mb-3 flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground">
-              <span>{locale === "ar" ? "أمثلة من أعمالنا" : "Featured Work"}</span>
-              <div className="h-px flex-1 bg-border" />
-            </div>
-            
-            <div className="grid gap-3 sm:grid-cols-2">
-              {service.exampleProjects.slice(0, 2).map((project) => (
-                <Link
-                  key={project.slug}
-                  href={`/projects/${project.slug}`}
-                  className="group/img relative overflow-hidden rounded-md border border-border bg-muted transition-all duration-300 hover:shadow-md hover:border-gold/50"
-                >
-                  {/* Image */}
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                return (
+                  <Link
+                    key={service.id}
+                    href={`/projects/${project.slug}`}
+                    className={`group relative overflow-hidden rounded-lg ${
+                      index === 0 ? 'col-span-2 aspect-[16/9]' : 'aspect-square'
+                    }`}
+                  >
+                    {/* Image */}
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      sizes="(max-width: 640px) 50vw, 200px"
-                      className="object-cover transition-transform duration-500 group-hover/img:scale-110"
+                      sizes={index === 0 ? "(max-width: 1024px) 100vw, 40vw" : "(max-width: 1024px) 50vw, 20vw"}
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover/img:opacity-100">
-                      <div className="absolute bottom-3 start-3 flex items-center gap-1 text-xs text-white">
-                        <span>{locale === "ar" ? "عرض المشروع" : "View Project"}</span>
-                        <ArrowRight className="h-3 w-3" />
-                      </div>
-                    </div>
-                  </div>
 
-                  {/* Project Title */}
-                  <div className="p-3 bg-card">
-                    <p className="text-xs font-medium text-foreground transition-colors duration-300 group-hover/img:text-gold line-clamp-1">
-                      {project.title}
-                    </p>
-                  </div>
-                </Link>
-              ))}
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+                    {/* Label */}
+                    <div className="absolute bottom-4 start-4 end-4">
+                      <p className="text-[10px] uppercase tracking-[0.2em] text-white/80 transition-all duration-300 group-hover:text-white">
+                        {m.pages?.services?.items?.[service.id]?.title}
+                      </p>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </div>
-        )}
-
-        {/* Hover Border Effect */}
-        <div className="absolute bottom-0 start-0 h-1 w-0 bg-gold-gradient transition-all duration-500 group-hover:w-full" />
-      </article>
-    );
-  };
-
-  return (
-    <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
-      {/* Design Services Section */}
-      <section className="mb-20">
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-medium text-foreground lg:text-4xl">
-            {m.pages?.services?.designServicesTitle || "Design Services"}
-          </h2>
-          <div className="mx-auto mt-4 h-1 w-20 bg-gold-gradient" />
-        </div>
-
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
-          {servicesData.designServices.map((service, index) => 
-            renderServiceCard(service, index)
-          )}
         </div>
       </section>
 
       {/* Construction Services Section */}
-      <section>
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-medium text-foreground lg:text-4xl">
-            {m.pages?.services?.constructionServicesTitle || "Construction Services"}
-          </h2>
-          <div className="mx-auto mt-4 h-1 w-20 bg-gold-gradient" />
-        </div>
+      <section className="relative overflow-hidden bg-muted/30 py-16 lg:py-24">
+        <div className="mx-auto grid max-w-7xl gap-8 px-5 lg:grid-cols-[1fr_1.5fr] lg:gap-12 lg:px-8">
+          {/* Left Side - Large Image */}
+          <div className="relative aspect-[3/2] overflow-hidden rounded-lg lg:aspect-auto lg:max-h-[500px]">
+            {servicesData.constructionServices[0]?.exampleProjects?.[0] && (
+              <>
+                <Image
+                  src={servicesData.constructionServices[0].exampleProjects[0].image}
+                  alt="Construction Services"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover"
+                />
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
-          {servicesData.constructionServices.map((service, index) => 
-            renderServiceCard(service, index)
-          )}
+                {/* Text Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+                <div className="absolute bottom-8 start-8 end-8">
+                  <p className="mb-2 font-display text-xs uppercase tracking-[0.3em] text-white/60">
+                    {locale === "ar" ? "أساسات قوية" : "Strong Foundations"}
+                  </p>
+                  <p className="font-display text-2xl text-white lg:text-3xl">
+                    {locale === "ar" ? "غد أكثر إشراقاً" : "Brighter Tomorrows"}
+                  </p>
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* Right Side - Content */}
+          <div className="flex flex-col justify-center">
+            {/* Section Number & Title */}
+            <div className="mb-6">
+              <p className="mb-2 text-sm uppercase tracking-[0.3em] text-muted-foreground">
+                02 —
+              </p>
+              <h2 className="mb-4 font-display text-4xl font-light text-foreground lg:text-5xl">
+                {m.pages?.services?.constructionServicesTitle || "Construction Services"}
+              </h2>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {locale === "ar"
+                  ? "نقدم حلول بناء عالية الجودة بدقة وموثوقية واهتمام بالتفاصيل. من الأعمال الخرسانية إلى التشطيبات النهائية، فريقنا يضمن بناء مشروعك بأعلى المعايير."
+                  : "We deliver high-quality construction solutions with precision, reliability, and attention to detail. From groundwork to final finishes, our team ensures your project is built to the highest standards."}
+              </p>
+            </div>
+
+            {/* Service Cards */}
+            <div className="space-y-4">
+              {servicesData.constructionServices.map((service) => {
+                const Icon = iconMap[service.icon];
+                const serviceData = m.pages?.services?.items?.[service.id];
+                if (!serviceData) return null;
+
+                return (
+                  <div
+                    key={service.id}
+                    className="group flex items-start gap-4 rounded-lg border border-border bg-background/80 p-5 backdrop-blur-sm transition-all duration-300 hover:border-gold/50 hover:bg-background"
+                  >
+                    {/* Icon */}
+                    <div className="flex-shrink-0">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gold/10 text-gold transition-all duration-300 group-hover:bg-gold group-hover:text-primary-foreground">
+                        <Icon className="h-6 w-6" strokeWidth={1.5} />
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1">
+                      <h3 className="mb-1 text-base font-medium text-foreground">
+                        {serviceData.title}
+                      </h3>
+                      <p className="text-xs leading-relaxed text-muted-foreground">
+                        {serviceData.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* CTA Button */}
+            <div className="mt-8">
+              <Link
+                href="/contact"
+                className="group inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-xs font-medium uppercase tracking-wider text-primary-foreground transition-all duration-300 hover:bg-gold/90"
+              >
+                <span>{locale === "ar" ? "استكشف خدمات البناء" : "Explore Construction Services"}</span>
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </div>
+
+            {/* Signature */}
+            <div className="mt-8">
+              <p className="font-display text-2xl text-gold/60">
+                {locale === "ar" ? "بناء للمستقبل" : "Built to Last"}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <div className="mt-20 rounded-lg border border-border bg-muted/50 p-12 text-center">
-        <h3 className="mb-4 text-2xl font-medium text-foreground">
-          {locale === "ar" 
-            ? "جاهزون لبدء مشروعك؟" 
-            : "Ready to Start Your Project?"}
-        </h3>
-        <p className="mb-8 text-muted-foreground">
-          {locale === "ar"
-            ? "تواصل معنا اليوم للحصول على استشارة مجانية ومناقشة احتياجات مشروعك."
-            : "Contact us today for a free consultation and discuss your project needs."}
-        </p>
-        <a
-          href="/contact"
-          className="inline-flex items-center gap-2 rounded-full bg-gold px-8 py-3 text-sm font-medium uppercase tracking-wider text-primary-foreground transition-all duration-300 hover:bg-gold/90 hover:shadow-lg"
-        >
-          {locale === "ar" ? "اتصل بنا" : "Contact Us"}
-        </a>
-      </div>
+      <section className="relative overflow-hidden bg-background py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="relative overflow-hidden rounded-2xl">
+            {/* Background Image */}
+            <div className="absolute inset-0">
+              <Image
+                src="/assets/CTA_bg.png"
+                alt="Background"
+                fill
+                sizes="100vw"
+                className="object-cover"
+              />
+              {/* Overlay for better text readability */}
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70" />
+            </div>
+
+            {/* Content */}
+            <div className="relative z-10 flex flex-col items-center justify-center px-8 py-20 text-center lg:px-16 lg:py-24">
+              <h3 className="mb-4 font-display text-3xl font-light text-white lg:text-4xl">
+                {locale === "ar" 
+                  ? "جاهزون لبدء مشروعك؟" 
+                  : "Ready to Start Your Project?"}
+              </h3>
+              <p className="mb-8 max-w-2xl text-sm leading-relaxed text-white/80">
+                {locale === "ar"
+                  ? "تواصل معنا اليوم للحصول على استشارة مجانية ومناقشة احتياجات مشروعك."
+                  : "Contact us today for a free consultation and discuss your project needs."}
+              </p>
+              <div>
+                <Link
+                  href="/contact"
+                  className="group inline-flex items-center gap-2 rounded-md bg-gold px-8 py-4 text-xs font-medium uppercase tracking-wider text-primary-foreground transition-all duration-300 hover:bg-gold/90 hover:shadow-lg hover:shadow-gold/20"
+                >
+                  <span>{locale === "ar" ? "تواصل معنا" : "Contact Us"}</span>
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
