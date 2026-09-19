@@ -7,11 +7,21 @@ import { Input } from "@/components/ui/input";
 import { Spinner } from "@/components/ui/spinner";
 import { useI18n } from "@/i18n";
 
-// Stub: trigger the PDF download / mailing list signup later.
+// Send brochure request to API
 async function onSubscribe(email: string) {
-  console.log("Brochure request", email);
-  // Simulated delay — remove once wired to a real API
-  await new Promise((resolve) => setTimeout(resolve, 1200));
+  const response = await fetch("/api/send-brochure", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Failed to send brochure");
+  }
+
+  return data;
 }
 
 export function Brochure() {
@@ -19,14 +29,19 @@ export function Brochure() {
   const brochure = m.brochure;
   const [done, setDone] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoading(true);
+    setError(null);
+    
     try {
       const form = new FormData(event.currentTarget);
       await onSubscribe(String(form.get("email") ?? ""));
       setDone(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "حصل خطأ، من فضلك حاولي تاني");
     } finally {
       setLoading(false);
     }
@@ -43,24 +58,29 @@ export function Brochure() {
         {done ? (
           <p className="text-sm text-gold lg:text-end">{brochure.successBody}</p>
         ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row">
-            <Input
-              name="email"
-              type="email"
-              required
-              disabled={loading}
-              placeholder={brochure.emailPlaceholder}
-              aria-label={brochure.emailLabel}
-              className="h-12 rounded-none"
-            />
-            <Button
-              type="submit"
-              disabled={loading}
-              className="h-12 shrink-0 rounded-none px-7 text-xs uppercase tracking-[0.2em]"
-            >
-              {loading ? <Spinner /> : <><Download className="size-4" />{brochure.ctaLabel}</>}
-            </Button>
-          </form>
+          <div className="flex flex-col gap-3">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row">
+              <Input
+                name="email"
+                type="email"
+                required
+                disabled={loading}
+                placeholder={brochure.emailPlaceholder}
+                aria-label={brochure.emailLabel}
+                className="h-12 rounded-none"
+              />
+              <Button
+                type="submit"
+                disabled={loading}
+                className="h-12 shrink-0 rounded-none px-7 text-xs uppercase tracking-[0.2em]"
+              >
+                {loading ? <Spinner /> : <><Download className="size-4" />{brochure.ctaLabel}</>}
+              </Button>
+            </form>
+            {error && (
+              <p className="text-sm text-red-500">{error}</p>
+            )}
+          </div>
         )}
       </div>
     </section>

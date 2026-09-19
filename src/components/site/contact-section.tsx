@@ -9,15 +9,25 @@ import { Spinner } from "@/components/ui/spinner";
 import { useI18n } from "@/i18n";
 import site from "@/data/site-config.json";
 
-// Stub — wire to an API route later
 async function sendMessage(data: {
   name: string;
   email: string;
   phone: string;
   message: string;
 }) {
-  console.log("Contact form submission", data);
-  await new Promise((resolve) => setTimeout(resolve, 1200));
+  const response = await fetch("/api/send-contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  const result = await response.json();
+
+  if (!response.ok) {
+    throw new Error(result.message || "Failed to send message");
+  }
+
+  return result;
 }
 
 export function ContactSection() {
@@ -41,6 +51,9 @@ export function ContactSection() {
         message: String(fd.get("message") ?? ""),
       });
       setSubmitted(true);
+    } catch (error) {
+      console.error("Contact form error:", error);
+      alert(error instanceof Error ? error.message : "حدث خطأ، حاول مرة أخرى");
     } finally {
       setLoading(false);
     }
@@ -108,7 +121,7 @@ export function ContactSection() {
                       disabled={loading}
                       rows={5}
                       placeholder={f.messagePlaceholder}
-                      className="w-full resize-none border border-input bg-transparent px-3 py-3 text-sm outline-none transition-shadow focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:opacity-50"
+                      className="w-full resize-none border border-input bg-transparent px-3 py-3 text-sm outline-none transition-all duration-300 hover:border-gold focus:border-gold focus:ring-2 focus:ring-gold/20 disabled:opacity-50"
                     />
                   </div>
 
