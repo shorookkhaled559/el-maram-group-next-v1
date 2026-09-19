@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { PageHeader } from "@/components/site/page-header";
 import projectsData from "@/data/maram-projects-categorized.json";
 import { useI18n } from "@/i18n";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronDown } from "lucide-react";
 
 type Project = {
   id: string;
@@ -49,6 +49,20 @@ export function ProjectsContent() {
   const { m, locale } = useI18n();
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   // Translation helper for categories
   const translateCategory = (category: string): string => {
@@ -82,6 +96,20 @@ export function ProjectsContent() {
   const handleCategoryChange = (category: string | null) => {
     setActiveCategory(category);
     setCurrentPage(1);
+    setIsDropdownOpen(false);
+  };
+
+  // Get selected category display name
+  const getSelectedCategoryName = () => {
+    if (activeCategory === null) {
+      return `${m.projects?.allLocations || (locale === "ar" ? "الكل" : "All")} (${projectsData.projects.length})`;
+    }
+    const count = categoryMap.get(activeCategory) || 0;
+    const isHierarchical = activeCategory.includes('/');
+    const displayName = isHierarchical 
+      ? translateCategory(activeCategory.split('/').pop() || activeCategory)
+      : translateCategory(activeCategory);
+    return `${displayName} (${count})`;
   };
 
   // Pagination handlers
@@ -147,45 +175,75 @@ export function ProjectsContent() {
 
       {/* ── Category Filter ──────────────────────────── */}
       <div className="border-b border-border bg-surface/50">
-        <div className="mx-auto flex max-w-7xl flex-wrap gap-3 px-5 py-6 lg:px-8">
-          {/* "All" Button */}
-          <button
-            onClick={() => handleCategoryChange(null)}
-            className={`rounded-full px-6 py-2 text-xs font-medium uppercase tracking-wider transition-all duration-300 ${
-              activeCategory === null
-                ? "bg-gold text-primary-foreground shadow-md"
-                : "border border-border text-muted-foreground hover:border-gold hover:text-gold"
-            }`}
-          >
-            {m.projects?.allLocations || (locale === "ar" ? "الكل" : "All")}
-            <span className="ml-2 text-[10px] opacity-70">
-              ({projectsData.projects.length})
-            </span>
-          </button>
-
-          {/* Category Buttons */}
-          {categories.map((category, index) => {
-            const count = categoryMap.get(category) || 0;
-            const isHierarchical = category.includes('/');
-            const displayName = isHierarchical 
-              ? translateCategory(category.split('/').pop() || category)
-              : translateCategory(category);
+        <div className="mx-auto max-w-7xl px-5 py-6 lg:px-8">
+          <div className="flex items-center gap-4">
+            <label className="text-sm font-medium text-foreground whitespace-nowrap">
+              {locale === "ar" ? "التصنيف:" : "Category:"}
+            </label>
             
-            return (
+            {/* Custom Dropdown */}
+            <div ref={dropdownRef} className="relative flex-1 max-w-md">
+              {/* Dropdown Button */}
               <button
-                key={`category-${category}-${index}`}
-                onClick={() => handleCategoryChange(category)}
-                className={`rounded-full px-6 py-2 text-xs font-medium uppercase tracking-wider transition-all duration-300 ${
-                  activeCategory === category
-                    ? "bg-gold text-primary-foreground shadow-md"
-                    : "border border-border text-muted-foreground hover:border-gold hover:text-gold"
-                } ${isHierarchical ? 'ml-4' : ''}`}
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className="w-full flex items-center justify-between rounded-lg border border-border bg-background px-4 py-3 text-sm font-medium text-foreground shadow-sm transition-all duration-300 hover:border-gold hover:bg-gold/5 focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/20"
               >
-                {displayName}
-                <span className="ml-2 text-[10px] opacity-70">({count})</span>
+                <span>{getSelectedCategoryName()}</span>
+                <ChevronDown 
+                  className={`h-5 w-5 text-gold transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} 
+                />
               </button>
-            );
-          })}
+
+              {/* Dropdown Menu */}
+              {isDropdownOpen && (
+                <div className="absolute z-50 mt-2 w-full rounded-lg border border-border bg-background shadow-elevated max-h-80 overflow-y-auto scrollbar-thin scrollbar-thumb-gold/50 scrollbar-track-border/30 hover:scrollbar-thumb-gold scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+                  {/* All option */}
+                  <button
+                    onClick={() => handleCategoryChange(null)}
+                    className={`w-full text-left px-4 py-3 text-sm font-medium transition-all duration-200 ${
+                      activeCategory === null
+                        ? 'bg-gold text-primary-foreground'
+                        : 'text-foreground hover:bg-gold/10 hover:text-gold'
+                    }`}
+                  >
+                    {m.projects?.allLocations || (locale === "ar" ? "الكل" : "All")}
+                    <span className="ml-2 text-xs opacity-70">
+                      ({projectsData.projects.length})
+                    </span>
+                  </button>
+
+                  {/* Categories */}
+                  {categories.map((category, index) => {
+                    const count = categoryMap.get(category) || 0;
+                    const isHierarchical = category.includes('/');
+                    const displayName = isHierarchical 
+                      ? translateCategory(category.split('/').pop() || category)
+                      : translateCategory(category);
+                    
+                    return (
+                      <button
+                        key={`category-${category}-${index}`}
+                        onClick={() => handleCategoryChange(category)}
+                        className={`w-full text-left px-4 py-3 text-sm font-medium transition-all duration-200 border-t border-border/50 ${
+                          activeCategory === category
+                            ? 'bg-gold text-primary-foreground'
+                            : 'text-foreground hover:bg-gold/10 hover:text-gold'
+                        } ${isHierarchical ? 'pl-8' : ''}`}
+                      >
+                        {isHierarchical && (
+                          <span className="mr-2 text-gold">↳</span>
+                        )}
+                        {displayName}
+                        <span className="ml-2 text-xs opacity-70">
+                          ({count})
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
 

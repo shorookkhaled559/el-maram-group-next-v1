@@ -1,8 +1,8 @@
 {
   "items": [
-    { "key": "years", "value": 20, "suffix": "+" },
+    { "key": "years", "value": 25, "suffix": "+" },
     { "key": "units", "value": 4800, "suffix": "" },
-    { "key": "projects", "value": 62, "suffix": "" },
+    { "key": "projects", "value": 300, "suffix": "+" },
     { "key": "land", "value": 350, "suffix": "K" }
   ]
 }

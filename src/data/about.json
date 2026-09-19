@@ -1,22 +1,28 @@
 {
   "sections": [
     {
-      "id": "our-story",
-      "image": "/assets/project-1.jpg",
-      "imageAlt": "Salmiya Heights under construction",
+      "id": "vision",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Khalaf-Al-Antari-4-copy.webp",
+      "imageAlt": "Khalaf Al-Antari - Architectural Excellence",
       "imagePosition": "right"
     },
     {
-      "id": "our-approach",
-      "image": "/assets/project-2.jpg",
-      "imageAlt": "Bnaider Coastal Villas site",
+      "id": "from-kuwait-to-egypt",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/11/EM-Maryam-Al-Shamali-6-copy.webp",
+      "imageAlt": "Maryam Al-Shamali - Modern Architecture",
       "imagePosition": "left"
     },
     {
-      "id": "our-commitment",
-      "image": "/assets/project-3.jpg",
-      "imageAlt": "Sharq Business House facade",
+      "id": "people-centered",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-28-14-copy.webp",
+      "imageAlt": "Reception & Living Design - Comfort and Quality",
       "imagePosition": "right"
+    },
+    {
+      "id": "vision-to-reality",
+      "image": "https://maram-kw.com/wp-content/uploads/2023/12/Office-Design-1-1-copy.webp",
+      "imageAlt": "Office Design - Professional Spaces",
+      "imagePosition": "left"
     }
   ]
 }

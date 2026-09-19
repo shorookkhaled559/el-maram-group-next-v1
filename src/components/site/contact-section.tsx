@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { Check, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Check, MapPin, Phone, Mail, Clock, MessageCircle, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -31,13 +31,22 @@ async function sendMessage(data: {
 }
 
 export function ContactSection() {
-  const { m } = useI18n();
+  const { m, locale } = useI18n();
   const copy = m.contactPage;
   const f = copy.form;
   const info = copy.info;
 
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  // Get localized address and locations
+  const address = typeof site.address === 'string' 
+    ? site.address 
+    : site.address[locale as 'ar' | 'en'] || site.address.en;
+    
+  const locations = typeof site.locations === 'string'
+    ? site.locations
+    : site.locations[locale as 'ar' | 'en'] || site.locations.en;
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -138,11 +147,42 @@ export function ContactSection() {
           <aside className="flex flex-col gap-6">
             <p className="eyebrow">{info.eyebrow}</p>
 
-            <InfoRow icon={<MapPin className="size-4 shrink-0 text-gold" />} label={info.address} value={site.address} />
+            <InfoRow 
+              icon={<MapPin className="size-4 shrink-0 text-gold" />} 
+              label={locale === 'ar' ? 'العنوان' : 'Address'} 
+              value={address} 
+            />
+            <InfoRow 
+              icon={<MapPin className="size-4 shrink-0 text-gold" />} 
+              label={locale === 'ar' ? 'المواقع' : 'Locations'} 
+              value={locations} 
+            />
             <InfoRow icon={<Phone className="size-4 shrink-0 text-gold" />} label={info.phone}
               value={<a href={site.hotlineHref} dir="ltr" className="hover:text-gold transition-colors">{site.hotline}</a>} />
-            <InfoRow icon={<Mail className="size-4 shrink-0 text-gold" />} label={info.email}
-              value={<a href={site.emailHref} className="hover:text-gold transition-colors">{site.email}</a>} />
+            <InfoRow 
+              icon={<Mail className="size-4 shrink-0 text-gold" />} 
+              label={info.email}
+              value={
+                <div className="flex flex-col gap-1">
+                  <a href={site.emailHref} className="hover:text-gold transition-colors lowercase">
+                    {site.email}
+                  </a>
+                  <a href={site.email2Href} className="hover:text-gold transition-colors lowercase">
+                    {site.email2}
+                  </a>
+                </div>
+              } 
+            />
+            <InfoRow 
+              icon={<MessageCircle className="size-4 shrink-0 text-gold" />} 
+              label={locale === 'ar' ? 'واتساب' : 'WhatsApp'}
+              value={<a href={site.whatsappHref} dir="ltr" className="hover:text-gold transition-colors">{site.whatsapp}</a>} 
+            />
+            <InfoRow 
+              icon={<Globe className="size-4 shrink-0 text-gold" />} 
+              label={locale === 'ar' ? 'الموقع الإلكتروني' : 'Website'}
+              value={<a href={site.websiteHref} target="_blank" rel="noopener noreferrer" dir="ltr" className="hover:text-gold transition-colors lowercase">{site.website}</a>} 
+            />
             <InfoRow icon={<Clock className="size-4 shrink-0 text-gold" />} label={info.hours} value={info.hoursValue} />
           </aside>
         </div>
@@ -154,27 +194,19 @@ export function ContactSection() {
           <p className="eyebrow">{copy.map.eyebrow}</p>
           <h2 className="mt-4 text-3xl lg:text-4xl">{copy.map.heading}</h2>
 
-          {/* Placeholder map — swap the src for a real embed later */}
-          <div className="relative mt-10 aspect-[16/7] w-full overflow-hidden border border-border bg-muted">
-            {/* Grid-pattern placeholder that matches the site style */}
-            <div
-              className="absolute inset-0 opacity-30 dark:opacity-20"
-              style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h1v40H0zM0 0h40v1H0z' fill='%23d4af37' fill-opacity='0.25'/%3E%3C/svg%3E")`,
-                backgroundSize: "40px 40px",
-              }}
+          {/* Google Maps Embed */}
+          <div className="relative mt-10 aspect-[16/7] w-full overflow-hidden border border-border bg-muted rounded-lg">
+            <iframe
+              src={site.mapUrl}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={locale === 'ar' ? 'موقعنا على الخريطة' : 'Our Location on Map'}
+              className="w-full h-full"
             />
-
-            {/* Pin marker */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-              <div className="flex size-12 items-center justify-center bg-gold-gradient shadow-elevated">
-                <MapPin className="size-5 text-primary-foreground" />
-              </div>
-              <p className="text-sm font-medium">{site.address}</p>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-                Kuwait City
-              </p>
-            </div>
           </div>
         </div>
       </section>

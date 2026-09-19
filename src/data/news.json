@@ -1,11 +1,17 @@
 {
   "items": [
     {
-      "id": "salmiya-heights-topping-out",
-      "image": "/assets/project-1.jpg",
-      "date": "2026-07-14T10:00:00",
-      "title": "Salmiya Heights Reaches Topping-Out Milestone",
-      "body": "Maram Group is pleased to announce that Salmiya Heights has reached its structural topping-out milestone, marking a defining moment in the delivery of one of Salmiya's most anticipated residential addresses.\n\nThe twelve-floor tower, which offers forty-two residences with unobstructed views of the Arabian Gulf, has seen its final structural slab completed ahead of the original schedule. The project team — comprising our in-house development management division alongside appointed contractors — maintained a rigorous programme throughout the structural phase.\n\nAttention now turns to the fit-out and finishing works. Warm limestone cladding, brushed bronze hardware and floor-to-ceiling glazing packages have all been procured and delivery to site commences next month. The rooftop terrace structure is also in place, ready for landscaping and services installation.\n\nUnits remain available across select floor levels. Prospective buyers are encouraged to contact our sales team to review layouts, finishes and payment plan options before availability closes."
+      "id": "maram-group-today",
+      "image": "/assets/hadaba.jpeg",
+      "date": "2026-08-24T10:00:00",
+      "title": {
+        "en": "Maram Group Today",
+        "ar": "مرام جروب اليوم"
+      },
+      "body": {
+        "en": "Building a Stronger Future in Real Estate\n\nToday, Maram Group continues to strengthen its presence in the Egyptian real estate market, building on its experience in real estate development, construction, and project execution across Kuwait and Egypt.\n\nOur growing portfolio reflects our commitment to developing high-quality residential, commercial, administrative, medical, and educational projects designed around real market needs and long-term value.\n\nFrom strategic locations and thoughtful architectural design to quality construction and precise execution, we approach every project with the same objective: to create spaces that deliver lasting value to communities, businesses, and investors.\n\nWith projects such as Hadaba Plaza, Zayed Mall, Noor Heights Compound, Al Maram Medical Tower, and International School, Maram Group continues to expand its development portfolio while maintaining a clear focus on quality, functionality, and professional execution.\n\nAs we look ahead, our vision remains focused on creating distinctive real estate projects in Egypt and beyond, combining experience, innovation, and quality to shape communities built for the future.\n\nMaram Group — Building Today. Shaping Tomorrow.",
+        "ar": "نبني مستقبلًا أقوى في التطوير العقاري\n\nتواصل مرام جروب اليوم تعزيز حضورها في السوق العقاري المصري، مستندة إلى خبراتها في التطوير العقاري، والإنشاءات، وتنفيذ المشروعات في كل من الكويت ومصر.\n\nوتعكس محفظة مشروعاتنا المتنامية التزامنا بتطوير مشروعات عالية الجودة في قطاعات السكني، والتجاري، والإداري، والطبي، والتعليمي، بما يتوافق مع احتياجات السوق ويحقق قيمة مستدامة على المدى الطويل.\n\nمن اختيار المواقع الاستراتيجية والتصميمات المعمارية المدروسة، إلى جودة الإنشاء ودقة التنفيذ، نتعامل مع كل مشروع برؤية واحدة: تطوير مساحات تحقق قيمة حقيقية ومستدامة للمجتمعات، والأعمال، والمستثمرين.\n\nومن خلال مشروعات مثل هضبة بلازا، مول زايد، كمبوند نور هايتس، برج المرام الطبي، ومدرسة إنترناشونال، تواصل مرام جروب توسيع محفظتها من المشروعات العقارية، مع الحفاظ على تركيزها على الجودة، والوظيفية، والاحترافية في التنفيذ.\n\nومع تطلعاتنا للمستقبل، تركز رؤيتنا على تطوير مشروعات عقارية متميزة في مصر وخارجها، تجمع بين الخبرة، والابتكار، والجودة، لصناعة مجتمعات تستمر قيمتها للمستقبل.\n\nمرام جروب — نبني اليوم. ونصنع ملامح الغد."
+      }
     }
   ]
 }

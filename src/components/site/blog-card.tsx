@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 export interface BlogCardProps {
@@ -13,6 +12,7 @@ export interface BlogCardProps {
   excerpt: string;
   readMoreLabel: string;
   locale: string;
+  onClick?: () => void;
 }
 
 function formatDate(iso: string, locale: string) {
@@ -32,14 +32,12 @@ export function BlogCard({
   excerpt,
   readMoreLabel,
   locale,
+  onClick,
 }: BlogCardProps) {
   return (
-    <article className="group flex flex-col">
+    <article className="group flex cursor-pointer flex-col" onClick={onClick}>
       {/* Image */}
-      <Link
-        href={`/blogs/${slug}`}
-        className="relative block aspect-[4/3] overflow-hidden bg-muted"
-      >
+      <div className="relative block aspect-[4/3] overflow-hidden bg-muted">
         <Image
           src={image}
           alt={title}
@@ -51,7 +49,7 @@ export function BlogCard({
         <span className="absolute start-4 top-4 border border-white/25 bg-black/50 px-3 py-1 text-[10px] uppercase tracking-[0.22em] text-white backdrop-blur">
           {category}
         </span>
-      </Link>
+      </div>
 
       {/* Date */}
       <p className="mt-5 text-[10px] uppercase tracking-[0.26em] text-muted-foreground">
@@ -67,13 +65,10 @@ export function BlogCard({
       </p>
 
       {/* CTA */}
-      <Link
-        href={`/blogs/${slug}`}
-        className="mt-5 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-gold"
-      >
+      <div className="mt-5 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-gold">
         {readMoreLabel}
         <ArrowUpRight className="size-3.5 transition-transform group-hover:translate-x-1 rtl:-scale-x-100" />
-      </Link>
+      </div>
     </article>
   );
 }
