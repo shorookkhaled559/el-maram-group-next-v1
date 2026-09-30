@@ -44,6 +44,10 @@ export function ContactSection() {
     ? site.address 
     : site.address[locale as 'ar' | 'en'] || site.address.en;
     
+  const branch = typeof site.branch === 'string' 
+    ? site.branch 
+    : site.branch[locale as 'ar' | 'en'] || site.branch.en;
+    
   const locations = typeof site.locations === 'string'
     ? site.locations
     : site.locations[locale as 'ar' | 'en'] || site.locations.en;
@@ -149,8 +153,13 @@ export function ContactSection() {
 
             <InfoRow 
               icon={<MapPin className="size-4 shrink-0 text-gold" />} 
-              label={locale === 'ar' ? 'العنوان' : 'Address'} 
-              value={address} 
+              label={locale === 'ar' ? 'العنوان الرئيسي' : 'Main Address'} 
+              value={<span className="leading-relaxed block">{address}</span>} 
+            />
+            <InfoRow 
+              icon={<MapPin className="size-4 shrink-0 text-gold" />} 
+              label={locale === 'ar' ? 'الفرع' : 'Branch'} 
+              value={<span className="leading-relaxed block">{branch}</span>} 
             />
             <InfoRow 
               icon={<MapPin className="size-4 shrink-0 text-gold" />} 
@@ -203,7 +212,7 @@ export function ContactSection() {
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
               title={locale === 'ar' ? 'موقعنا على الخريطة' : 'Our Location on Map'}
               className="w-full h-full"
             />

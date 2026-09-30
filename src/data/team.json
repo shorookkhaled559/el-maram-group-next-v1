@@ -1,25 +1,31 @@
 {
   "items": [
     {
-      "id": "ahmed-al-maram",
-      "image": "/assets/project-1.jpg",
-      "name": "Ahmed Al-Maram",
-      "role": "Chairman & Founder",
-      "bio": "Ahmed founded Maram Group in 2005 with a conviction that Kuwait's built environment deserved more considered development. Over two decades he has led the acquisition and delivery of residential, coastal and commercial addresses across the country, building a reputation grounded in design integrity and on-schedule delivery."
+      "id": "mohamed-abouzeid",
+      "image": "/our team/Co founder.png",
+      "name": "Mohamed Mostafa Abouzeid",
+      "nameAr": "محمد مصطفى أبو زيد",
+      "role": "Co-Founder",
+      "roleAr": "مؤسس مشارك",
+      "bio": "Mohamed co-founded Maram Group with a vision to transform the real estate landscape in Egypt. His expertise in business development and strategic planning has been instrumental in establishing the company's reputation for excellence and innovation."
     },
     {
-      "id": "sara-al-rashidi",
-      "image": "/assets/project-2.jpg",
-      "name": "Sara Al-Rashidi",
-      "role": "Chief Executive Officer",
-      "bio": "Sara joined Maram Group in 2011 and was appointed CEO in 2019. She oversees the group's strategy, operations and financial performance. Her background spans investment banking and real estate advisory, and she brings a disciplined, data-led approach to each development decision."
+      "id": "ahmed-abouzeid",
+      "image": "/our team/Ceo founder.png",
+      "name": "Ahmed Mostafa Abouzeid",
+      "nameAr": "أحمد مصطفى أبو زيد",
+      "role": "CEO & Founder",
+      "roleAr": "الرئيس التنفيذي والمؤسس",
+      "bio": "Ahmed founded Maram Group with a commitment to delivering exceptional real estate projects. As CEO, he oversees the company's strategic direction, ensuring every project meets the highest standards of quality and design excellence."
     },
     {
-      "id": "khalid-al-sabah",
-      "image": "/assets/project-3.jpg",
-      "name": "Khalid Al-Sabah",
-      "role": "Head of Development",
-      "bio": "Khalid leads the development management function, taking projects from site acquisition through to handover. With fifteen years of experience in Kuwait's construction sector, he coordinates architects, contractors and consultants to keep each project on programme and within budget."
+      "id": "eslam-hashem",
+      "image": "/our team/Contract Manager.png",
+      "name": "Eslam Hashem Saleh",
+      "nameAr": "إسلام هاشم صالح",
+      "role": "Contract Manager",
+      "roleAr": "مدير العقود",
+      "bio": "Eslam leads the contract management function, overseeing all project agreements and ensuring compliance with terms and timelines. His attention to detail and strong negotiation skills ensure smooth project execution from start to finish."
     }
   ]
 }

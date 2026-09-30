@@ -5,7 +5,7 @@ import { useI18n } from "@/i18n";
 import team from "@/data/team.json";
 
 export function TeamSection() {
-  const { m } = useI18n();
+  const { m, locale } = useI18n();
   const copy = m.mgToday.team;
 
   return (
@@ -17,32 +17,37 @@ export function TeamSection() {
 
         {/* Team grid */}
         <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {team.items.map((member) => (
-            <div
-              key={member.id}
-              className="flex flex-col items-center border border-border bg-card px-6 pb-8 pt-10 text-center"
-            >
-              {/* Circular avatar */}
-              <div className="relative size-38 shrink-0 overflow-hidden rounded-full ring-2 ring-border ring-offset-2 ring-offset-card">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width={224}
-                  height={224}
-                  sizes="152px"
-                  className="h-full w-full object-cover object-top"
-                />
+          {team.items.map((member) => {
+            const name = locale === 'ar' && member.nameAr ? member.nameAr : member.name;
+            const role = locale === 'ar' && member.roleAr ? member.roleAr : member.role;
+            
+            return (
+              <div
+                key={member.id}
+                className="flex flex-col items-center border border-border bg-card px-6 pb-8 pt-10 text-center"
+              >
+                {/* Circular avatar */}
+                <div className="relative size-38 shrink-0 overflow-hidden rounded-full ring-2 ring-border ring-offset-2 ring-offset-card mb-4">
+                  <Image
+                    src={member.image}
+                    alt={name}
+                    width={224}
+                    height={224}
+                    sizes="152px"
+                    className="h-full w-full object-cover object-top"
+                  />
+                </div>
+
+                {/* Name */}
+                <h3 className="text-xl">{name}</h3>
+
+                {/* Role */}
+                <p className="mt-1.5 text-[10px] uppercase tracking-[0.26em] text-gold">
+                  {role}
+                </p>
               </div>
-
-              {/* Name */}
-              <h3 className="mt-5 text-xl">{member.name}</h3>
-
-              {/* Role */}
-              <p className="mt-1.5 text-[10px] uppercase tracking-[0.26em] text-gold">
-                {member.role}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
