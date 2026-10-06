@@ -128,7 +128,44 @@
       "subcategories": [
         "Private Villa"
       ],
-      "oldCategory": "Construction"
+      "oldCategory": "Construction",
+      "hasDetails": true,
+      "description": {
+        "en": "An impressive commercial showroom project in Shuwaikh Industrial Area, featuring modern design and functional spaces perfect for business operations.",
+        "ar": "مشروع معرض تجاري مميز في منطقة الشويخ الصناعية، يتميز بتصميم حديث ومساحات وظيفية مثالية للعمليات التجارية."
+      },
+      "client": "Jawad Al-Saffar",
+      "location": "Shuwaikh Industrial, Kuwait",
+      "area": "950m²",
+      "year": "2023",
+      "style": "Commercial Modern",
+      "highlights": [
+        {
+          "en": "Commercial Design",
+          "ar": "تصميم تجاري"
+        },
+        {
+          "en": "Functional Layout",
+          "ar": "تخطيط وظيفي"
+        },
+        {
+          "en": "Modern Façade",
+          "ar": "واجهة حديثة"
+        },
+        {
+          "en": "Strategic Location",
+          "ar": "موقع استراتيجي"
+        }
+      ],
+      "designDetails": {
+        "en": "The showroom features a contemporary design with efficient space utilization, modern display areas, and a striking exterior that attracts attention in the industrial zone.",
+        "ar": "يتميز المعرض بتصميم عصري مع استخدام فعال للمساحة ومناطق عرض حديثة وواجهة خارجية ملفتة تجذب الانتباه في المنطقة الصناعية."
+      },
+      "gallery": [
+        "https://maram-kw.com/wp-content/uploads/2023/12/معرض-الصفار-الشويخ-الصناعية.jpg",
+        "https://maram-kw.com/wp-content/uploads/2023/12/معرض-الصفار-الشويخ-الصناعية.jpg",
+        "https://maram-kw.com/wp-content/uploads/2023/12/معرض-الصفار-الشويخ-الصناعية.jpg"
+      ]
     },
     {
       "id": "mohamed-al-kandry",
@@ -193,7 +230,44 @@
       "subcategories": [
         "Private Villa"
       ],
-      "oldCategory": "Construction"
+      "oldCategory": "Construction",
+      "hasDetails": true,
+      "description": {
+        "en": "A modern private villa combining contemporary design with functional living spaces. This project emphasizes clean lines, open layouts, and premium materials throughout.",
+        "ar": "فيلا خاصة حديثة تجمع بين التصميم المعاصر ومساحات المعيشة الوظيفية. يركز هذا المشروع على الخطوط النظيفة والتخطيطات المفتوحة والمواد المميزة في جميع أنحاء المبنى."
+      },
+      "client": "Essam Al-Zaid",
+      "location": "Al-Shuhada, Kuwait",
+      "area": "720m²",
+      "year": "2023",
+      "style": "Modern",
+      "highlights": [
+        {
+          "en": "Modern Architecture",
+          "ar": "عمارة حديثة"
+        },
+        {
+          "en": "Open Floor Plans",
+          "ar": "مخططات أرضية مفتوحة"
+        },
+        {
+          "en": "Premium Finishes",
+          "ar": "تشطيبات مميزة"
+        },
+        {
+          "en": "Sustainable Design",
+          "ar": "تصميم مستدام"
+        }
+      ],
+      "designDetails": {
+        "en": "The villa showcases modern architectural principles with spacious interiors, large windows for natural lighting, and carefully selected materials that ensure durability and aesthetic appeal.",
+        "ar": "تعرض الفيلا مبادئ معمارية حديثة مع تصميمات داخلية واسعة ونوافذ كبيرة للإضاءة الطبيعية ومواد مختارة بعناية تضمن المتانة والجاذبية الجمالية."
+      },
+      "gallery": [
+        "https://maram-kw.com/wp-content/uploads/2023/12/عصام-الزيد-الشهداء.jpg",
+        "https://maram-kw.com/wp-content/uploads/2023/12/عصام-الزيد-الشهداء.jpg",
+        "https://maram-kw.com/wp-content/uploads/2023/12/عصام-الزيد-الشهداء.jpg"
+      ]
     },
     {
       "id": "abdullah-al-shatti",
@@ -505,7 +579,44 @@
       "subcategories": [
         "Interior"
       ],
-      "oldCategory": "Design"
+      "oldCategory": "Design",
+      "hasDetails": true,
+      "description": {
+        "en": "A sophisticated retail space design featuring modern aesthetics and customer-friendly layout. This interior design project creates an inviting atmosphere for shoppers.",
+        "ar": "تصميم مساحة تجزئة متطور يتميز بالجماليات الحديثة والتخطيط الملائم للعملاء. يخلق مشروع التصميم الداخلي هذا جواً جذاباً للمتسوقين."
+      },
+      "client": "Confidential",
+      "location": "Kuwait",
+      "area": "180m²",
+      "year": "2023",
+      "style": "Contemporary Retail",
+      "highlights": [
+        {
+          "en": "Modern Interior Design",
+          "ar": "تصميم داخلي حديث"
+        },
+        {
+          "en": "Customer Flow Optimization",
+          "ar": "تحسين تدفق العملاء"
+        },
+        {
+          "en": "Display Innovation",
+          "ar": "ابتكار في العرض"
+        },
+        {
+          "en": "Brand Integration",
+          "ar": "تكامل العلامة التجارية"
+        }
+      ],
+      "designDetails": {
+        "en": "The shop design incorporates sleek display units, strategic lighting, and a color palette that enhances the shopping experience while maintaining brand identity.",
+        "ar": "يتضمن تصميم المتجر وحدات عرض أنيقة وإضاءة استراتيجية ولوحة ألوان تعزز تجربة التسوق مع الحفاظ على هوية العلامة التجارية."
+      },
+      "gallery": [
+        "https://maram-kw.com/wp-content/uploads/2023/12/Shop-Design-1-4-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/12/Shop-Design-1-4-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/12/Shop-Design-1-4-copy.webp"
+      ]
     },
     {
       "id": "reception-living-design-23",
@@ -518,7 +629,44 @@
       "subcategories": [
         "Interior"
       ],
-      "oldCategory": "Design"
+      "oldCategory": "Design",
+      "hasDetails": true,
+      "description": {
+        "en": "An elegant reception and living area design that combines comfort with sophistication. This space features luxurious furnishings and a harmonious color scheme.",
+        "ar": "تصميم منطقة استقبال ومعيشة أنيق يجمع بين الراحة والرقي. تتميز هذه المساحة بأثاث فاخر ونظام ألوان متناغم."
+      },
+      "client": "Private Residence",
+      "location": "Kuwait",
+      "area": "85m²",
+      "year": "2023",
+      "style": "Luxury Modern",
+      "highlights": [
+        {
+          "en": "Luxurious Interiors",
+          "ar": "تصميمات داخلية فاخرة"
+        },
+        {
+          "en": "Custom Furniture",
+          "ar": "أثاث مخصص"
+        },
+        {
+          "en": "Elegant Lighting",
+          "ar": "إضاءة أنيقة"
+        },
+        {
+          "en": "Premium Materials",
+          "ar": "مواد فاخرة"
+        }
+      ],
+      "designDetails": {
+        "en": "The reception area showcases bespoke furniture pieces, designer lighting fixtures, and carefully curated décor elements that create a welcoming yet refined atmosphere.",
+        "ar": "تعرض منطقة الاستقبال قطع أثاث مصممة خصيصاً وتركيبات إضاءة من المصممين وعناصر ديكور منسقة بعناية تخلق جواً ترحيبياً وراقياً."
+      },
+      "gallery": [
+        "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-23-1-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-23-1-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/12/Reception-Living-Design-23-1-copy.webp"
+      ]
     },
     {
       "id": "reception-living-design-24",
@@ -739,7 +887,44 @@
       "subcategories": [
         "Interior"
       ],
-      "oldCategory": "Design"
+      "oldCategory": "Design",
+      "hasDetails": true,
+      "description": {
+        "en": "A meticulously designed dressing room that maximizes storage while maintaining elegance. This project features custom cabinetry and sophisticated finishes.",
+        "ar": "غرفة ملابس مصممة بدقة تعظم التخزين مع الحفاظ على الأناقة. يتميز هذا المشروع بخزائن مخصصة وتشطيبات راقية."
+      },
+      "client": "Private Residence",
+      "location": "Kuwait",
+      "area": "35m²",
+      "year": "2023",
+      "style": "Contemporary Luxury",
+      "highlights": [
+        {
+          "en": "Custom Cabinetry",
+          "ar": "خزائن مخصصة"
+        },
+        {
+          "en": "Smart Storage Solutions",
+          "ar": "حلول تخزين ذكية"
+        },
+        {
+          "en": "Premium Finishes",
+          "ar": "تشطيبات فاخرة"
+        },
+        {
+          "en": "Integrated Lighting",
+          "ar": "إضاءة متكاملة"
+        }
+      ],
+      "designDetails": {
+        "en": "The dressing room design includes floor-to-ceiling wardrobes, a central island with drawers, LED lighting strips, and mirrored surfaces that enhance the sense of space.",
+        "ar": "يتضمن تصميم غرفة الملابس خزائن من الأرض إلى السقف وجزيرة مركزية بأدراج وشرائط إضاءة LED وأسطح مرآة تعزز الإحساس بالمساحة."
+      },
+      "gallery": [
+        "https://maram-kw.com/wp-content/uploads/2023/12/Dressing-Design-3-3-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/12/Dressing-Design-3-3-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/12/Dressing-Design-3-3-copy.webp"
+      ]
     },
     {
       "id": "enterance-design-1",
@@ -1025,7 +1210,44 @@
       "subcategories": [
         "Interior"
       ],
-      "oldCategory": "Design"
+      "oldCategory": "Design",
+      "hasDetails": true,
+      "description": {
+        "en": "A stunning dining room design that creates the perfect setting for memorable meals. This space combines elegance with functionality.",
+        "ar": "تصميم غرفة طعام مذهل يخلق الإطار المثالي لوجبات لا تُنسى. تجمع هذه المساحة بين الأناقة والوظيفة."
+      },
+      "client": "Private Residence",
+      "location": "Kuwait",
+      "area": "45m²",
+      "year": "2023",
+      "style": "Modern Elegant",
+      "highlights": [
+        {
+          "en": "Statement Lighting",
+          "ar": "إضاءة مميزة"
+        },
+        {
+          "en": "Custom Dining Set",
+          "ar": "طقم طعام مخصص"
+        },
+        {
+          "en": "Wall Treatments",
+          "ar": "معالجات الجدران"
+        },
+        {
+          "en": "Elegant Finishes",
+          "ar": "تشطيبات أنيقة"
+        }
+      ],
+      "designDetails": {
+        "en": "The dining room features a dramatic chandelier as the centerpiece, a custom-made dining table, designer chairs, and sophisticated wall paneling that adds depth to the space.",
+        "ar": "تتميز غرفة الطعام بثريا مثيرة كنقطة محورية وطاولة طعام مصنوعة حسب الطلب وكراسي من المصممين وألواح جدران راقية تضيف عمقاً للمساحة."
+      },
+      "gallery": [
+        "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-6-2-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-6-2-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/12/Dining-Design-6-2-copy.webp"
+      ]
     },
     {
       "id": "dining-design-7",
@@ -2453,7 +2675,44 @@
         "Exterior",
         "New Classic"
       ],
-      "oldCategory": "Design"
+      "oldCategory": "Design",
+      "hasDetails": true,
+      "description": {
+        "en": "An elegant private villa featuring refined architectural elements and luxurious living spaces designed for comfort and style.",
+        "ar": "فيلا خاصة أنيقة تتميز بعناصر معمارية راقية ومساحات معيشة فاخرة مصممة للراحة والأناقة."
+      },
+      "client": "Muhammad Al-Ayyar",
+      "location": "Kuwait",
+      "area": "740m²",
+      "year": "2023",
+      "style": "New Classic",
+      "highlights": [
+        {
+          "en": "Elegant Architecture",
+          "ar": "عمارة أنيقة"
+        },
+        {
+          "en": "Luxurious Interiors",
+          "ar": "تصميمات داخلية فاخرة"
+        },
+        {
+          "en": "Premium Materials",
+          "ar": "مواد فاخرة"
+        },
+        {
+          "en": "Smart Home Features",
+          "ar": "ميزات المنزل الذكي"
+        }
+      ],
+      "designDetails": {
+        "en": "The villa showcases a harmonious blend of elegance and functionality, with carefully selected finishes, smart home integration, and spacious rooms that cater to modern living.",
+        "ar": "تعرض الفيلا مزيجاً متناغماً من الأناقة والوظيفة، مع تشطيبات مختارة بعناية وتكامل المنزل الذكي وغرف واسعة تلبي احتياجات الحياة العصرية."
+      },
+      "gallery": [
+        "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Muhammad-Al-Ayyar-3-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Muhammad-Al-Ayyar-3-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/11/New-Classic-Muhammad-Al-Ayyar-3-copy.webp"
+      ]
     },
     {
       "id": "reda-soroush",
@@ -2537,7 +2796,44 @@
         "Exterior",
         "Classic"
       ],
-      "oldCategory": "Design"
+      "oldCategory": "Design",
+      "hasDetails": true,
+      "description": {
+        "en": "A contemporary private villa project showcasing classical architectural design with attention to detail and high-quality construction standards.",
+        "ar": "مشروع فيلا خاصة معاصرة يعرض تصميماً معمارياً كلاسيكياً مع الاهتمام بالتفاصيل ومعايير بناء عالية الجودة."
+      },
+      "client": "Muhammad Al-Dariwishi",
+      "location": "Kuwait",
+      "area": "680m²",
+      "year": "2023",
+      "style": "Classic",
+      "highlights": [
+        {
+          "en": "Classical Design",
+          "ar": "تصميم كلاسيكي"
+        },
+        {
+          "en": "Quality Construction",
+          "ar": "بناء عالي الجودة"
+        },
+        {
+          "en": "Detailed Finishes",
+          "ar": "تشطيبات مفصلة"
+        },
+        {
+          "en": "Spacious Layout",
+          "ar": "تخطيط واسع"
+        }
+      ],
+      "designDetails": {
+        "en": "The villa combines classical design elements with practical living spaces, featuring elegant proportions, ornate details, and premium construction materials throughout.",
+        "ar": "تجمع الفيلا بين عناصر التصميم الكلاسيكي ومساحات المعيشة العملية، وتتميز بنسب أنيقة وتفاصيل مزخرفة ومواد بناء فاخرة في جميع أنحاء المبنى."
+      },
+      "gallery": [
+        "https://maram-kw.com/wp-content/uploads/2023/11/Muhammad-Al-Dariwishi-2-5-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/11/Muhammad-Al-Dariwishi-2-5-copy.webp",
+        "https://maram-kw.com/wp-content/uploads/2023/11/Muhammad-Al-Dariwishi-2-5-copy.webp"
+      ]
     },
     {
       "id": "ayed-al-fadali",
@@ -2712,14 +3008,118 @@
       "slug": "abdullah-ali-al-hajri",
       "title": "Abdullah Ali Al-Hajri",
       "category": "Design",
-      "image": "https://maram-kw.com/wp-content/uploads/2023/11/Classic-Abdullah-Ali-Al-Hajri-6-copy.webp",
+      "image": "/projects/abdullah-ali-al-hajri/hero.jpg",
       "url": "https://maram-kw.com/portfolio/abdullah-ali-al-hajri/",
       "mainCategory": "Design",
       "subcategories": [
         "Exterior",
         "Classic"
       ],
-      "oldCategory": "Design"
+      "oldCategory": "Design",
+      "hasDetails": true,
+      "description": {
+        "en": "This project is a Classic private villa designed with a refined and elegant architectural character. The design combines classical architectural details with contemporary elements to create a balanced and timeless residential façade.\n\nThe villa incorporates GRC architectural elements throughout the façade, adding depth, detail, and a distinctive Classic character. Tall and expansive glass façades are also used to allow more natural daylight to enter the interior spaces, while creating a stronger visual connection between the interior and exterior.\n\nThe exterior design features carefully detailed cornices and mouldings, elegant balconies, decorative metal railings, a prominent main entrance, and a balanced façade composition. The light-colored exterior complements the Classic style and emphasizes the architectural details.\n\nThe surrounding landscaping and greenery complement the villa's architecture and add a softer natural element to the overall exterior composition.",
+        "ar": "هذا المشروع عبارة عن فيلا سكنية خاصة بتصميم كلاسيك يتميز بطابع معماري راق وانيق. يجمع التصميم بين التفاصيل المعمارية الكلاسيكية والعناصر المعاصرة لتقديم واجهة سكنية متوازنة وانيقة تتميز بطابع خالد.\n\nتتضمن واجهة الفيلا عناصر معمارية من GRC تضيف عمقا وتفاصيل مميزة وتبرز الطابع الكلاسيك للمبنى. كما تم استخدام واجهات زجاجية واسعة ومرتفعة للسماح بدخول قدر اكبر من الاضاءة الطبيعية الى المساحات الداخلية، مع تعزيز الترابط البصري بين الداخل والخارج.\n\nتتميز الواجهة الخارجية بتفاصيل دقيقة من الكورنيش والزخارف المعمارية، وشرفات انيقة، ودرابزينات معدنية زخرفية، ومدخل رئيسي بارز، مع تكوين متوازن للواجهة. كما يتكامل اللون الفاتح للواجهة مع الطراز الكلاسيك ويبرز التفاصيل المعمارية للمبنى.\n\nوتكمل المساحات الخضراء والتنسيق الخارجي المحيط بالفيلا التصميم المعماري، وتضيف عنصرا طبيعيا اكثر نعومة الى التكوين الخارجي العام."
+      },
+      "client": "Abdullah Ali Al-Hajri",
+      "location": "Fahaheel, Kuwait",
+      "area": "750m²",
+      "year": "2023",
+      "style": "Classic",
+      "highlights": [
+        {
+          "en": "Classic Design",
+          "ar": "التصميم الكلاسيك",
+          "description": {
+            "en": "A balanced architectural composition that combines classic proportions, decorative details, and refined façade elements with timeless design features.",
+            "ar": "تكوين معماري متوازن يجمع بين النسب الكلاسيكية والتفاصيل الزخرفية وعناصر الواجهة الراقية مع لمسات تصميم خالدة."
+          }
+        },
+        {
+          "en": "GRC Elements",
+          "ar": "عناصر GRC",
+          "description": {
+            "en": "GRC is used as an important architectural element across the façade to create detailed classic forms, mouldings, and decorative features.",
+            "ar": "تم استخدام GRC كعنصر معماري رئيسي في الواجهة لتكوين التفاصيل والأشكال الكلاسيكية والزخارف المعمارية."
+          }
+        },
+        {
+          "en": "Tall Glass Façades",
+          "ar": "الواجهات الزجاجية المرتفعة",
+          "description": {
+            "en": "Large and vertically extended glass openings are incorporated into the façade to maximize the amount of natural daylight entering the interior spaces.",
+            "ar": "تم دمج فتحات زجاجية كبيرة ومرتفعة بشكل رأسي في الواجهة لزيادة دخول الاضاءة الطبيعية الى المساحات الداخلية."
+          }
+        },
+        {
+          "en": "Façade Composition",
+          "ar": "تكوين الواجهة",
+          "description": {
+            "en": "The façade combines solid architectural masses with large glazed openings, balconies, decorative elements, and a prominent entrance to create a balanced and elegant exterior.",
+            "ar": "تجمع الواجهة بين الكتل المعمارية الصلبة والفتحات الزجاجية الكبيرة والشرفات والعناصر الزخرفية والمدخل الرئيسي البارز لتكوين واجهة متوازنة وانيقة."
+          }
+        }
+      ],
+      "designDetails": [
+        {
+          "en": "Classical cornices and mouldings",
+          "ar": "كورنيش وزخارف معمارية كلاسيكية"
+        },
+        {
+          "en": "Tall vertical windows",
+          "ar": "نوافذ رأسية مرتفعة"
+        },
+        {
+          "en": "Large glazed openings",
+          "ar": "فتحات زجاجية كبيرة"
+        },
+        {
+          "en": "Multiple balconies",
+          "ar": "شرفات متعددة"
+        },
+        {
+          "en": "Decorative metal railings",
+          "ar": "درابزينات معدنية زخرفية"
+        },
+        {
+          "en": "Prominent main entrance",
+          "ar": "مدخل رئيسي بارز"
+        },
+        {
+          "en": "Light-colored exterior",
+          "ar": "واجهة خارجية بالوان فاتحة"
+        },
+        {
+          "en": "Detailed GRC architectural elements",
+          "ar": "عناصر معمارية من GRC بتفاصيل دقيقة"
+        },
+        {
+          "en": "Integrated landscaping and greenery",
+          "ar": "تنسيق خارجي ومساحات خضراء متكاملة مع التصميم"
+        }
+      ],
+      "gallery": [
+        "/projects/abdullah-ali-al-hajri/gallery-1.jpg",
+        "/projects/abdullah-ali-al-hajri/gallery-2.jpg",
+        "/projects/abdullah-ali-al-hajri/gallery-3.jpg",
+        "/projects/abdullah-ali-al-hajri/gallery-4.jpg"
+      ],
+      "titleAr": "عبدالله علي الهاجري",
+      "subtitle": {
+        "en": "Classic Private Villa",
+        "ar": "فيلا سكنية خاصة بتصميم كلاسيك"
+      },
+      "clientAr": "عبدالله علي الهاجري",
+      "locationAr": "الفحيحيل، الكويت",
+      "styleAr": "كلاسيك",
+      "projectType": {
+        "en": "Private Villa",
+        "ar": "فيلا سكنية خاصة"
+      },
+      "mainMaterials": {
+        "en": "GRC and Glass",
+        "ar": "GRC والزجاج"
+      }
     },
     {
       "id": "alhomor-2",

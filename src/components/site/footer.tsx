@@ -11,6 +11,7 @@ const LOGO_URL = "/assets/maram-logo.png";
 export function Footer() {
   const { m, locale } = useI18n();
   const address = typeof site.address === 'string' ? site.address : site.address[locale as 'en' | 'ar'];
+  const branch = typeof site.branch === 'string' ? site.branch : site.branch[locale as 'en' | 'ar'];
 
   return (
     <footer className="border-t border-border bg-surface">
@@ -29,7 +30,14 @@ export function Footer() {
               {m.site.companyName}
             </span>
           </div>
-          <p className="mt-5 max-w-xs text-sm text-muted-foreground">{address}</p>
+          <div className="mt-5 space-y-3">
+            <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
+              {address}
+            </p>
+            <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
+              {branch}
+            </p>
+          </div>
         </div>
 
         <nav className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">

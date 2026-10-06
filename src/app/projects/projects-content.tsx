@@ -17,10 +17,11 @@ type Project = {
   subcategories: string[];
   image: string;
   url: string;
+  hasDetails?: boolean;
 };
 
 // Pagination settings
-const ITEMS_PER_PAGE = 12;
+const ITEMS_PER_PAGE = 9;
 
 // Get all categories (main + subcategories)
 const allCategories: string[] = [];
@@ -70,8 +71,8 @@ export function ProjectsContent() {
     return categories?.[category] || category;
   };
 
-  // Filter projects by category (supports hierarchy)
-  const filteredProjects =
+  // Filter projects by category (supports hierarchy) and sort by hasDetails
+  const filteredProjects = (
     activeCategory === null
       ? projectsData.projects
       : projectsData.projects.filter((p: Project) => {
@@ -84,7 +85,13 @@ export function ProjectsContent() {
             // Main category filter
             return p.mainCategory === activeCategory;
           }
-        });
+        })
+  ).sort((a, b) => {
+    // Sort: projects with hasDetails=true first
+    if (a.hasDetails && !b.hasDetails) return -1;
+    if (!a.hasDetails && b.hasDetails) return 1;
+    return 0;
+  });
 
   // Pagination calculations
   const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);
@@ -259,70 +266,96 @@ export function ProjectsContent() {
                   className="group relative overflow-hidden rounded-lg border border-border bg-card transition-all duration-500 hover:shadow-elevated hover:border-gold/50"
                 >
                   {/* Project Image */}
-                  <Link
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block relative aspect-[4/3] overflow-hidden bg-muted"
-                  >
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    
-                    {/* Overlay on Hover */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    
-                    {/* Category Badge */}
-                    <div className="absolute top-4 right-4 z-10 flex flex-col gap-1">
-                      <span className="inline-block rounded-full bg-gold/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-primary-foreground backdrop-blur-sm">
-                        {translateCategory(project.mainCategory)}
-                      </span>
-                      {project.subcategories.length > 0 && (
-                        <span className="inline-block rounded-full bg-foreground/80 px-3 py-1 text-[9px] font-medium tracking-wide text-background backdrop-blur-sm">
-                          {translateCategory(project.subcategories[0])}
+                  {project.hasDetails ? (
+                    <Link
+                      href={`/projects/${project.slug}`}
+                      className="block relative aspect-[4/3] overflow-hidden bg-muted"
+                    >
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      
+                      {/* Overlay on Hover */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      
+                      {/* Category Badge */}
+                      <div className="absolute top-4 right-4 z-10 flex flex-col gap-1">
+                        <span className="inline-block rounded-full bg-gold/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-primary-foreground backdrop-blur-sm">
+                          {translateCategory(project.mainCategory)}
                         </span>
-                      )}
+                        {project.subcategories.length > 0 && (
+                          <span className="inline-block rounded-full bg-foreground/80 px-3 py-1 text-[9px] font-medium tracking-wide text-background backdrop-blur-sm">
+                            {translateCategory(project.subcategories[0])}
+                          </span>
+                        )}
+                      </div>
+                    </Link>
+                  ) : (
+                    <div className="block relative aspect-[4/3] overflow-hidden bg-muted">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover"
+                      />
+                      
+                      {/* Category Badge */}
+                      <div className="absolute top-4 right-4 z-10 flex flex-col gap-1">
+                        <span className="inline-block rounded-full bg-gold/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-primary-foreground backdrop-blur-sm">
+                          {translateCategory(project.mainCategory)}
+                        </span>
+                        {project.subcategories.length > 0 && (
+                          <span className="inline-block rounded-full bg-foreground/80 px-3 py-1 text-[9px] font-medium tracking-wide text-background backdrop-blur-sm">
+                            {translateCategory(project.subcategories[0])}
+                          </span>
+                        )}
+                      </div>
                     </div>
-                  </Link>
+                  )}
 
                   {/* Project Info */}
                   <div className="p-5">
-                    <Link
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group/title"
-                    >
-                      <h3 className="text-lg font-medium text-foreground transition-colors duration-300 group-hover/title:text-gold">
+                    {project.hasDetails ? (
+                      <Link
+                        href={`/projects/${project.slug}`}
+                        className="group/title"
+                      >
+                        <h3 className="text-lg font-medium text-foreground transition-colors duration-300 group-hover/title:text-gold">
+                          {project.title}
+                        </h3>
+                      </Link>
+                    ) : (
+                      <h3 className="text-lg font-medium text-foreground">
                         {project.title}
                       </h3>
-                    </Link>
+                    )}
 
-                    <Link
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 inline-flex items-center gap-2 text-sm text-gold transition-all duration-300 hover:gap-3"
-                    >
-                      <span>{locale === "ar" ? "عرض التفاصيل" : "View Details"}</span>
-                      <svg
-                        className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
+                    {project.hasDetails && (
+                      <Link
+                        href={`/projects/${project.slug}`}
+                        className="mt-4 inline-flex items-center gap-2 text-sm text-gold transition-all duration-300 hover:gap-3"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d={locale === "ar" ? "M7 16l-4-4m0 0l4-4m-4 4h18" : "M17 8l4 4m0 0l-4 4m4-4H3"}
-                        />
-                      </svg>
-                    </Link>
+                        <span>{locale === "ar" ? "عرض التفاصيل" : "View Details"}</span>
+                        <svg
+                          className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d={locale === "ar" ? "M7 16l-4-4m0 0l4-4m-4 4h18" : "M17 8l4 4m0 0l-4 4m4-4H3"}
+                          />
+                        </svg>
+                      </Link>
+                    )}
                   </div>
                 </article>
               ))}
