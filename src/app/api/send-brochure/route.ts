@@ -32,7 +32,8 @@ export async function POST(req: NextRequest) {
 
     const insertResult = await leadsCollection.insertOne(leadDoc);
 
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 
+    const baseUrl = process.env.BASE_URL || 
+                    process.env.NEXT_PUBLIC_BASE_URL ||
                     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
     
     const brochureUrl = `${baseUrl}/files/maram-brochure.pdf`;
