@@ -1,11 +1,26 @@
-// app/api/send-brochure/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
+import fs from "node:fs/promises";
+import path from "node:path";
 import { getDb } from "@/lib/mongodb";
+import { getLogoAttachment } from "@/lib/email-logo";
 import BrochureEmail from "@/emails/BrochureEmail";
+
+export const runtime = "nodejs";
+export const maxDuration = 30;
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+let brochureCache: Buffer | null = null;
+async function getBrochure(): Promise<Buffer> {
+  if (!brochureCache) {
+    brochureCache = await fs.readFile(
+      path.join(process.cwd(), "public", "files", "maram-brochure.pdf")
+    );
+  }
+  return brochureCache;
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -22,48 +37,35 @@ export async function POST(req: NextRequest) {
     const db = await getDb();
     const leadsCollection = db.collection("leads");
 
-    const leadDoc = {
+    const insertResult = await leadsCollection.insertOne({
       email,
       formType: "brochure_request",
       source: "website",
       emailSent: false,
       createdAt: new Date(),
-    };
+    });
 
-    const insertResult = await leadsCollection.insertOne(leadDoc);
+    const pdf = await getBrochure();
 
-    const baseUrl = process.env.BASE_URL || 
-                    process.env.NEXT_PUBLIC_BASE_URL ||
-                    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
-    
-    const brochureUrl = `${baseUrl}/files/maram-brochure.pdf`;
-    const logoUrl = `${baseUrl}/assets/maram-logo.png`;
+    const { data, error } = await resend.emails.send({
+      from: process.env.RESEND_FROM!,
+      to: [email],
+      subject: "Maram Group Brochure | بروشور مرام جروب",
+      react: BrochureEmail(),
+      attachments: [
+        await getLogoAttachment(),
+        { filename: "Maram-Group-Brochure.pdf", content: pdf },
+      ],
+    });
 
-    try {
-      const testMode = !process.env.RESEND_DOMAIN_VERIFIED;
-      const recipientEmail = testMode 
-        ? (process.env.RECIPIENT_EMAIL || 'shorookkhaled559@gmail.com')
-        : email;
-
-      const { data, error } = await resend.emails.send({
-        from: 'Maram Group <onboarding@resend.dev>',
-        to: [recipientEmail],
-        subject: "Maram Group Brochure | بروشور مرام جروب",
-        react: BrochureEmail({ brochureUrl, logoUrl }),
-      });
-
-      if (error) {
-        throw error;
-      }
-
-      await leadsCollection.updateOne(
-        { _id: insertResult.insertedId },
-        { $set: { emailSent: true, emailId: data?.id } }
-      );
-    } catch (sendError: any) {
-      console.error("Email send error:", sendError);
-      throw sendError;
+    if (error) {
+      throw new Error(`${error.name}: ${error.message}`);
     }
+
+    await leadsCollection.updateOne(
+      { _id: insertResult.insertedId },
+      { $set: { emailSent: true, emailId: data?.id } }
+    );
 
     return NextResponse.json({
       success: true,
