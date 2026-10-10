@@ -14,6 +14,8 @@ import {
 } from "@react-email/components";
 
 interface BrochureEmailProps {
+  /** Direct download link for the brochure PDF */
+  brochureUrl: string;
   /** Inline image sent as an attachment with contentId "maram-logo" */
   logoSrc?: string;
 }
@@ -28,11 +30,14 @@ const CONTACT = {
   websiteHref: "https://www.maram-kw.com",
 };
 
-export default function BrochureEmail({ logoSrc = "cid:maram-logo" }: BrochureEmailProps) {
+export default function BrochureEmail({
+  brochureUrl,
+  logoSrc = "cid:maram-logo",
+}: BrochureEmailProps) {
   return (
     <Html lang="ar">
       <Head />
-      <Preview>بروشور مرام جروب مرفق مع هذه الرسالة · Maram Group brochure attached</Preview>
+      <Preview>حمّل بروشور مرام جروب · Download the Maram Group brochure</Preview>
       <Body style={body}>
         <Container style={container}>
           {/* Header */}
@@ -45,22 +50,17 @@ export default function BrochureEmail({ logoSrc = "cid:maram-logo" }: BrochureEm
           <Section style={block} dir="rtl">
             <Text style={headingAr}>شكراً لاهتمامك بمرام جروب</Text>
             <Text style={paragraphAr}>
-              يسعدنا اهتمامك بمشاريعنا. بروشور الشركة مرفق مع هذه الرسالة بصيغة PDF،
-              وفيه أحدث المشاريع والوحدات المتاحة.
+              يسعدنا اهتمامك بمشاريعنا. اضغط على الزر أدناه لتحميل بروشور الشركة
+              بصيغة PDF، وفيه أحدث المشاريع والوحدات المتاحة.
             </Text>
           </Section>
 
-          {/* Attachment card */}
-          <Section style={attachmentWrap}>
-            <div style={attachment}>
-              <Row>
-                <Column style={attachIcon}>📎</Column>
-                <Column style={attachText}>
-                  <Text style={attachName}>Maram-Group-Brochure.pdf</Text>
-                  <Text style={attachNote}>مرفق مع هذه الرسالة · Attached to this email</Text>
-                </Column>
-              </Row>
-            </div>
+          {/* Download button */}
+          <Section style={downloadWrap}>
+            <Button href={brochureUrl} style={button}>
+              تحميل البروشور · Download Brochure
+            </Button>
+            <Text style={fileNote}>PDF</Text>
           </Section>
 
           <Section style={dividerWrap}>
@@ -71,14 +71,15 @@ export default function BrochureEmail({ logoSrc = "cid:maram-logo" }: BrochureEm
           <Section style={block}>
             <Text style={headingEn}>Thank you for your interest in Maram Group</Text>
             <Text style={paragraphEn}>
-              We appreciate your interest in our projects. Our company brochure is attached
-              to this email as a PDF, featuring our latest projects and available units.
+              We appreciate your interest in our projects. Use the button above to
+              download our company brochure (PDF), featuring our latest projects and
+              available units.
             </Text>
           </Section>
 
           {/* CTA */}
           <Section style={actions}>
-            <Button href={CONTACT.whatsappHref} style={button}>
+            <Button href={CONTACT.whatsappHref} style={buttonOutline}>
               تواصل معنا على واتساب · Chat on WhatsApp
             </Button>
             <Text style={ctaNote}>
@@ -204,24 +205,9 @@ const paragraphEn = {
   margin: "0 0 8px 0",
 };
 
-const attachmentWrap = { padding: "16px 32px 28px" };
+const downloadWrap = { padding: "8px 32px 28px", textAlign: "center" as const };
 
-const attachment = {
-  padding: "14px 16px",
-  backgroundColor: "#faf3e3",
-  border: "1px solid #ecdcb5",
-  borderRadius: "8px",
-};
-
-const attachIcon = { width: "36px", fontSize: "24px", verticalAlign: "middle" as const };
-const attachText = { verticalAlign: "middle" as const, textAlign: "left" as const };
-const attachName = {
-  fontSize: "15px",
-  fontWeight: "700",
-  color: "#18181b",
-  margin: "0",
-};
-const attachNote = { fontSize: "12px", color: "#8a6a2f", margin: "2px 0 0 0" };
+const fileNote = { fontSize: "12px", color: "#a1a1aa", margin: "10px 0 0 0" };
 
 const dividerWrap = { padding: "0 32px" };
 const divider = { borderColor: "#ece7dc", margin: "0" };
@@ -240,6 +226,13 @@ const button = {
   borderRadius: "6px",
   backgroundColor: GOLD,
   color: "#ffffff",
+};
+
+const buttonOutline = {
+  ...button,
+  backgroundColor: "#ffffff",
+  color: "#18181b",
+  border: `1px solid ${GOLD}`,
 };
 
 const ctaNote = {
