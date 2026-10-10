@@ -147,6 +147,36 @@
       }
     }
   },
+  "howWeWork": {
+    "eyebrow": "Our Process",
+    "title": "How We Work With You?",
+    "steps": {
+      "consultation": {
+        "title": "Initial Consultation",
+        "description": "We start by understanding your needs, ideas, and budget to ensure alignment and set the scope of work."
+      },
+      "siteInspection": {
+        "title": "Site Inspection",
+        "description": "Our team visits the site to take accurate measurements and assess potential and constraints."
+      },
+      "conceptDesign": {
+        "title": "Concept Design",
+        "description": "We offer initial design proposals with mood boards and material and color options."
+      },
+      "detailedDesign": {
+        "title": "Detailed Design",
+        "description": "Complete detailed drawings, furniture details, lighting, and needs with BIM technology for dimensional accuracy."
+      },
+      "executionSupervision": {
+        "title": "Execution & Supervision",
+        "description": "Ongoing field supervision to ensure implementation according to specifications and established standards."
+      },
+      "deliveryFollowup": {
+        "title": "Delivery & Follow-up",
+        "description": "Project delivery with complete inspection and post-delivery quality assurance."
+      }
+    }
+  },
   "brochure": {
     "eyebrow": "Brochure",
     "title": "Interested in our projects?",
