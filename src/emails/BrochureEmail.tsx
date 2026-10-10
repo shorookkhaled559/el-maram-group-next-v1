@@ -1,98 +1,111 @@
-// emails/BrochureEmail.tsx
 import {
   Body,
+  Button,
+  Column,
   Container,
   Head,
-  Heading,
   Hr,
   Html,
   Img,
-  Link,
   Preview,
+  Row,
   Section,
   Text,
 } from "@react-email/components";
 
 interface BrochureEmailProps {
-  brochureUrl: string;
-  logoUrl?: string;
+  /** Inline image sent as an attachment with contentId "maram-logo" */
+  logoSrc?: string;
 }
 
-export default function BrochureEmail({
-  brochureUrl,
-  logoUrl,
-}: BrochureEmailProps) {
-  const displayLogoUrl = logoUrl?.includes('localhost') 
-    ? 'https://via.placeholder.com/80x80/c9a05f/ffffff?text=MG' 
-    : logoUrl || 'https://via.placeholder.com/80x80/c9a05f/ffffff?text=MG';
+const CONTACT = {
+  hotline: "+20 109 469 2669",
+  hotlineHref: "tel:+201094692669",
+  whatsapp: "+20 106 639 5959",
+  whatsappHref: "https://wa.me/201066395959",
+  email: "info@maramkwdevelopment.com",
+  website: "www.maram-kw.com",
+  websiteHref: "https://www.maram-kw.com",
+};
 
+export default function BrochureEmail({ logoSrc = "cid:maram-logo" }: BrochureEmailProps) {
   return (
-    <Html>
+    <Html lang="ar">
       <Head />
-      <Preview>Maram Group Brochure | بروشور مرام جروب</Preview>
-      <Body style={main}>
+      <Preview>بروشور مرام جروب مرفق مع هذه الرسالة · Maram Group brochure attached</Preview>
+      <Body style={body}>
         <Container style={container}>
-          {/* Logo */}
-          <Section style={logoSection}>
-            <Img src={displayLogoUrl} width="80" height="80" alt="Maram Group" style={logo} />
+          {/* Header */}
+          <Section style={header}>
+            <Img src={logoSrc} width="120" height="90" alt="Maram Group" style={logo} />
           </Section>
+          <div style={goldBar} />
 
-          {/* English Section */}
-          <Section style={section}>
-            <Heading style={heading}>Thank You for Your Interest</Heading>
-            
-            <Text style={paragraph}>
-              We appreciate your interest in Maram Group. You can now download our company brochure to learn more about our latest projects and available units.
-            </Text>
-
-            <Section style={buttonContainer}>
-              <Link style={button} href={brochureUrl} download="maram-group-brochure.pdf">
-                Download Brochure
-              </Link>
-            </Section>
-
-            <Text style={infoText}>
-              If you have any questions, our sales team is ready to assist you at any time.
-            </Text>
-          </Section>
-
-          {/* Divider */}
-          <Hr style={divider} />
-
-          {/* Arabic Section */}
-          <Section style={section} dir="rtl">
-            <Heading style={headingAr}>شكراً لاهتمامك بمرام جروب</Heading>
-            
+          {/* Arabic */}
+          <Section style={block} dir="rtl">
+            <Text style={headingAr}>شكراً لاهتمامك بمرام جروب</Text>
             <Text style={paragraphAr}>
-              نقدر اهتمامك بمرام جروب. تقدر الآن تحمّل بروشور الشركة لتتعرف على أحدث المشاريع والوحدات المتاحة.
+              يسعدنا اهتمامك بمشاريعنا. بروشور الشركة مرفق مع هذه الرسالة بصيغة PDF،
+              وفيه أحدث المشاريع والوحدات المتاحة.
             </Text>
+          </Section>
 
-            <Section style={buttonContainer}>
-              <Link style={button} href={brochureUrl} download="maram-group-brochure.pdf">
-                تحميل البروشور
-              </Link>
-            </Section>
+          {/* Attachment card */}
+          <Section style={attachmentWrap}>
+            <div style={attachment}>
+              <Row>
+                <Column style={attachIcon}>📎</Column>
+                <Column style={attachText}>
+                  <Text style={attachName}>Maram-Group-Brochure.pdf</Text>
+                  <Text style={attachNote}>مرفق مع هذه الرسالة · Attached to this email</Text>
+                </Column>
+              </Row>
+            </div>
+          </Section>
 
-            <Text style={infoTextAr}>
-              إذا كان لديك أي استفسار، فريق المبيعات جاهز لمساعدتك في أي وقت.
+          <Section style={dividerWrap}>
+            <Hr style={divider} />
+          </Section>
+
+          {/* English */}
+          <Section style={block}>
+            <Text style={headingEn}>Thank you for your interest in Maram Group</Text>
+            <Text style={paragraphEn}>
+              We appreciate your interest in our projects. Our company brochure is attached
+              to this email as a PDF, featuring our latest projects and available units.
             </Text>
+          </Section>
+
+          {/* CTA */}
+          <Section style={actions}>
+            <Button href={CONTACT.whatsappHref} style={button}>
+              تواصل معنا على واتساب · Chat on WhatsApp
+            </Button>
+            <Text style={ctaNote}>
+              فريق المبيعات جاهز لمساعدتك في أي وقت
+              <br />
+              Our sales team is ready to help you anytime
+            </Text>
+          </Section>
+
+          {/* Contact info */}
+          <Section style={contactWrap}>
+            <div style={contactCard}>
+            <ContactRow en="Hotline" ar="الخط الساخن" valueText={CONTACT.hotline} href={CONTACT.hotlineHref} />
+            <ContactRow en="WhatsApp" ar="واتساب" valueText={CONTACT.whatsapp} href={CONTACT.whatsappHref} />
+            <ContactRow en="Email" ar="البريد" valueText={CONTACT.email} href={`mailto:${CONTACT.email}`} />
+            <ContactRow en="Website" ar="الموقع" valueText={CONTACT.website} href={CONTACT.websiteHref} />
+            </div>
           </Section>
 
           {/* Footer */}
-          <Hr style={divider} />
-          
           <Section style={footer}>
-            <Text style={footerText}>
-              Maram Group Design & Built
+            <Text style={footerBrand}>Maram Group Design & Built · مرام جروب للتصميم والتشييد</Text>
+            <Text style={footerText} dir="rtl">
+              المقر الرئيسي: القاهرة – التجمع الخامس · الفرع: الفيوم – برج النوران
             </Text>
             <Text style={footerText}>
-              مرام جروب للتصميم والتشييد
-            </Text>
-            <Text style={footerText}>
-              Golf Tower, Sherq City, Egypt
-            </Text>
-            <Text style={footerText}>
-              برج الجولف، شرق سيتي، مصر
+              HQ: Cairo, Fifth Settlement · Branch: Fayoum, Al-Nouran Tower
             </Text>
           </Section>
         </Container>
@@ -101,124 +114,161 @@ export default function BrochureEmail({
   );
 }
 
-// ─────────────────────────────────────────────────────────
-// Styles (matching website colors & vibe)
-// ─────────────────────────────────────────────────────────
+function ContactRow({
+  en,
+  ar,
+  valueText,
+  href,
+}: {
+  en: string;
+  ar: string;
+  valueText: string;
+  href: string;
+}) {
+  return (
+    <Row style={contactRow}>
+      <Column style={contactLabel}>
+        {en} · {ar}
+      </Column>
+      <Column style={contactValue}>
+        <a href={href} style={link} dir="ltr">
+          {valueText}
+        </a>
+      </Column>
+    </Row>
+  );
+}
 
-const main = {
-  backgroundColor: "#0a0a0a", // Dark background like the website
-  fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-  padding: "40px 20px",
+// ─────────────────────────────────────────────────────────
+// Styles
+// ─────────────────────────────────────────────────────────
+const GOLD = "#c9a05f";
+const DARK = "#0a0a0a";
+const FONT = "'Segoe UI', Tahoma, Arial, sans-serif";
+
+const body = {
+  backgroundColor: "#f3f0ea",
+  fontFamily: FONT,
+  margin: "0",
+  padding: "32px 12px",
 };
 
 const container = {
   backgroundColor: "#ffffff",
-  margin: "0 auto",
-  padding: "0",
   maxWidth: "600px",
-  border: "1px solid #27272a",
-};
-
-const logoSection = {
-  backgroundColor: "#0a0a0a",
-  padding: "32px 24px",
-  textAlign: "center" as const,
-};
-
-const logo = {
   margin: "0 auto",
+  borderRadius: "10px",
+  overflow: "hidden" as const,
+  border: "1px solid #e7e2d8",
 };
 
-const section = {
-  padding: "32px 24px",
-};
-
-const heading = {
-  fontSize: "28px",
-  fontWeight: "600",
-  lineHeight: "1.3",
-  color: "#18181b",
-  margin: "0 0 16px 0",
+const header = {
+  backgroundColor: DARK,
+  padding: "28px 24px 20px",
   textAlign: "center" as const,
 };
+
+const logo = { margin: "0 auto", display: "block" };
+
+const goldBar = { height: "3px", backgroundColor: GOLD, lineHeight: "3px", fontSize: "0" };
+
+const block = { padding: "32px 32px 8px", textAlign: "center" as const };
 
 const headingAr = {
-  fontSize: "28px",
-  fontWeight: "600",
-  lineHeight: "1.3",
+  fontSize: "26px",
+  fontWeight: "700",
   color: "#18181b",
-  margin: "0 0 16px 0",
-  textAlign: "center" as const,
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const paragraph = {
-  fontSize: "16px",
-  lineHeight: "1.6",
-  color: "#52525b",
-  margin: "0 0 24px 0",
-  textAlign: "center" as const,
+  lineHeight: "1.5",
+  margin: "0 0 12px 0",
 };
 
 const paragraphAr = {
-  fontSize: "16px",
-  lineHeight: "1.8",
+  fontSize: "15px",
+  lineHeight: "1.9",
   color: "#52525b",
-  margin: "0 0 24px 0",
-  textAlign: "center" as const,
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
+  margin: "0 0 8px 0",
 };
 
-const buttonContainer = {
-  textAlign: "center" as const,
-  margin: "32px 0",
+const headingEn = {
+  fontSize: "20px",
+  fontWeight: "700",
+  color: "#18181b",
+  lineHeight: "1.4",
+  margin: "0 0 10px 0",
 };
 
-const button = {
-  backgroundColor: "#c9a05f",
-  color: "#ffffff",
-  fontSize: "14px",
-  fontWeight: "600",
-  textDecoration: "none",
-  textAlign: "center" as const,
-  display: "inline-block",
-  padding: "14px 40px",
-  letterSpacing: "0.05em",
-  textTransform: "uppercase" as const,
-  borderRadius: "4px",
-};
-
-const infoText = {
-  fontSize: "14px",
-  lineHeight: "1.5",
-  color: "#71717a",
-  textAlign: "center" as const,
-  margin: "0",
-};
-
-const infoTextAr = {
+const paragraphEn = {
   fontSize: "14px",
   lineHeight: "1.7",
   color: "#71717a",
+  margin: "0 0 8px 0",
+};
+
+const attachmentWrap = { padding: "16px 32px 28px" };
+
+const attachment = {
+  padding: "14px 16px",
+  backgroundColor: "#faf3e3",
+  border: "1px solid #ecdcb5",
+  borderRadius: "8px",
+};
+
+const attachIcon = { width: "36px", fontSize: "24px", verticalAlign: "middle" as const };
+const attachText = { verticalAlign: "middle" as const, textAlign: "left" as const };
+const attachName = {
+  fontSize: "15px",
+  fontWeight: "700",
+  color: "#18181b",
+  margin: "0",
+};
+const attachNote = { fontSize: "12px", color: "#8a6a2f", margin: "2px 0 0 0" };
+
+const dividerWrap = { padding: "0 32px" };
+const divider = { borderColor: "#ece7dc", margin: "0" };
+
+const actions = { padding: "16px 32px 8px", textAlign: "center" as const };
+
+const button = {
+  display: "block",
+  boxSizing: "border-box" as const,
+  width: "100%",
   textAlign: "center" as const,
-  margin: "0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
+  fontSize: "14px",
+  fontWeight: "700",
+  textDecoration: "none",
+  padding: "15px 20px",
+  borderRadius: "6px",
+  backgroundColor: GOLD,
+  color: "#ffffff",
 };
 
-const divider = {
-  borderColor: "#e4e4e7",
-  margin: "0",
-};
-
-const footer = {
-  padding: "24px",
-  backgroundColor: "#fafafa",
-};
-
-const footerText = {
-  fontSize: "13px",
-  lineHeight: "1.5",
+const ctaNote = {
+  fontSize: "12px",
+  lineHeight: "1.7",
   color: "#a1a1aa",
-  textAlign: "center" as const,
-  margin: "4px 0",
+  margin: "14px 0 0 0",
 };
+
+const contactWrap = { padding: "20px 24px 32px" };
+
+const contactCard = {
+  padding: "6px 18px",
+  backgroundColor: "#fcfbf8",
+  border: "1px solid #ece7dc",
+  borderRadius: "8px",
+};
+
+const contactRow = { borderBottom: "1px solid #f0ebe0" };
+const contactLabel = {
+  fontSize: "12px",
+  color: "#a08242",
+  fontWeight: "700",
+  padding: "11px 8px 11px 0",
+  textAlign: "left" as const,
+};
+const contactValue = { fontSize: "13px", padding: "11px 0", textAlign: "right" as const };
+const link = { color: "#18181b", textDecoration: "none", borderBottom: `1px solid ${GOLD}` };
+
+const footer = { backgroundColor: DARK, padding: "22px 24px", textAlign: "center" as const };
+const footerBrand = { fontSize: "13px", fontWeight: "700", color: GOLD, margin: "0 0 8px 0" };
+const footerText = { fontSize: "12px", color: "#a1a1aa", lineHeight: "1.7", margin: "2px 0" };

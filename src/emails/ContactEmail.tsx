@@ -1,11 +1,14 @@
 import {
   Body,
+  Button,
+  Column,
   Container,
   Head,
-  Heading,
   Hr,
   Html,
+  Img,
   Preview,
+  Row,
   Section,
   Text,
 } from "@react-email/components";
@@ -15,129 +18,102 @@ interface ContactEmailProps {
   email: string;
   phone?: string;
   message: string;
+  /** Inline image sent as an attachment with contentId "maram-logo" */
+  logoSrc?: string;
 }
 
-export default function ContactEmail({ name, email, phone, message }: ContactEmailProps) {
+export default function ContactEmail({
+  name,
+  email,
+  phone,
+  message,
+  logoSrc = "cid:maram-logo",
+}: ContactEmailProps) {
+  const telHref = phone ? `tel:${phone.replace(/[^\d+]/g, "")}` : "";
+
   return (
-    <Html>
+    <Html lang="ar">
       <Head />
-      <Preview>New Contact Message from {name} | رسالة جديدة من {name}</Preview>
-      <Body style={main}>
+      <Preview>
+        رسالة جديدة من {name} · New message from {name}
+      </Preview>
+      <Body style={body}>
         <Container style={container}>
           {/* Header */}
           <Section style={header}>
-            <div style={logoPlaceholder}>MG</div>
+            <Img src={logoSrc} width="120" height="90" alt="Maram Group" style={logo} />
+          </Section>
+          <div style={goldBar} />
+
+          {/* Title */}
+          <Section style={titleSection}>
+            <Text style={badge}>NEW CONTACT MESSAGE · رسالة تواصل جديدة</Text>
+            <Text style={titleAr}>وصلتك رسالة جديدة من الموقع</Text>
+            <Text style={titleEn}>You have a new message from the website</Text>
           </Section>
 
-          {/* English Section */}
-          <Section style={content}>
-            <Heading style={heading}>New Contact Message</Heading>
-            <Text style={paragraph}>
-              You have received a new message from your website contact form:
-            </Text>
+          {/* Details */}
+          <Section style={cardWrap}>
+            <div style={card}>
+            <Field en="Name" ar="الاسم">
+              <Text style={value} dir="auto">
+                {name}
+              </Text>
+            </Field>
 
-            <Section style={detailsCard}>
-              <Section style={detailRow}>
-                <Text style={detailLabel}>Name</Text>
-                <Text style={detailValue}>{name}</Text>
-              </Section>
+            <Hr style={fieldDivider} />
 
-              <Hr style={detailDivider} />
+            <Field en="Email" ar="البريد الإلكتروني">
+              <Text style={value} dir="ltr">
+                <a href={`mailto:${email}`} style={link}>
+                  {email}
+                </a>
+              </Text>
+            </Field>
 
-              <Section style={detailRow}>
-                <Text style={detailLabel}>Email Address</Text>
-                <Text style={detailValue}>
-                  <a href={`mailto:${email}`} style={linkStyle}>
-                    {email}
-                  </a>
-                </Text>
-              </Section>
-
-              {phone && (
-                <>
-                  <Hr style={detailDivider} />
-                  <Section style={detailRow}>
-                    <Text style={detailLabel}>Phone Number</Text>
-                    <Text style={detailValue} dir="ltr">
+            {phone && (
+              <>
+                <Hr style={fieldDivider} />
+                <Field en="Phone" ar="رقم الهاتف">
+                  <Text style={value} dir="ltr">
+                    <a href={telHref} style={link}>
                       {phone}
-                    </Text>
-                  </Section>
-                </>
-              )}
+                    </a>
+                  </Text>
+                </Field>
+              </>
+            )}
 
-              <Hr style={detailDivider} />
+            <Hr style={fieldDivider} />
 
-              <Section style={detailRow}>
-                <Text style={detailLabel}>Message</Text>
-                <Text style={messageValue}>{message}</Text>
-              </Section>
-            </Section>
-
-            <Text style={note}>
-              Please respond to the client at their email address or phone number.
-            </Text>
+            <Field en="Message" ar="الرسالة">
+              <Text style={messageBox} dir="auto">
+                {message}
+              </Text>
+            </Field>
+            </div>
           </Section>
 
-          {/* Divider */}
-          <Hr style={mainDivider} />
-
-          {/* Arabic Section */}
-          <Section style={content} dir="rtl">
-            <Heading style={headingAr}>رسالة تواصل جديدة</Heading>
-            <Text style={paragraphAr}>
-              تم استلام رسالة جديدة من نموذج التواصل في الموقع الإلكتروني:
-            </Text>
-
-            <Section style={detailsCard}>
-              <Section style={detailRow}>
-                <Text style={detailLabelAr}>الاسم</Text>
-                <Text style={detailValueAr}>{name}</Text>
-              </Section>
-
-              <Hr style={detailDivider} />
-
-              <Section style={detailRow}>
-                <Text style={detailLabelAr}>البريد الإلكتروني</Text>
-                <Text style={detailValueAr}>
-                  <a href={`mailto:${email}`} style={linkStyle}>
-                    {email}
-                  </a>
-                </Text>
-              </Section>
-
-              {phone && (
-                <>
-                  <Hr style={detailDivider} />
-                  <Section style={detailRow}>
-                    <Text style={detailLabelAr}>رقم الهاتف</Text>
-                    <Text style={detailValueAr} dir="ltr">
-                      {phone}
-                    </Text>
-                  </Section>
-                </>
-              )}
-
-              <Hr style={detailDivider} />
-
-              <Section style={detailRow}>
-                <Text style={detailLabelAr}>الرسالة</Text>
-                <Text style={messageValueAr}>{message}</Text>
-              </Section>
-            </Section>
-
-            <Text style={noteAr}>
-              يرجى الرد على العميل عبر البريد الإلكتروني أو رقم الهاتف.
-            </Text>
+          {/* Actions */}
+          <Section style={actions}>
+            <Button href={`mailto:${email}`} style={buttonPrimary}>
+              الرد بالإيميل · Reply by email
+            </Button>
+            {phone && (
+              <>
+                <div style={{ height: "10px" }} />
+                <Button href={telHref} style={buttonOutline}>
+                  اتصال · Call
+                </Button>
+              </>
+            )}
           </Section>
 
           {/* Footer */}
-          <Hr style={mainDivider} />
           <Section style={footer}>
+            <Text style={footerBrand}>Maram Group · مرام جروب</Text>
             <Text style={footerText}>
-              Maram Group Design & Built | مرام جروب للتصميم والتشييد
-            </Text>
-            <Text style={footerText}>
-              This is an automated notification | هذا إشعار تلقائي
+              إشعار تلقائي من موقع الشركة · Automated notification from the website
             </Text>
           </Section>
         </Container>
@@ -146,189 +122,157 @@ export default function ContactEmail({ name, email, phone, message }: ContactEma
   );
 }
 
-const main = {
-  backgroundColor: "#0a0a0a",
-  fontFamily:
-    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-  padding: "40px 20px",
+function Field({
+  en,
+  ar,
+  children,
+}: {
+  en: string;
+  ar: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <Section style={field}>
+      <Row>
+        <Column style={labelEn}>{en}</Column>
+        <Column style={labelAr} dir="rtl">
+          {ar}
+        </Column>
+      </Row>
+      {children}
+    </Section>
+  );
+}
+
+// ─────────────────────────────────────────────────────────
+// Styles
+// ─────────────────────────────────────────────────────────
+const GOLD = "#c9a05f";
+const DARK = "#0a0a0a";
+const FONT = "'Segoe UI', Tahoma, Arial, sans-serif";
+
+const body = {
+  backgroundColor: "#f3f0ea",
+  fontFamily: FONT,
+  margin: "0",
+  padding: "32px 12px",
 };
 
 const container = {
   backgroundColor: "#ffffff",
-  margin: "0 auto",
   maxWidth: "600px",
-  border: "1px solid #27272a",
+  margin: "0 auto",
+  borderRadius: "10px",
+  overflow: "hidden" as const,
+  border: "1px solid #e7e2d8",
 };
 
 const header = {
-  backgroundColor: "#0a0a0a",
-  padding: "32px 24px",
+  backgroundColor: DARK,
+  padding: "28px 24px 20px",
   textAlign: "center" as const,
 };
 
-const logoPlaceholder = {
-  width: "60px",
-  height: "60px",
-  backgroundColor: "#c9a05f",
-  color: "#ffffff",
-  fontSize: "24px",
-  fontWeight: "bold",
-  display: "inline-flex",
-  alignItems: "center",
-  justifyContent: "center",
-  borderRadius: "50%",
-  margin: "0 auto",
-};
+const logo = { margin: "0 auto", display: "block" };
 
-const content = {
-  padding: "32px 24px",
-};
+const goldBar = { height: "3px", backgroundColor: GOLD, lineHeight: "3px", fontSize: "0" };
 
-const heading = {
-  fontSize: "26px",
-  fontWeight: "600",
-  lineHeight: "1.3",
-  color: "#18181b",
-  margin: "0 0 16px 0",
-};
+const titleSection = { padding: "32px 28px 8px", textAlign: "center" as const };
 
-const headingAr = {
-  fontSize: "26px",
-  fontWeight: "600",
-  lineHeight: "1.4",
-  color: "#18181b",
-  margin: "0 0 16px 0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const paragraph = {
-  fontSize: "15px",
-  lineHeight: "1.6",
-  color: "#52525b",
-  margin: "0 0 24px 0",
-};
-
-const paragraphAr = {
-  fontSize: "15px",
-  lineHeight: "1.8",
-  color: "#52525b",
-  margin: "0 0 24px 0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const detailsCard = {
-  backgroundColor: "#fafafa",
-  border: "1px solid #e4e4e7",
-  borderLeft: "4px solid #c9a05f",
-  padding: "20px",
-  marginBottom: "24px",
-};
-
-const detailRow = {
-  marginBottom: "0",
-};
-
-const detailLabel = {
+const badge = {
+  display: "inline-block",
   fontSize: "11px",
-  fontWeight: "600",
-  color: "#71717a",
-  textTransform: "uppercase" as const,
-  letterSpacing: "0.05em",
-  margin: "0 0 6px 0",
+  fontWeight: "700",
+  letterSpacing: "0.08em",
+  color: "#8a6a2f",
+  backgroundColor: "#faf3e3",
+  border: "1px solid #ecdcb5",
+  borderRadius: "999px",
+  padding: "6px 14px",
+  margin: "0 0 18px 0",
 };
 
-const detailLabelAr = {
-  fontSize: "12px",
-  fontWeight: "600",
-  color: "#71717a",
-  textTransform: "uppercase" as const,
-  letterSpacing: "0.02em",
-  margin: "0 0 6px 0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const detailValue = {
-  fontSize: "16px",
-  fontWeight: "500",
+const titleAr = {
+  fontSize: "24px",
+  fontWeight: "700",
   color: "#18181b",
-  margin: "0 0 16px 0",
+  lineHeight: "1.5",
+  margin: "0",
 };
 
-const detailValueAr = {
+const titleEn = {
+  fontSize: "14px",
+  color: "#71717a",
+  margin: "4px 0 0 0",
+};
+
+const cardWrap = { padding: "20px 24px 8px" };
+
+const card = {
+  padding: "8px 20px",
+  backgroundColor: "#fcfbf8",
+  border: "1px solid #ece7dc",
+  borderRadius: "8px",
+};
+
+const field = { padding: "14px 0 4px" };
+
+const labelBase = {
+  fontSize: "11px",
+  fontWeight: "700",
+  letterSpacing: "0.06em",
+  color: "#a08242",
+  padding: "0 0 4px 0",
+};
+const labelEn = { ...labelBase, textAlign: "left" as const, textTransform: "uppercase" as const };
+const labelAr = { ...labelBase, textAlign: "right" as const };
+
+const value = {
   fontSize: "16px",
-  fontWeight: "500",
-  color: "#18181b",
-  margin: "0 0 16px 0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const messageValue = {
-  fontSize: "15px",
-  fontWeight: "400",
+  fontWeight: "600",
   color: "#18181b",
   lineHeight: "1.6",
-  margin: "0 0 16px 0",
-  whiteSpace: "pre-wrap" as const,
+  margin: "0 0 10px 0",
 };
 
-const messageValueAr = {
+const link = { color: "#18181b", textDecoration: "none", borderBottom: `1px solid ${GOLD}` };
+
+const messageBox = {
   fontSize: "15px",
-  fontWeight: "400",
-  color: "#18181b",
-  lineHeight: "1.8",
-  margin: "0 0 16px 0",
+  lineHeight: "1.9",
+  color: "#27272a",
+  backgroundColor: "#ffffff",
+  border: "1px solid #ece7dc",
+  borderLeft: `4px solid ${GOLD}`,
+  borderRadius: "6px",
+  padding: "14px 16px",
+  margin: "4px 0 12px 0",
   whiteSpace: "pre-wrap" as const,
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
 };
 
-const linkStyle = {
-  color: "#c9a05f",
+const fieldDivider = { borderColor: "#ece7dc", margin: "2px 0" };
+
+const actions = { padding: "20px 24px 32px", textAlign: "center" as const };
+
+const buttonBase = {
+  display: "block",
+  boxSizing: "border-box" as const,
+  width: "100%",
+  textAlign: "center" as const,
+  fontSize: "14px",
+  fontWeight: "700",
   textDecoration: "none",
+  padding: "14px 20px",
+  borderRadius: "6px",
+};
+const buttonPrimary = { ...buttonBase, backgroundColor: GOLD, color: "#ffffff" };
+const buttonOutline = {
+  ...buttonBase,
+  backgroundColor: "#ffffff",
+  color: "#18181b",
+  border: `1px solid ${GOLD}`,
 };
 
-const detailDivider = {
-  borderColor: "#e4e4e7",
-  margin: "16px 0",
-};
-
-const note = {
-  fontSize: "14px",
-  lineHeight: "1.6",
-  color: "#71717a",
-  backgroundColor: "#fef3c7",
-  border: "1px solid #fde047",
-  padding: "12px 16px",
-  borderRadius: "4px",
-  margin: "0",
-};
-
-const noteAr = {
-  fontSize: "14px",
-  lineHeight: "1.8",
-  color: "#71717a",
-  backgroundColor: "#fef3c7",
-  border: "1px solid #fde047",
-  padding: "12px 16px",
-  borderRadius: "4px",
-  margin: "0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const mainDivider = {
-  borderColor: "#e4e4e7",
-  margin: "0",
-};
-
-const footer = {
-  padding: "24px",
-  backgroundColor: "#fafafa",
-  textAlign: "center" as const,
-};
-
-const footerText = {
-  fontSize: "13px",
-  lineHeight: "1.6",
-  color: "#a1a1aa",
-  textAlign: "center" as const,
-  margin: "4px 0",
-};
+const footer = { backgroundColor: DARK, padding: "22px 24px", textAlign: "center" as const };
+const footerBrand = { fontSize: "13px", fontWeight: "700", color: GOLD, margin: "0 0 6px 0" };
+const footerText = { fontSize: "12px", color: "#a1a1aa", lineHeight: "1.6", margin: "0" };

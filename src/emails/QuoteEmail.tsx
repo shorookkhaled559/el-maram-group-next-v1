@@ -1,12 +1,14 @@
 import {
   Body,
+  Button,
+  Column,
   Container,
   Head,
-  Heading,
   Hr,
   Html,
   Img,
   Preview,
+  Row,
   Section,
   Text,
 } from "@react-email/components";
@@ -16,121 +18,100 @@ interface QuoteEmailProps {
   phone: string;
   project: string;
   message?: string;
+  /** Inline image sent as an attachment with contentId "maram-logo" */
+  logoSrc?: string;
 }
 
-export default function QuoteEmail({ name, phone, project, message }: QuoteEmailProps) {
+export default function QuoteEmail({
+  name,
+  phone,
+  project,
+  message,
+  logoSrc = "cid:maram-logo",
+}: QuoteEmailProps) {
+  const telHref = `tel:${phone.replace(/[^\d+]/g, "")}`;
+
   return (
-    <Html>
+    <Html lang="ar">
       <Head />
-      <Preview>New Quote Request from {name} | طلب عرض سعر جديد من {name}</Preview>
-      <Body style={main}>
+      <Preview>
+        طلب عرض سعر جديد من {name} · New quote request from {name}
+      </Preview>
+      <Body style={body}>
         <Container style={container}>
           {/* Header */}
           <Section style={header}>
-            <div style={logoPlaceholder}>MG</div>
+            <Img src={logoSrc} width="120" height="90" alt="Maram Group" style={logo} />
+          </Section>
+          <div style={goldBar} />
+
+          {/* Title */}
+          <Section style={titleSection}>
+            <Text style={badge}>NEW QUOTE REQUEST · طلب عرض سعر جديد</Text>
+            <Text style={titleAr}>عميل جديد يطلب عرض سعر</Text>
+            <Text style={titleEn}>A new client is requesting a quote</Text>
           </Section>
 
-          {/* English Section */}
-          <Section style={content}>
-            <Heading style={heading}>New Quote Request</Heading>
-            <Text style={paragraph}>
-              You have received a new quote request from your website. Here are the details:
-            </Text>
+          {/* Details */}
+          <Section style={cardWrap}>
+            <div style={card}>
+            <Field en="Client Name" ar="اسم العميل">
+              <Text style={value} dir="auto">
+                {name}
+              </Text>
+            </Field>
 
-            <Section style={detailsCard}>
-              <Section style={detailRow}>
-                <Text style={detailLabel}>Client Name</Text>
-                <Text style={detailValue}>{name}</Text>
-              </Section>
+            <Hr style={fieldDivider} />
 
-              <Hr style={detailDivider} />
-
-              <Section style={detailRow}>
-                <Text style={detailLabel}>Phone Number</Text>
-                <Text style={detailValue} dir="ltr">
+            <Field en="Phone" ar="رقم الهاتف">
+              <Text style={value} dir="ltr">
+                <a href={telHref} style={link}>
                   {phone}
-                </Text>
-              </Section>
+                </a>
+              </Text>
+            </Field>
 
-              <Hr style={detailDivider} />
+            <Hr style={fieldDivider} />
 
-              <Section style={detailRow}>
-                <Text style={detailLabel}>Interested Project</Text>
-                <Text style={detailValue}>{project}</Text>
-              </Section>
+            <Field en="Interested Project" ar="المشروع المهتم به">
+              <Text style={value} dir="auto">
+                {project}
+              </Text>
+            </Field>
 
-              {message && (
-                <>
-                  <Hr style={detailDivider} />
-                  <Section style={detailRow}>
-                    <Text style={detailLabel}>Additional Notes</Text>
-                    <Text style={detailValue}>{message}</Text>
-                  </Section>
-                </>
-              )}
-            </Section>
-
-            <Text style={note}>
-              Please contact the client as soon as possible to provide them with the requested quote.
-            </Text>
+            {message && (
+              <>
+                <Hr style={fieldDivider} />
+                <Field en="Notes" ar="ملاحظات">
+                  <Text style={messageBox} dir="auto">
+                    {message}
+                  </Text>
+                </Field>
+              </>
+            )}
+            </div>
           </Section>
 
-          {/* Divider */}
-          <Hr style={mainDivider} />
+          {/* Reminder */}
+          <Section style={reminderWrap}>
+            <div style={reminder}>
+              <Text style={reminderAr} dir="rtl">يرجى التواصل مع العميل في أقرب وقت ممكن.</Text>
+              <Text style={reminderEn}>Please contact the client as soon as possible.</Text>
+            </div>
+          </Section>
 
-          {/* Arabic Section */}
-          <Section style={content} dir="rtl">
-            <Heading style={headingAr}>طلب عرض سعر جديد</Heading>
-            <Text style={paragraphAr}>
-              تم استلام طلب عرض سعر جديد من الموقع الإلكتروني. فيما يلي التفاصيل:
-            </Text>
-
-            <Section style={detailsCard}>
-              <Section style={detailRow}>
-                <Text style={detailLabelAr}>اسم العميل</Text>
-                <Text style={detailValueAr}>{name}</Text>
-              </Section>
-
-              <Hr style={detailDivider} />
-
-              <Section style={detailRow}>
-                <Text style={detailLabelAr}>رقم الهاتف</Text>
-                <Text style={detailValueAr} dir="ltr">
-                  {phone}
-                </Text>
-              </Section>
-
-              <Hr style={detailDivider} />
-
-              <Section style={detailRow}>
-                <Text style={detailLabelAr}>المشروع المهتم به</Text>
-                <Text style={detailValueAr}>{project}</Text>
-              </Section>
-
-              {message && (
-                <>
-                  <Hr style={detailDivider} />
-                  <Section style={detailRow}>
-                    <Text style={detailLabelAr}>ملاحظات إضافية</Text>
-                    <Text style={detailValueAr}>{message}</Text>
-                  </Section>
-                </>
-              )}
-            </Section>
-
-            <Text style={noteAr}>
-              يرجى التواصل مع العميل في أقرب وقت ممكن لتزويده بعرض السعر المطلوب.
-            </Text>
+          {/* Actions */}
+          <Section style={actions}>
+            <Button href={telHref} style={buttonPrimary}>
+              اتصال بالعميل · Call client
+            </Button>
           </Section>
 
           {/* Footer */}
-          <Hr style={mainDivider} />
           <Section style={footer}>
+            <Text style={footerBrand}>Maram Group · مرام جروب</Text>
             <Text style={footerText}>
-              Maram Group Design & Built | مرام جروب للتصميم والتشييد
-            </Text>
-            <Text style={footerText}>
-              This is an automated notification | هذا إشعار تلقائي
+              إشعار تلقائي من موقع الشركة · Automated notification from the website
             </Text>
           </Section>
         </Container>
@@ -139,165 +120,160 @@ export default function QuoteEmail({ name, phone, project, message }: QuoteEmail
   );
 }
 
-const main = {
-  backgroundColor: "#0a0a0a",
-  fontFamily:
-    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-  padding: "40px 20px",
+function Field({
+  en,
+  ar,
+  children,
+}: {
+  en: string;
+  ar: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <Section style={field}>
+      <Row>
+        <Column style={labelEn}>{en}</Column>
+        <Column style={labelAr} dir="rtl">
+          {ar}
+        </Column>
+      </Row>
+      {children}
+    </Section>
+  );
+}
+
+// ─────────────────────────────────────────────────────────
+// Styles
+// ─────────────────────────────────────────────────────────
+const GOLD = "#c9a05f";
+const DARK = "#0a0a0a";
+const FONT = "'Segoe UI', Tahoma, Arial, sans-serif";
+
+const body = {
+  backgroundColor: "#f3f0ea",
+  fontFamily: FONT,
+  margin: "0",
+  padding: "32px 12px",
 };
 
 const container = {
   backgroundColor: "#ffffff",
-  margin: "0 auto",
   maxWidth: "600px",
-  border: "1px solid #27272a",
+  margin: "0 auto",
+  borderRadius: "10px",
+  overflow: "hidden" as const,
+  border: "1px solid #e7e2d8",
 };
 
 const header = {
-  backgroundColor: "#0a0a0a",
-  padding: "32px 24px",
+  backgroundColor: DARK,
+  padding: "28px 24px 20px",
   textAlign: "center" as const,
 };
 
-const logoPlaceholder = {
-  width: "60px",
-  height: "60px",
-  backgroundColor: "#c9a05f",
-  color: "#ffffff",
-  fontSize: "24px",
-  fontWeight: "bold",
-  display: "inline-flex",
-  alignItems: "center",
-  justifyContent: "center",
-  borderRadius: "50%",
-  margin: "0 auto",
-};
+const logo = { margin: "0 auto", display: "block" };
 
-const content = {
-  padding: "32px 24px",
-};
+const goldBar = { height: "3px", backgroundColor: GOLD, lineHeight: "3px", fontSize: "0" };
 
-const heading = {
-  fontSize: "26px",
-  fontWeight: "600",
-  lineHeight: "1.3",
-  color: "#18181b",
-  margin: "0 0 16px 0",
-};
+const titleSection = { padding: "32px 28px 8px", textAlign: "center" as const };
 
-const headingAr = {
-  fontSize: "26px",
-  fontWeight: "600",
-  lineHeight: "1.4",
-  color: "#18181b",
-  margin: "0 0 16px 0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const paragraph = {
-  fontSize: "15px",
-  lineHeight: "1.6",
-  color: "#52525b",
-  margin: "0 0 24px 0",
-};
-
-const paragraphAr = {
-  fontSize: "15px",
-  lineHeight: "1.8",
-  color: "#52525b",
-  margin: "0 0 24px 0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const detailsCard = {
-  backgroundColor: "#fafafa",
-  border: "1px solid #e4e4e7",
-  borderLeft: "4px solid #c9a05f",
-  padding: "20px",
-  marginBottom: "24px",
-};
-
-const detailRow = {
-  marginBottom: "0",
-};
-
-const detailLabel = {
+const badge = {
+  display: "inline-block",
   fontSize: "11px",
-  fontWeight: "600",
-  color: "#71717a",
-  textTransform: "uppercase" as const,
-  letterSpacing: "0.05em",
-  margin: "0 0 6px 0",
+  fontWeight: "700",
+  letterSpacing: "0.08em",
+  color: "#8a6a2f",
+  backgroundColor: "#faf3e3",
+  border: "1px solid #ecdcb5",
+  borderRadius: "999px",
+  padding: "6px 14px",
+  margin: "0 0 18px 0",
 };
 
-const detailLabelAr = {
-  fontSize: "12px",
-  fontWeight: "600",
-  color: "#71717a",
-  textTransform: "uppercase" as const,
-  letterSpacing: "0.02em",
-  margin: "0 0 6px 0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const detailValue = {
-  fontSize: "16px",
-  fontWeight: "500",
+const titleAr = {
+  fontSize: "24px",
+  fontWeight: "700",
   color: "#18181b",
-  margin: "0 0 16px 0",
+  lineHeight: "1.5",
+  margin: "0",
 };
 
-const detailValueAr = {
+const titleEn = { fontSize: "14px", color: "#71717a", margin: "4px 0 0 0" };
+
+const cardWrap = { padding: "20px 24px 8px" };
+
+const card = {
+  padding: "8px 20px",
+  backgroundColor: "#fcfbf8",
+  border: "1px solid #ece7dc",
+  borderRadius: "8px",
+};
+
+const field = { padding: "14px 0 4px" };
+
+const labelBase = {
+  fontSize: "11px",
+  fontWeight: "700",
+  letterSpacing: "0.06em",
+  color: "#a08242",
+  padding: "0 0 4px 0",
+};
+const labelEn = { ...labelBase, textAlign: "left" as const, textTransform: "uppercase" as const };
+const labelAr = { ...labelBase, textAlign: "right" as const };
+
+const value = {
   fontSize: "16px",
-  fontWeight: "500",
+  fontWeight: "600",
   color: "#18181b",
-  margin: "0 0 16px 0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const detailDivider = {
-  borderColor: "#e4e4e7",
-  margin: "16px 0",
-};
-
-const note = {
-  fontSize: "14px",
   lineHeight: "1.6",
-  color: "#71717a",
-  backgroundColor: "#fef3c7",
-  border: "1px solid #fde047",
+  margin: "0 0 10px 0",
+};
+
+const link = { color: "#18181b", textDecoration: "none", borderBottom: `1px solid ${GOLD}` };
+
+const messageBox = {
+  fontSize: "15px",
+  lineHeight: "1.9",
+  color: "#27272a",
+  backgroundColor: "#ffffff",
+  border: "1px solid #ece7dc",
+  borderLeft: `4px solid ${GOLD}`,
+  borderRadius: "6px",
+  padding: "14px 16px",
+  margin: "4px 0 12px 0",
+  whiteSpace: "pre-wrap" as const,
+};
+
+const fieldDivider = { borderColor: "#ece7dc", margin: "2px 0" };
+
+const reminderWrap = { padding: "12px 24px 0" };
+
+const reminder = {
   padding: "12px 16px",
-  borderRadius: "4px",
-  margin: "0",
-};
-
-const noteAr = {
-  fontSize: "14px",
-  lineHeight: "1.8",
-  color: "#71717a",
-  backgroundColor: "#fef3c7",
-  border: "1px solid #fde047",
-  padding: "12px 16px",
-  borderRadius: "4px",
-  margin: "0",
-  fontFamily: "'Cairo', 'Tahoma', sans-serif",
-};
-
-const mainDivider = {
-  borderColor: "#e4e4e7",
-  margin: "0",
-};
-
-const footer = {
-  padding: "24px",
-  backgroundColor: "#fafafa",
+  backgroundColor: "#faf3e3",
+  border: "1px solid #ecdcb5",
+  borderRadius: "8px",
   textAlign: "center" as const,
 };
+const reminderAr = { fontSize: "14px", fontWeight: "600", color: "#6b5222", margin: "0" };
+const reminderEn = { fontSize: "13px", color: "#8a6a2f", margin: "2px 0 0 0" };
 
-const footerText = {
-  fontSize: "13px",
-  lineHeight: "1.6",
-  color: "#a1a1aa",
+const actions = { padding: "20px 24px 32px", textAlign: "center" as const };
+
+const buttonPrimary = {
+  display: "block",
+  boxSizing: "border-box" as const,
+  width: "100%",
   textAlign: "center" as const,
-  margin: "4px 0",
+  fontSize: "14px",
+  fontWeight: "700",
+  textDecoration: "none",
+  padding: "14px 20px",
+  borderRadius: "6px",
+  backgroundColor: GOLD,
+  color: "#ffffff",
 };
+
+const footer = { backgroundColor: DARK, padding: "22px 24px", textAlign: "center" as const };
+const footerBrand = { fontSize: "13px", fontWeight: "700", color: GOLD, margin: "0 0 6px 0" };
+const footerText = { fontSize: "12px", color: "#a1a1aa", lineHeight: "1.6", margin: "0" };

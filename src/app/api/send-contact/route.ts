@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { getDb } from "@/lib/mongodb";
+import { getLogoAttachment } from "@/lib/email-logo";
 import ContactEmail from "@/emails/ContactEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -46,7 +47,7 @@ export async function POST(req: NextRequest) {
     const db = await getDb();
     const leadsCollection = db.collection("leads");
 
-    const leadDoc = {
+    const insertResult = await leadsCollection.insertOne({
       name,
       email,
       phone: phone || null,
@@ -55,32 +56,27 @@ export async function POST(req: NextRequest) {
       source: "website",
       emailSent: false,
       createdAt: new Date(),
-    };
+    });
 
-    const insertResult = await leadsCollection.insertOne(leadDoc);
+    const recipientEmail = process.env.RECIPIENT_EMAIL!;
 
-    try {
-      const recipientEmail = process.env.RECIPIENT_EMAIL || "shorookkhaled559@gmail.com";
+    const { data, error } = await resend.emails.send({
+      from: process.env.RESEND_FROM!,
+      to: [recipientEmail],
+      replyTo: email,
+      subject: "رسالة تواصل جديدة | New Contact Message",
+      react: ContactEmail({ name, email, phone, message }),
+      attachments: [await getLogoAttachment()],
+    });
 
-      const { data, error } = await resend.emails.send({
-        from: "Maram Group <onboarding@resend.dev>",
-        to: [recipientEmail],
-        subject: "رسالة تواصل جديدة | New Contact Message",
-        react: ContactEmail({ name, email, phone, message }),
-      });
-
-      if (error) {
-        throw error;
-      }
-
-      await leadsCollection.updateOne(
-        { _id: insertResult.insertedId },
-        { $set: { emailSent: true, emailId: data?.id } }
-      );
-    } catch (sendError: any) {
-      console.error("Email send error:", sendError);
-      throw sendError;
+    if (error) {
+      throw new Error(`${error.name}: ${error.message}`);
     }
+
+    await leadsCollection.updateOne(
+      { _id: insertResult.insertedId },
+      { $set: { emailSent: true, emailId: data?.id } }
+    );
 
     return NextResponse.json({
       success: true,
