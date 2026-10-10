@@ -1,26 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import fs from "node:fs/promises";
-import path from "node:path";
 import { getDb } from "@/lib/mongodb";
 import { getLogoAttachment } from "@/lib/email-logo";
 import BrochureEmail from "@/emails/BrochureEmail";
 
-export const runtime = "nodejs";
-export const maxDuration = 30;
-
 const resend = new Resend(process.env.RESEND_API_KEY);
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-let brochureCache: Buffer | null = null;
-async function getBrochure(): Promise<Buffer> {
-  if (!brochureCache) {
-    brochureCache = await fs.readFile(
-      path.join(process.cwd(), "public", "files", "maram-brochure.pdf")
-    );
-  }
-  return brochureCache;
-}
 
 export async function POST(req: NextRequest) {
   try {
@@ -45,17 +30,18 @@ export async function POST(req: NextRequest) {
       createdAt: new Date(),
     });
 
-    const pdf = await getBrochure();
+    const baseUrl = (
+      process.env.BASE_URL ||
+      process.env.NEXT_PUBLIC_BASE_URL ||
+      "http://localhost:3000"
+    ).replace(/\/$/, "");
 
     const { data, error } = await resend.emails.send({
       from: process.env.RESEND_FROM!,
       to: [email],
       subject: "Maram Group Brochure | بروشور مرام جروب",
-      react: BrochureEmail(),
-      attachments: [
-        await getLogoAttachment(),
-        { filename: "Maram-Group-Brochure.pdf", content: pdf },
-      ],
+      react: BrochureEmail({ brochureUrl: `${baseUrl}/api/brochure` }),
+      attachments: [await getLogoAttachment()],
     });
 
     if (error) {
