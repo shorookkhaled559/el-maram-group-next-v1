@@ -55,7 +55,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
-  --font-arabic: var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: var(--font-cairo), "Cairo", Tahoma, ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -193,11 +193,36 @@
     letter-spacing: 0;
     font-weight: 400;
   }
+}
 
-  /* Reset Latin tracking utilities when in Arabic */
-  :lang(ar) [class*="tracking-"] {
-    letter-spacing: 0.02em;
-  }
+/* ===== Arabic overrides (unlayered on purpose: must beat Tailwind utilities) ===== */
+html[lang="ar"],
+html[lang="ar"] body,
+html[lang="ar"] * {
+  font-family: var(--font-arabic);
+  letter-spacing: 0 !important;
+  word-spacing: normal;
+  text-transform: none;
+  font-variant-ligatures: normal;
+  font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+}
+
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3 {
+  font-weight: 500;
+}
+
+/* Cairo Light is too thin on mobile */
+html[lang="ar"] .font-light {
+  font-weight: 400;
+}
+
+/* background-clip:text clips Arabic glyph edges when line-height is tight */
+html[lang="ar"] .text-gold-gradient {
+  padding-block: 0.15em;
+  line-height: 1.6;
 }
 
 @utility text-gold-gradient {
