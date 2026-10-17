@@ -87,7 +87,10 @@
       "Chalet": "شاليه",
       "Private Villa": "فيلا خاصة",
       "Renovation": "تجديد",
-      "Real Estate": "العقارات"
+      "Real Estate": "العقارات",
+      "Commercial": "تجاري",
+      "Residential": "سكني",
+      "Medical": "طبي"
     },
     "detail": {
       "backToProjects": "العودة إلى المشاريع",

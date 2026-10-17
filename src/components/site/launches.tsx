@@ -19,23 +19,28 @@ export function Launches() {
       </div>
 
       <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {projects.items.map((project) => {
-          const t = copy.items[project.id as keyof typeof copy.items];
-          return (
-            <ProjectCard
-              key={project.id}
-              slug={project.slug}
-              image={project.image}
-              title={t.title}
-              location={t.location}
-              shortDescription={t.shortDescription}
-              status={t.status}
-              soldOut={project.soldOut}
-              viewMoreLabel={copy.viewMore}
-              soldOutLabel={copy.soldOut}
-            />
-          );
-        })}
+        {projects.items
+          .filter((project) => {
+            // Only show projects that have translations
+            return copy.items && copy.items[project.id as keyof typeof copy.items];
+          })
+          .map((project) => {
+            const t = copy.items[project.id as keyof typeof copy.items];
+            return (
+              <ProjectCard
+                key={project.id}
+                slug={project.slug}
+                image={project.image}
+                title={t.title}
+                location={t.location}
+                shortDescription={t.shortDescription}
+                status={t.status}
+                soldOut={project.soldOut}
+                viewMoreLabel={copy.viewMore}
+                soldOutLabel={copy.soldOut}
+              />
+            );
+          })}
       </div>
     </section>
   );

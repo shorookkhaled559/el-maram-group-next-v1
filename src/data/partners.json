@@ -2,47 +2,73 @@
   "partners": [
     {
       "id": "partner-1",
-      "name": "Al-Rajhi Construction",
-      "logo": "/assets/partners/partner-1.png"
+      "name": "ACICO Group",
+      "nameAr": "أسيكو",
+      "logo": "/assets/partners/1.png"
     },
     {
       "id": "partner-2",
-      "name": "Emirates Development",
-      "logo": "/assets/partners/partner-2.png"
+      "name": "Hempel",
+      "nameAr": "هيمبل",
+      "logo": "/assets/partners/2.png"
     },
     {
       "id": "partner-3",
-      "name": "Gulf Engineering",
-      "logo": "/assets/partners/partner-3.png"
+      "name": "International Insulation Company",
+      "nameAr": "العوازل الدولية",
+      "logo": "/assets/partners/3.png"
     },
     {
       "id": "partner-4",
-      "name": "Arabian Properties",
-      "logo": "/assets/partners/partner-4.png"
+      "name": "National Industries Company (NIC)",
+      "nameAr": "الصناعات الوطنية",
+      "logo": "/assets/partners/4.png"
     },
     {
       "id": "partner-5",
-      "name": "Delta Construction",
-      "logo": "/assets/partners/partner-5.png"
+      "name": "Roma International Marble",
+      "nameAr": "روما للرخام الدولية",
+      "logo": "/assets/partners/5.png"
     },
     {
       "id": "partner-6",
-      "name": "Oasis Real Estate",
-      "logo": "/assets/partners/partner-6.png"
+      "name": "Kuwait Cement Company",
+      "nameAr": "أسمنت الكويت",
+      "logo": "/assets/partners/6.png"
     },
     {
       "id": "partner-7",
-      "name": "Skyline Developers",
-      "logo": "/assets/partners/partner-7.png"
+      "name": "Kuwait Steel",
+      "nameAr": "حديد الكويت",
+      "logo": "/assets/partners/7.png"
     },
     {
       "id": "partner-8",
-      "name": "Premier Building",
-      "logo": "/assets/partners/partner-8.png"
+      "name": "Sadeem",
+      "nameAr": "سديم",
+      "logo": "/assets/partners/8.png"
+    },
+    {
+      "id": "partner-9",
+      "name": "Gulf Aluminium Company",
+      "nameAr": "ألمنيوم الخليج",
+      "logo": "/assets/partners/9.png"
+    },
+    {
+      "id": "partner-10",
+      "name": "Kuwait Portland Cement Company",
+      "nameAr": "أسمنت بورتلاند الكويت",
+      "logo": "/assets/partners/10.png"
+    },
+    {
+      "id": "partner-11",
+      "name": "OULA STEEL",
+      "nameAr": "الأولى لصناعة الحديد",
+      "logo": "/assets/partners/11.png"
     }
   ],
   "stats": {
     "partnersCount": 50,
-    "projectsCount": 200
+    "projectsCount": 300
   }
 }

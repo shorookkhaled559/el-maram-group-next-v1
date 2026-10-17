@@ -37,8 +37,9 @@ const cairo = localFont({
   ],
   variable: "--font-arabic",
   display: "swap",
-  preload: false,
-  fallback: ["system-ui", "ui-sans-serif", "sans-serif"],
+  preload: true,
+  fallback: ["Tahoma", "Arial", "sans-serif"],
+  adjustFontFallback: "Arial",
 });
 
 export const metadata: Metadata = {
@@ -77,6 +78,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <head>
+        {/* Preload Arabic fonts for better performance */}
+        <link
+          rel="preload"
+          href="/assets/fonts/Cairo-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/assets/fonts/Cairo-SemiBold.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        
         {/* Favicon & App Icons */}
         <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
         <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
