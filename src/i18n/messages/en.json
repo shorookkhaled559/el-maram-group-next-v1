@@ -87,7 +87,10 @@
       "Chalet": "Chalet",
       "Private Villa": "Private Villa",
       "Renovation": "Renovation",
-      "Real Estate": "Real Estate"
+      "Real Estate": "Real Estate",
+      "Commercial": "Commercial",
+      "Residential": "Residential",
+      "Medical": "Medical"
     },
     "detail": {
       "backToProjects": "Back to Projects",

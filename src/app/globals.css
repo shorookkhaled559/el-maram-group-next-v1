@@ -156,11 +156,18 @@
     border-color: var(--color-border);
   }
 
+  /* Ensure fonts load properly with fallback */
+  @font-face {
+    font-display: swap;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   h1,
@@ -171,10 +178,12 @@
     letter-spacing: -0.01em;
   }
 
-  /* Arabic — use Cairo for all text, tighten letter-spacing overrides */
+  /* Arabic — use Cairo for all text, improve rendering */
   :lang(ar) body,
   :lang(ar) {
     font-family: var(--font-arabic);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   :lang(ar) h1,
@@ -182,6 +191,7 @@
   :lang(ar) h3 {
     font-family: var(--font-arabic);
     letter-spacing: 0;
+    font-weight: 400;
   }
 
   /* Reset Latin tracking utilities when in Arabic */

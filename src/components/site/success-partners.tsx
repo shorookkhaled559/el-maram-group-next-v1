@@ -5,11 +5,16 @@ import { useI18n } from "@/i18n";
 import partnersData from "@/data/partners.json";
 
 export function SuccessPartners() {
-  const { m } = useI18n();
+  const { m, locale } = useI18n();
   const successPartners = m.successPartners;
 
   // Get partners from JSON
-  const partners = partnersData.partners;
+  const partners = partnersData.partners as Array<{
+    id: string;
+    name: string;
+    nameAr?: string;
+    logo: string;
+  }>;
   const stats = partnersData.stats;
 
   // Duplicate the array for seamless loop
@@ -41,15 +46,15 @@ export function SuccessPartners() {
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={`${partner.id}-${index}`}
-                className="group relative flex h-24 w-48 shrink-0 items-center justify-center rounded-lg border border-border bg-card p-6 transition-all duration-300 hover:border-gold hover:shadow-lg lg:h-28 lg:w-56 lg:p-8"
+                className="group relative flex h-24 w-48 shrink-0 items-center justify-center rounded-lg border border-border bg-card p-3 transition-all duration-300 hover:border-gold hover:shadow-lg lg:h-28 lg:w-56 lg:p-4"
               >
-                {/* Logo Placeholder - replace with actual Image when you have logos */}
+                {/* Logo */}
                 <div className="relative h-full w-full">
                   <Image
                     src={partner.logo}
-                    alt={partner.name}
+                    alt={locale === 'ar' ? (partner.nameAr || partner.name) : partner.name}
                     fill
-                    className="object-contain opacity-60 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+                    className="object-contain transition-all duration-300"
                   />
                 </div>
 

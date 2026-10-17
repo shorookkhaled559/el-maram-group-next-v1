@@ -1,6 +1,42 @@
 {
   "projects": [
     {
+      "id": "hadaba-plaza",
+      "slug": "hadaba-plaza",
+      "title": "Hadaba Plaza",
+      "titleAr": "هضبة بلازا",
+      "category": "Real Estate",
+      "mainCategory": "Real Estate",
+      "subcategories": ["Commercial"],
+      "image": "/assets/hadaba.jpeg",
+      "url": "/projects/hadaba-plaza",
+      "hasDetails": false
+    },
+    {
+      "id": "noor-heights",
+      "slug": "noor-heights",
+      "title": "Noor Heights",
+      "titleAr": "نور هايتس",
+      "category": "Real Estate",
+      "mainCategory": "Real Estate",
+      "subcategories": ["Residential"],
+      "image": "/assets/project-1.jpg",
+      "url": "/projects/noor-heights",
+      "hasDetails": false
+    },
+    {
+      "id": "maram-medical-tower",
+      "slug": "maram-medical-tower",
+      "title": "Maram Medical Tower",
+      "titleAr": "برج المرام الطبي",
+      "category": "Real Estate",
+      "mainCategory": "Real Estate",
+      "subcategories": ["Commercial", "Medical"],
+      "image": "/assets/maram-tower.png",
+      "url": "/projects/maram-medical-tower",
+      "hasDetails": false
+    },
+    {
       "id": "nayef-al-masma",
       "slug": "nayef-al-masma",
       "title": "Nayef Al-Masma",
