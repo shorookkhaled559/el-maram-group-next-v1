@@ -1,0 +1,48 @@
+{
+  "partners": [
+    {
+      "id": "partner-1",
+      "name": "Al-Rajhi Construction",
+      "logo": "/assets/partners/partner-1.png"
+    },
+    {
+      "id": "partner-2",
+      "name": "Emirates Development",
+      "logo": "/assets/partners/partner-2.png"
+    },
+    {
+      "id": "partner-3",
+      "name": "Gulf Engineering",
+      "logo": "/assets/partners/partner-3.png"
+    },
+    {
+      "id": "partner-4",
+      "name": "Arabian Properties",
+      "logo": "/assets/partners/partner-4.png"
+    },
+    {
+      "id": "partner-5",
+      "name": "Delta Construction",
+      "logo": "/assets/partners/partner-5.png"
+    },
+    {
+      "id": "partner-6",
+      "name": "Oasis Real Estate",
+      "logo": "/assets/partners/partner-6.png"
+    },
+    {
+      "id": "partner-7",
+      "name": "Skyline Developers",
+      "logo": "/assets/partners/partner-7.png"
+    },
+    {
+      "id": "partner-8",
+      "name": "Premier Building",
+      "logo": "/assets/partners/partner-8.png"
+    }
+  ],
+  "stats": {
+    "partnersCount": 50,
+    "projectsCount": 200
+  }
+}

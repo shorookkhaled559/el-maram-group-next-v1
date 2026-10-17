@@ -5,16 +5,29 @@ import { ArrowDownRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import content from "@/data/homepage-content.json";
 import { useI18n } from "@/i18n";
+import { useEffect, useState } from "react";
 import { useTheme } from "@/hooks/use-theme";
-import { HeroCanvas } from "./hero-canvas";
 
 const { hero } = content;
 
+// Hero slideshow images
+const HERO_IMAGES = [
+  "/assets/hero-slides/slide-1.jpg",
+  "/assets/hero-slides/slide-2.jpg",
+  "/assets/hero-slides/slide-3.jpg",
+  "/assets/hero-slides/slide-4.jpg",
+  "/assets/hero-slides/slide-5.jpg",
+  "/assets/hero-slides/slide-6.jpg",
+];
+
+const SLIDE_INTERVAL = 2000; // 2 seconds
+
 function Marquee() {
   const { m, isRtl } = useI18n();
-  const line = [...m.hero.marquee, ...m.hero.marquee];
+  // Duplicate the array multiple times for seamless infinite scroll
+  const line = [...m.hero.marquee, ...m.hero.marquee, ...m.hero.marquee, ...m.hero.marquee];
   return (
-    <div className="relative overflow-hidden border-y border-border bg-background/80 py-3">
+    <div className="relative overflow-hidden border-y border-border bg-background/80 py-4">
       <div
         className={`flex w-max gap-8 whitespace-nowrap ${isRtl ? "animate-marquee-rtl" : "animate-marquee"}`}
         dir="ltr"
@@ -22,7 +35,7 @@ function Marquee() {
         {line.map((word, i) => (
           <span
             key={`${word}-${i}`}
-            className="flex items-center gap-8 text-[10px] uppercase tracking-[0.36em] text-muted-foreground"
+            className="flex items-center gap-8 text-sm uppercase tracking-[0.36em] text-muted-foreground lg:text-base"
           >
             {word}
             <span className="text-gold">&bull;</span>
@@ -36,23 +49,40 @@ function Marquee() {
 export function Hero() {
   const { m } = useI18n();
   const { theme } = useTheme();
-  const isLight = theme === "light";
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, SLIDE_INTERVAL);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const isDark = theme === "dark";
 
   return (
     <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden pt-2.5">
-      <Image
-        src={isLight ? "/assets/hero-poster1.jpg" : "/assets/hero-poster.jpg"}
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
-      {/* Dark overlay — dark mode only */}
-      {!isLight && <div className="absolute inset-0 bg-black/70" />}
-      {/* Ambient 3D layer sits above the background image but below the readability gradient. */}
-      <HeroCanvas className="pointer-events-none absolute inset-0" />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-black/70 to-black/75" />
+      {/* Slideshow Images */}
+      {HERO_IMAGES.map((src, index) => (
+        <Image
+          key={src}
+          src={src}
+          alt=""
+          fill
+          priority={index === 0}
+          sizes="100vw"
+          className={`object-cover object-center transition-opacity duration-1000 ${
+            index === currentSlide ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      ))}
+      {/* Overlay for readability */}
+      {isDark ? (
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-black/70 to-black/75" />
+      ) : (
+        <div className="absolute inset-0 bg-black/60" />
+      )}
 
       <div className="relative mx-auto w-full max-w-7xl px-5 pt-32 pb-10 lg:px-8">
         <p className="animate-rise text-[0.6875rem] uppercase tracking-[0.32em] text-gold-soft">

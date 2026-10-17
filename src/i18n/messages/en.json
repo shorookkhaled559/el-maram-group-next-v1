@@ -1,8 +1,8 @@
 {
   "dir": "ltr",
   "site": {
-    "companyName": "Maram Group",
-    "tagline": "Kuwaiti Company for Urban Development and Real Estate Development",
+    "companyName": "Maram Group Kuwaiti",
+    "tagline": "Consaltant & Development",
     "rights": "All rights reserved."
   },
   "nav": {
@@ -21,20 +21,21 @@
     "language": "Switch language"
   },
   "hero": {
-    "eyebrow": "Kuwait Development",
-    "title": "Building Today. Shaping Tomorrow.",
+    "eyebrow": "Egypt & Kuwait Development",
+    "title": "We build your dreams.",
     "subtitle": "A real estate developer with roots in Kuwait and a growing presence in Egypt — building spaces designed to last.",
     "ctaLabel": "Explore Projects",
     "secondaryCtaLabel": "Request a Quotation",
     "marquee": [
-      "Kuwait City",
-      "Salmiya",
-      "Residential Towers",
-      "Coastal Villas",
-      "Commercial Assets",
+      "Kuwait",
+      "Our Services",
+      "Architectural Design",
+      "Interior Design",
+      "Exterior Design",
+      "Real Estate",
+      "Contracting",
       "25+ Years",
-      "Bnaider",
-      "Design-Led Development"
+      "Egypt"
     ]
   },
   "stats": {
@@ -85,7 +86,8 @@
       "New Classic": "New Classic",
       "Chalet": "Chalet",
       "Private Villa": "Private Villa",
-      "Renovation": "Renovation"
+      "Renovation": "Renovation",
+      "Real Estate": "Real Estate"
     },
     "detail": {
       "backToProjects": "Back to Projects",
@@ -147,9 +149,17 @@
       }
     }
   },
+  "successPartners": {
+    "eyebrow": "Our Network",
+    "title": "Success Partners",
+    "subtitle": "We are proud to partner with leading companies and institutions in real estate development and construction",
+    "partnersCount": "Success Partners",
+    "projectsCount": "Joint Projects"
+  },
   "howWeWork": {
     "eyebrow": "Our Process",
     "title": "How We Work With You?",
+    "ctaLabel": "Explore Our Services",
     "steps": {
       "consultation": {
         "title": "Initial Consultation",
@@ -176,6 +186,13 @@
         "description": "Project delivery with complete inspection and post-delivery quality assurance."
       }
     }
+  },
+  "exploreCategories": {
+    "eyebrow": "Explore Our Work",
+    "title": "Browse by Category",
+    "subtitle": "Discover our diverse portfolio across design, construction, and interior works",
+    "viewProjects": "View Projects",
+    "viewAll": "View All Projects"
   },
   "brochure": {
     "eyebrow": "Brochure",
