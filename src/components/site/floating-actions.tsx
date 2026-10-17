@@ -51,23 +51,22 @@ export function FloatingActions() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close contact menu" : "Open contact menu"}
-        className="group relative flex size-14 cursor-pointer items-center justify-center rounded-full bg-gold text-primary-foreground shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-gold/30 sm:size-16"
+        className="group relative flex cursor-pointer items-center gap-2 rounded-full bg-gold px-4 py-3 text-primary-foreground shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-gold/30 sm:px-5 sm:py-3.5"
       >
         {/* Animated Ring */}
         <span className="absolute inset-0 rounded-full bg-gold opacity-75 animate-ping" 
               style={{ animationDuration: '2s' }} />
         
-        {/* Rotating Glow */}
-        <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-gold via-gold-soft to-gold opacity-50 blur-sm animate-spin" 
-              style={{ animationDuration: '3s' }} />
-        
         {/* Button Content */}
-        <span className="relative z-10 transition-transform duration-300">
+        <span className="relative z-10 flex items-center gap-2 transition-transform duration-300">
           {isOpen ? (
-            <X className="size-6 sm:size-7" />
+            <X className="size-5 sm:size-6" />
           ) : (
-            <MessageSquare className="size-6 animate-pulse sm:size-7" />
+            <MessageSquare className="size-5 animate-pulse sm:size-6" />
           )}
+          <span className="text-sm font-semibold whitespace-nowrap sm:text-base">
+            {m.nav.items["/contact"]}
+          </span>
         </span>
       </button>
     </div>

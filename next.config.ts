@@ -36,6 +36,20 @@ const nextConfig: NextConfig = {
     // positives for dynamic route params in Next.js 15 with generateStaticParams.
     ignoreBuildErrors: true,
   },
+  
+  // Redirects for favicon to ensure search engines find it
+  async rewrites() {
+    return [
+      {
+        source: '/favicon.ico',
+        destination: '/favicon/favicon.ico',
+      },
+      {
+        source: '/apple-touch-icon.png',
+        destination: '/favicon/apple-touch-icon.png',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

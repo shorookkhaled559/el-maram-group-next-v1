@@ -43,9 +43,9 @@ const cairo = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Maram Group | Real Estate Development in Kuwait",
+  title: "MARAM Group | Engineering, Design & Real Estate | مرام جروب | استشارات هندسية وتصميم وتطوير عقاري",
   description:
-    "Maram Group develops residential towers, coastal villas and commercial addresses across Kuwait. Explore our latest launches and request a quotation.",
+    "MARAM Group, Engineering Consultancy, Architectural Design, Interior Design, Exterior Design, Execution Drawings, Construction Company, Real Estate Development, Engineering Services. مرام جروب، استشارات هندسية، تصميم معماري، تصميم داخلي، تصميم خارجي، رسومات تنفيذية، شركة إنشاءات، تطوير عقاري، خدمات هندسية.",
   manifest: '/favicon/site.webmanifest',
   icons: {
     icon: [
@@ -55,16 +55,42 @@ export const metadata: Metadata = {
     ],
     apple: [
       { url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
-    ]
+    ],
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '192x192',
+        url: '/favicon/web-app-manifest-192x192.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '512x512',
+        url: '/favicon/web-app-manifest-512x512.png',
+      },
+    ],
   },
   openGraph: {
-    title: "Maram Group | Real Estate Development in Kuwait",
+    title: "MARAM Group | Engineering, Design & Real Estate | مرام جروب",
     description:
-      "Residential, coastal and commercial developments across Kuwait — designed with intent, delivered with discipline.",
+      "MARAM Group, Engineering Consultancy, Architectural Design, Interior Design, Exterior Design, Execution Drawings, Construction Company, Real Estate Development, Engineering Services. مرام جروب، استشارات هندسية، تصميم معماري، تصميم داخلي، تصميم خارجي، رسومات تنفيذية، شركة إنشاءات، تطوير عقاري، خدمات هندسية.",
     type: "website",
+    siteName: "Maram Group",
+    images: [
+      {
+        url: '/favicon/web-app-manifest-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'Maram Group Logo',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    title: "MARAM Group | Engineering, Design & Real Estate",
+    description: "MARAM Group, Engineering Consultancy, Architectural Design, Interior Design, Exterior Design, Execution Drawings, Construction Company, Real Estate Development, Engineering Services. مرام جروب، استشارات هندسية، تصميم معماري، تصميم داخلي، تصميم خارجي، رسومات تنفيذية، شركة إنشاءات، تطوير عقاري، خدمات هندسية.",
+    images: ['/favicon/web-app-manifest-512x512.png'],
   },
 };
 
@@ -103,6 +129,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#c9a05f" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        
+        {/* SEO Keywords */}
+        <meta name="keywords" content="MARAM Group, مرام جروب, Engineering Consultancy, استشارات هندسية, Architectural Design, تصميم معماري, Interior Design, تصميم داخلي, Exterior Design, تصميم خارجي, Execution Drawings, رسومات تنفيذية, Construction Company, شركة إنشاءات, Real Estate Development, تطوير عقاري, Engineering Services, خدمات هندسية, Kuwait, الكويت, Egypt, مصر" />
+        <meta name="author" content="Maram Group" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English, Arabic" />
+        <meta name="revisit-after" content="7 days" />
+        
+        {/* Language Alternates */}
+        <link rel="alternate" hrefLang="en" href="https://www.maram-kw.com" />
+        <link rel="alternate" hrefLang="ar" href="https://www.maram-kw.com" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.maram-kw.com" />
         
         {/* Critical CSS - inlined for instant render, no blocking */}
         <style
