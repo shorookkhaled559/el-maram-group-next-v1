@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { PageHeader } from "@/components/site/page-header";
@@ -48,10 +49,18 @@ const categories = Array.from(categoryMap.keys());
 
 export function ProjectsContent() {
   const { m, locale } = useI18n();
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+  const categoryFromUrl = searchParams.get('category');
+  const [activeCategory, setActiveCategory] = useState<string | null>(categoryFromUrl);
   const [currentPage, setCurrentPage] = useState(1);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Update active category when URL changes
+  useEffect(() => {
+    setActiveCategory(categoryFromUrl);
+    setCurrentPage(1);
+  }, [categoryFromUrl]);
 
   // Close dropdown when clicking outside
   useEffect(() => {

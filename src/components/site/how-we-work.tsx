@@ -1,5 +1,8 @@
 "use client";
 
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { useI18n } from "@/i18n";
 
 export function HowWeWork() {
@@ -73,6 +76,20 @@ export function HowWeWork() {
               <div className="absolute -bottom-8 -right-8 h-24 w-24 rounded-full bg-gold/5 transition-all duration-300 group-hover:scale-150 group-hover:bg-gold/10" />
             </div>
           ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-12 text-center lg:mt-16">
+          <Button
+            asChild
+            variant="outline"
+            className="rounded-none px-8 py-6 text-xs uppercase tracking-[0.2em]"
+          >
+            <Link href="/services">
+              {howWeWork.ctaLabel}
+              <ArrowUpRight className="size-4 rtl:-scale-x-100" />
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

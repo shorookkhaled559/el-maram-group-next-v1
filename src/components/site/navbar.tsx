@@ -50,10 +50,10 @@ export function Navbar() {
               className="h-16 w-16 object-contain lg:h-30 lg:w-30"
             />
           <span className="flex flex-col leading-none">
-            <span className={`font-display text-sm tracking-[0.5em] uppercase lg:text-[22px] transition-colors duration-500 ${!solidBg ? "text-white" : "text-foreground"}`}>
+            <span className={`font-display text-sm tracking-[0.25em] uppercase lg:text-lg transition-colors duration-500 ${!solidBg ? "text-white" : "text-foreground"}`}>
               {m.site.companyName}
             </span>
-            <span className={`mt-1.4 text-[10px] tracking-[0.3em] uppercase transition-colors duration-500 ${!solidBg ? "text-white/70" : "text-muted-foreground"}`}>
+            <span className={`mt-1.4 text-[10px] tracking-[0.2em] uppercase transition-colors duration-500 ${!solidBg ? "text-white/70" : "text-muted-foreground"}`}>
               {m.site.tagline}
             </span>
           </span>
