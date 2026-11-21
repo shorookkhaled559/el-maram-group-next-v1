@@ -103,6 +103,36 @@ export function BlogsContent() {
           {/* Divider */}
           <div className="my-10 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
+          {/* Map Section - For Nour Heights and Hadaba Plaza */}
+          {(currentPost.id === "nour-heights" || currentPost.id === "hadaba-plaza") && (
+            <div className="mb-10">
+              <h2 className="mb-4 text-2xl font-medium text-foreground">
+                {locale === "ar" ? "موقع المشروع على الخريطة" : "Project Location on Map"}
+              </h2>
+              <div className="relative aspect-[16/7] w-full overflow-hidden rounded-lg border border-border bg-muted">
+                <iframe
+                  src={
+                    currentPost.id === "nour-heights"
+                      ? "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3482.5987654321!2d30.8515644!3d29.3143495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDE4JzUxLjciTiAzMMKwNTEnMDUuNiJF!5e0!3m2!1sen!2seg!4v1234567890!5m2!1sen!2seg"
+                      : "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3453.789!2d31.0911560!3d29.9749804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDU4JzI5LjkiTiAzMcKwMDUnMjguMiJF!5e0!3m2!1sen!2seg!4v1234567891!5m2!1sen!2seg"
+                  }
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  title={
+                    locale === "ar" 
+                      ? `موقع ${currentPost.id === "nour-heights" ? "نور هايتس" : "هضبة بلازا"} على الخريطة`
+                      : `${currentPost.id === "nour-heights" ? "Nour Heights" : "Hadaba Plaza"} Location on Map`
+                  }
+                  className="h-full w-full"
+                />
+              </div>
+            </div>
+          )}
+
           {/* Body Content */}
           <div className="space-y-6">
             {body.split("\n\n").map((paragraph, index) => {
