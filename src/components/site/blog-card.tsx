@@ -37,12 +37,12 @@ export function BlogCard({
   return (
     <article className="group flex cursor-pointer flex-col" onClick={onClick}>
       {/* Image */}
-      <div className="relative block aspect-[4/3] overflow-hidden bg-muted">
+      <div className="relative block aspect-[16/9] overflow-hidden bg-muted">
         <Image
           src={image}
           alt={title}
           width={1200}
-          height={900}
+          height={675}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         {/* Category badge */}
